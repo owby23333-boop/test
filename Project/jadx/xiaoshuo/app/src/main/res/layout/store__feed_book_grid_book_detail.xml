@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/store__grid_book_grid_height"
+    android:foreground="?android:attr/selectableItemBackground">
+    <include
+        android:id="@+id/store__feed_book_grid_book_detail_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        layout="@layout/store__feed_book_grid_detail_cover"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/store__feed_book_grid_book_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/store__feed_book_grid_title_style"/>
+        <TextView
+            android:textSize="8.67sp"
+            android:textColor="#ffffff"
+            android:ellipsize="end"
+            android:id="@+id/store__feed_book_grid_book_detail_recommend"
+            android:background="@drawable/book__grid_book_detail_recommend_background"
+            android:padding="3.3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.33dp"
+            android:minHeight="16.67dp"
+            android:maxLines="1"/>
+        <include layout="@layout/store__feed_book_grid_book_detail_count_down"/>
+        <TextView
+            android:id="@+id/store__feed_book_grid_book_detail_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.67dp"
+            android:maxLines="2"
+            android:singleLine="false"
+            style="@style/store__feed_book_grid_desc_style"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,105 @@
+{
+  "session_id": "1cbf3965-3ff8-4807-af77-bea6571817be",
+  "timestamp": "2026-04-09T15:31:13.951Z",
+  "step": "spec",
+  "raw_idea": "Python CLI 待办事项工具，支持 add/list/done/delete",
+  "answers": {},
+  "dry_run": false,
+  "metadata": {
+    "source": "genesis-trigger-script",
+    "stack_hint": "python-cli",
+    "repo_url": null,
+    "project_name": "todo-cli-official",
+    "command": null,
+    "timeout_ms": null,
+    "answers_json": {},
+    "factory_change": false,
+    "channel_id": "-1003709213169",
+    "auth_gate": {
+      "signal": false,
+      "evidence": false
+    },
+    "genesis_contract": {
+      "version": 1,
+      "discover_complete": true,
+      "persisted_at": "2026-04-09T15:31:13.966Z",
+      "input_fingerprint": "24250f2505d800ba42ebce499a46a90b3fc70933d09d63fa8f07aa7449ef23af",
+      "phase": "discover"
+    }
+  },
+  "classification": {
+    "type": "feature",
+    "confidence": 0.33,
+    "alternatives": [],
+    "reasoning": "[Keywords] Classified as 'feature' based on 1 keyword/pattern matches.",
+    "delivery_target": "cli"
+  },
+  "interview": {
+    "questions": [
+      {
+        "id": "f1",
+        "question": "Qual o fluxo principal? O que o usuario faz e o que recebe de volta?",
+        "required": true,
+        "follow_up_if_vague": "Descreva o uso mais basico: entrada → saida."
+      },
+      {
+        "id": "f2",
+        "question": "Alguma restricao de tecnologia ou compatibilidade?",
+        "required": false,
+        "follow_up_if_vague": null
+      }
+    ],
+    "guidelines": "Interview for feature idea. Use clear language, preserve the user's technical terms, and only explain jargon when asked."
+  },
+  "spec_data": {
+    "title": "Python CLI 待办事项工具，支持 add/list/done/delete",
+    "objective": "Python CLI 待办事项工具，支持 add/list/done/delete",
+    "scope_v1": [
+      "Implement the primary user workflow described in the request",
+      "Expose the key interactions needed to operate the system end to end",
+      "Add validation and persistence rules for the main business flow"
+    ],
+    "out_of_scope": [
+      "To be defined during implementation"
+    ],
+    "acceptance_criteria": [
+      "Allows operators to complete the primary workflow end to end as requested",
+      "Validates and enforces the role, permission, or delivery constraints described in the request",
+      "Processes the asynchronous or background behavior required for the main operational path"
+    ],
+    "definition_of_done": [
+      "Code reviewed and merged",
+      "Tests pass",
+      "QA contract passes"
+    ],
+    "constraints": "None specified",
+    "risks": []
+  },
+  "spec": {
+    "title": "Python CLI 待办事项工具，支持 add/list/done/delete",
+    "type": "feature",
+    "objective": "Python CLI 待办事项工具，支持 add/list/done/delete",
+    "scope_v1": [
+      "Implement the primary user workflow described in the request",
+      "Expose the key interactions needed to operate the system end to end",
+      "Add validation and persistence rules for the main business flow"
+    ],
+    "out_of_scope": [
+      "To be defined during implementation"
+    ],
+    "acceptance_criteria": [
+      "Allows operators to complete the primary workflow end to end as requested",
+      "Validates and enforces the role, permission, or delivery constraints described in the request",
+      "Processes the asynchronous or background behavior required for the main operational path",
+      "Existe ao menos um comando CLI funcional do fluxo principal."
+    ],
+    "definition_of_done": [
+      "Code reviewed and merged",
+      "Tests pass",
+      "QA contract passes"
+    ],
+    "constraints": "Delivery target: cli.",
+    "risks": [],
+    "delivery_target": "cli"
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:right="28.7dp">
+        <bitmap android:src="@drawable/reading__taobao_item_ad_view__tmall"/>
+    </item>
+    <item android:left="17dp">
+        <bitmap android:src="@drawable/reading__taobao_item_ad_view__postfree"/>
+    </item>
+</layer-list>

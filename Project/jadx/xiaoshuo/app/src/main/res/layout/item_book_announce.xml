@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@drawable/store__feed_book_announce_bg"
+    android:paddingLeft="@dimen/store__share__interval_30"
+    android:paddingRight="@dimen/store__share__interval_30"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/store_feed_book_announce_height">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/store__feed_book_announce_ic"/>
+    <com.youth.banner.Banner
+        android:layout_gravity="center_vertical"
+        android:id="@+id/banner_announce"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/store__share__interval_30"/>
+</LinearLayout>

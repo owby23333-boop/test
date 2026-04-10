@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/vip_item_bg"
+    android:padding="@dimen/dimen15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/white"
+        android:gravity="top"
+        android:id="@+id/tv_help_q"
+        android:paddingLeft="@dimen/dimen10dp"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:button="@drawable/vippayhelp_q"
+        android:lineSpacingExtra="@dimen/dimen3dp"/>
+    <RadioButton
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/color_A4A5A7"
+        android:gravity="top"
+        android:id="@+id/tv_help_a"
+        android:paddingLeft="@dimen/dimen10dp"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen15dp"
+        android:checked="false"
+        android:button="@drawable/vippayhelp_a"
+        android:lineSpacingExtra="@dimen/dimen3dp"/>
+</LinearLayout>

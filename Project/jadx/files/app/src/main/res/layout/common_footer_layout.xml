@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/dimen20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/view_left"
+            android:background="@color/color_f1"
+            android:layout_width="@dimen/dimen60dp"
+            android:layout_height="2px"/>
+        <TextView
+            android:textSize="@dimen/dimen12dp"
+            android:textColor="@color/a2a9b2"
+            android:id="@+id/tv_bottom_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen20dp"
+            android:layout_marginRight="@dimen/dimen20dp"
+            android:text="人家是有底线的~"/>
+        <View
+            android:id="@+id/view_right"
+            android:background="@color/color_f1"
+            android:layout_width="@dimen/dimen60dp"
+            android:layout_height="2px"/>
+    </LinearLayout>
+</FrameLayout>

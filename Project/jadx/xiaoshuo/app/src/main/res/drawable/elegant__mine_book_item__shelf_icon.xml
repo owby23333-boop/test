@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/elegant__mine_book_item_recent__shelf_d"/>
+    <item android:drawable="@drawable/elegant__mine_book_item_recent__shelf"/>
+</selector>

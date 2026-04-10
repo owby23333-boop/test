@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/reading__send_error_view_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.duokan.reader.ui.general.HeaderView
+        android:id="@+id/reading__send_error_view__title"
+        android:background="@color/white_0_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:textSize="@dimen/general_font__shared__b"
+        android:textColor="@color/general__day_night__333333_2"
+        android:gravity="top|left"
+        android:id="@+id/reading__send_error_view__text"
+        android:background="@null"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="@string/reading__send_error_view__hint"
+        android:layout_weight="1"
+        android:textCursorDrawable="@null"/>
+</LinearLayout>

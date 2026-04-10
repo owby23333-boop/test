@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/view_dimen_42"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/view_dimen_42">
+    <TextView
+        android:textSize="@dimen/general__view__text_size__13_09sp"
+        android:textColor="@color/store_rank_selected__day_night__CC000000_CCFFFFFF"
+        android:id="@+id/tv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/store_rank_title_margin_top_height"
+        android:text="@string/store_rank_title_more_new"
+        android:maxLines="1"
+        android:drawablePadding="@dimen/store_rank_title_more_padding"
+        android:drawableEnd="@drawable/store_title__day_night_more"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/general__view__dimen__7dp"
+        android:scrollIndicators="none"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_more"
+        app:layout_constraintEnd_toStartOf="@+id/tv_more"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:id="@+id/tab_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

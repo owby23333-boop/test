@@ -1,0 +1,53 @@
+package cn.kuaipan.android.kss;
+
+/* JADX INFO: loaded from: classes.dex */
+public interface KssDef {
+    public static final int BLOCKSIZE = 4194304;
+    public static final long CHUNK_VALIDATE_DUR = 85376000;
+    public static final String ERR_BLOCK_CORRUPTED = "ERR_BLOCK_CORRUPTED";
+    public static final String ERR_CHUNK_CORRUPTED = "ERR_CHUNK_CORRUPTED";
+    public static final String ERR_CHUNK_OUT_OF_RANGE = "ERR_CHUNK_OUT_OF_RANGE";
+    public static final String ERR_INVALID_BLOCK_META = "ERR_INVALID_BLOCK_META";
+    public static final String ERR_INVALID_CHUNK_POS = "ERR_INVALID_CHUNK_POS";
+    public static final String ERR_INVALID_CHUNK_SIZE = "ERR_INVALID_CHUNK_SIZE";
+    public static final String ERR_INVALID_FILE_META = "ERR_INVALID_FILE_META";
+    public static final String ERR_INVALID_UPLOAD_ID = "ERR_INVALID_UPLOAD_ID";
+    public static final String ERR_SERVER_EXCEPTION = "ERR_SERVER_EXCEPTION";
+    public static final String ERR_STORAGE_REQUEST_ERROR = "ERR_STORAGE_REQUEST_ERROR";
+    public static final String ERR_STORAGE_REQUEST_FAILED = "ERR_STORAGE_REQUEST_FAILED";
+    public static final String ERR_TOO_MANY_CURRENT_BLOCKS = "ERR_TOO_MANY_CURRENT_BLOCKS";
+    public static final String FUNC_UPLOAD = "/upload_block_chunk";
+    public static final String KEY_BLOCKINFO = "block_infos";
+    public static final String KEY_BLOCKS = "blocks";
+    public static final String KEY_BLOCK_META = "block_meta";
+    public static final String KEY_BLOCK_METAS = "block_metas";
+    public static final String KEY_BODYSUM = "body_sum";
+    public static final String KEY_CHUNKPOS = "chunk_pos";
+    public static final String KEY_COMMIT_META = "commit_meta";
+    public static final String KEY_COMMIT_METAS = "commit_metas";
+    public static final String KEY_FILE_META = "file_meta";
+    public static final String KEY_IS_EXISTED = "is_existed";
+    public static final String KEY_LEFT_BYTES = "left_bytes";
+    public static final String KEY_MODIFY_TIME = "modify_time";
+    public static final String KEY_NEXT_POS = "next_pos";
+    public static final String KEY_NODE_URLS = "node_urls";
+    public static final String KEY_SECURE_KEY = "secure_key";
+    public static final String KEY_SHA1 = "sha1";
+    public static final String KEY_SIZE = "size";
+    public static final String KEY_STAT = "stat";
+    public static final String KEY_UPLOAD_ID = "upload_id";
+    public static final String KEY_URLS = "urls";
+    public static final int MAX_CHUNKSIZE = Math.min(4194304, 4194304);
+    public static final String MD5 = "md5";
+    public static final long META_VALID_TIME = 86400000;
+    public static final int MIN_CHUNKSIZE = 65536;
+    public static final long MIN_META_VALID_TIME = 3600000;
+    public static final int RETRY_TIMES = 3;
+    public static final String SHA1 = "sha1";
+    public static final String SIZE = "size";
+    public static final String VALUE_AUTO_COMMIT = "autoCommit";
+    public static final String VALUE_BLOCK_COMPLETED = "BLOCK_COMPLETED";
+    public static final String VALUE_CONTINUE_UPLOAD = "CONTINUE_UPLOAD";
+    public static final String VALUE_FILE_EXISTED = "FILE_EXISTED";
+    public static final String VALUE_OK = "OK";
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amgcyo.cuttadon.view.comic.GestureDetectorFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/fl_read"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.amgcyo.cuttadon.view.comic.ComicReadPictureView
+        android:id="@+id/reader_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.zwb.danmaku.MkDanmakuView
+        android:layout_gravity="center"
+        android:id="@+id/danmakuView"
+        android:background="@color/translucent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:danmaku_lineSpacingExtra="10dp"
+        app:danmaku_maxWidth="600dp"
+        app:danmaku_repeatCount="0"
+        app:danmaku_speed="6"
+        app:danmaku_textColor="@color/white"
+        app:danmaku_textShadowColor="@color/gray"
+        app:danmaku_textShadowWidth="1dp"
+        app:danmaku_textSize="21sp"
+        app:danmaku_trajectoryCount="5"
+        app:danmaku_trajectoryMargin="@dimen/dimen20dp"/>
+    <include layout="@layout/comic_pic_load_fail"/>
+</com.amgcyo.cuttadon.view.comic.GestureDetectorFrameLayout>

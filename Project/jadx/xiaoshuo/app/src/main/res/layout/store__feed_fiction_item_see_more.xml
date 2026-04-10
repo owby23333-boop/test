@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="@dimen/view_dimen_30"
+    android:paddingBottom="@dimen/view_dimen_50"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="14.67sp"
+        android:textColor="#4a4a4a"
+        android:layout_gravity="center"
+        android:id="@+id/store__feed_fiction_item_see_more__title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/store__audio__view_more"
+        android:drawablePadding="@dimen/view_dimen_8"
+        android:drawableEnd="@drawable/store__feed_audio_more"/>
+</FrameLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen42dp">
+        <ImageView
+            android:id="@+id/ivIconSeach"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/search_key_his"
+            android:tint="@color/color_ff767575"
+            android:contentDescription="@string/app_name"/>
+        <TextView
+            android:textSize="@dimen/dimen15dp"
+            android:textColor="@color/text_63"
+            android:gravity="center"
+            android:id="@+id/tvAutoCompleteItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ivIconSeach"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View
+        android:background="@color/dddddd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen0_5dp"
+        android:layout_marginLeft="@dimen/dimen15dp"
+        android:layout_marginRight="@dimen/dimen15dp"/>
+</LinearLayout>

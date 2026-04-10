@@ -1,0 +1,13 @@
+package me.jessyan.art.di.scope;
+
+import java.lang.annotation.Documented;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import javax.inject.Scope;
+
+/* JADX INFO: loaded from: classes.dex */
+@Scope
+@Documented
+@Retention(RetentionPolicy.RUNTIME)
+public @interface ActivityScope {
+}

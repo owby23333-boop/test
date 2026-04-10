@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/general_font__shared__dialog_button"
+    android:textColor="@color/general__day_night__000000b2"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>

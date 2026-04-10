@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@drawable/store__fiction_detail_view__add_to_bookshelf_toast_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="@dimen/view_dimen_48"
+        android:layout_height="@dimen/view_dimen_48"
+        android:src="@drawable/store__fiction_detail_view__add_to_bookshelf_ok"/>
+    <TextView
+        android:textSize="@dimen/text_font_size_32"
+        android:textStyle="bold"
+        android:textColor="@color/general__text__day_night__333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/store__fiction_detail_added_to_bookshelf"
+        android:layout_marginStart="@dimen/view_dimen_12"/>
+</LinearLayout>

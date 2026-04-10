@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:background="@drawable/bookshelf__bookshelf_menu_view_bg"
+    android:paddingTop="13dp"
+    android:paddingBottom="13dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:measureWithLargestChild="true">
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/general__day_night__1f2226"
+        android:gravity="center_vertical"
+        android:id="@+id/elegant__user_detail_menu__privacy"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:text="@string/elegant__user_detail__privacy"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/elegant__user__menu_lock"
+        android:fontFamily="sans-serif-medium"
+        android:paddingStart="16.67dp"
+        android:paddingEnd="32dp"/>
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/general__day_night__1f2226"
+        android:gravity="center_vertical"
+        android:id="@+id/elegant__user_detail_menu__edit_readings"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:text="@string/elegant__user_detail__edit_readings"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/elegant__user__menu_edit"
+        android:fontFamily="sans-serif-medium"
+        android:paddingStart="16.67dp"
+        android:paddingEnd="32dp"/>
+</LinearLayout>

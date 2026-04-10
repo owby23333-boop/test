@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.youth.banner.Banner
+        android:id="@+id/loop_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/store__banner_height"
+        android:importantForAccessibility="noHideDescendants"
+        app:banner_indicator_gravity="right"
+        app:banner_indicator_marginBottom="@dimen/view_dimen_30"
+        app:banner_indicator_marginRight="@dimen/view_dimen_30"
+        app:banner_indicator_normal_color="#80ffffff"
+        app:banner_indicator_normal_width="@dimen/view_dimen_15"
+        app:banner_indicator_selected_color="@color/white"
+        app:banner_indicator_selected_width="@dimen/view_dimen_15"
+        app:banner_loop_time="5000"
+        app:banner_radius="@dimen/general__shared_dimen__10dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

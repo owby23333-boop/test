@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/text_font_size_40"
+    android:textColor="@color/general__text__day_night__333333"
+    android:gravity="center"
+    android:background="@drawable/store__store_search_root_view__flow_layout__item_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/view_dimen_90"
+    android:layout_margin="@dimen/view_dimen_15"
+    android:lines="1"
+    android:drawablePadding="@dimen/view_dimen_12"
+    android:paddingStart="@dimen/view_dimen_39"
+    android:paddingEnd="@dimen/view_dimen_39"/>

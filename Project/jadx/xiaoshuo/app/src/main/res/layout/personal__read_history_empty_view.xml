@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/general__day_night__faf8f3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/personal__read_history_empty_view__image"/>
+    <TextView
+        android:textSize="13sp"
+        android:textColor="@color/general__day_night__999999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_50"
+        android:text="@string/personal__read_history__empty"/>
+    <TextView
+        android:textSize="@dimen/text_font_size_42"
+        android:textStyle="normal"
+        android:textColor="@color/general__shared__FF7433"
+        android:gravity="center"
+        android:id="@+id/personal__read_history_empty_view__go_bookstore"
+        android:background="@drawable/personal__read_history_empty_view__go_bookstore"
+        android:layout_width="@dimen/view_dimen_340"
+        android:layout_height="@dimen/view_dimen_100"
+        android:layout_marginTop="@dimen/view_dimen_60"
+        android:text="@string/bookshelf__empty_view__go_to_store"/>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.duokan.reader.ui.general.DkLabelView
+        android:textSize="@dimen/general_font__shared__c"
+        android:textColor="@color/general__shared__999999"
+        android:gravity="center"
+        android:id="@+id/user__followings_summary_view__following_count"
+        android:paddingLeft="13dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:includeFontPadding="false"/>
+    <ImageView
+        android:background="#e7e7e7"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <ImageView
+        android:background="#cccccc"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+</LinearLayout>

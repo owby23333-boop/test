@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="60dp"
+    android:width="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M28.8453,16.6072L28.8486,32.0604"
+        android:strokeColor="#ffffff"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M40.4783,36.4099L28.8058,32.3494"
+        android:strokeColor="#ffffff"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M5.3801,29C5.3801,15.1929 16.6626,4 30.5802,4C44.4977,4 55.7802,15.1929 55.7802,29C55.7802,42.8071 44.4977,54 30.5802,54C20.8423,54 12.3945,48.5205 8.1987,40.5"
+        android:strokeColor="#ffffff"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"/>
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M9.1629,45.5124C9.833,46.3652 11.0636,46.419 11.8486,45.6707L16.6595,41.0844C17.213,40.5568 16.9669,39.6261 16.225,39.4409L6.0513,36.9014C5.3729,36.732 4.7654,37.3098 4.9561,37.9825C5.3276,39.2927 6.0406,41.2791 7.2801,43C8.0445,44.0612 8.6737,44.8898 9.1629,45.5124Z"
+        android:fillType="evenOdd"/>
+</vector>

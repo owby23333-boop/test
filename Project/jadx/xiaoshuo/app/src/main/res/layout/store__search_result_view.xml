@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.duokan.reader.ui.general.LoadingCircleView
+        android:layout_gravity="center"
+        android:id="@+id/search__view_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_gravity="end|bottom"
+        android:id="@+id/search__result_to_top"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/view_dimen_220"
+        android:src="@drawable/reading__chapter_end_page_to_top"
+        android:layout_marginEnd="@dimen/view_dimen_20"/>
+    <include
+        android:layout_gravity="bottom"
+        android:id="@+id/search__result_to_report"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_dimen_190"
+        layout="@layout/store__store_search__report_search"/>
+</FrameLayout>

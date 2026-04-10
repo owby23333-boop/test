@@ -1,0 +1,26 @@
+package com.google.android.material.internal;
+
+import android.content.Context;
+import android.view.SubMenu;
+import androidx.annotation.NonNull;
+import androidx.annotation.RestrictTo;
+import androidx.appcompat.view.menu.MenuBuilder;
+import androidx.appcompat.view.menu.MenuItemImpl;
+
+/* JADX INFO: compiled from: NavigationMenu.java */
+/* JADX INFO: loaded from: classes2.dex */
+@RestrictTo({RestrictTo.Scope.LIBRARY_GROUP})
+public class e extends MenuBuilder {
+    public e(Context context) {
+        super(context);
+    }
+
+    @Override // androidx.appcompat.view.menu.MenuBuilder, android.view.Menu
+    @NonNull
+    public SubMenu addSubMenu(int i2, int i3, int i4, CharSequence charSequence) {
+        MenuItemImpl menuItemImpl = (MenuItemImpl) addInternal(i2, i3, i4, charSequence);
+        g gVar = new g(getContext(), this, menuItemImpl);
+        menuItemImpl.setSubMenu(gVar);
+        return gVar;
+    }
+}

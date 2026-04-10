@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/layout_locktime"
+        android:paddingLeft="@dimen/dimen16dp"
+        android:paddingRight="@dimen/dimen16dp"
+        style="@style/ReaderMenu.Panel">
+        <LinearLayout
+            android:gravity="center"
+            android:paddingTop="@dimen/dimen10dp"
+            android:paddingBottom="@dimen/dimen10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen65dp">
+            <TextView
+                android:id="@+id/textView_locktime1"
+                android:text="@string/reader_lock_time_5"
+                style="@style/ReaderMenu.CheckText01"/>
+            <View style="@style/ReaderMenu.PaddingView"/>
+            <TextView
+                android:id="@+id/textView_locktime2"
+                android:text="@string/reader_lock_time_15"
+                style="@style/ReaderMenu.CheckText01"/>
+            <View style="@style/ReaderMenu.PaddingView"/>
+            <TextView
+                android:id="@+id/textView_locktime3"
+                android:text="@string/reader_lock_time_30"
+                style="@style/ReaderMenu.CheckText01"/>
+            <View style="@style/ReaderMenu.PaddingView"/>
+            <TextView
+                android:id="@+id/textView_locktime4"
+                android:text="@string/reader_lock_time_xt"
+                style="@style/ReaderMenu.CheckText01"/>
+            <View style="@style/ReaderMenu.PaddingView"/>
+            <TextView
+                android:id="@+id/textView_locktime5"
+                android:text="@string/reader_lock_time_cl"
+                style="@style/ReaderMenu.CheckText01"/>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

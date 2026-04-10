@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/reading__app_ad_view_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/reading__app_ad_view_click"
+            android:background="@drawable/general__shared__ad_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_dimen_30"
+            android:layout_marginRight="@dimen/view_dimen_30"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_dimen_50"
+                android:layout_marginStart="@dimen/view_dimen_40"
+                android:layout_marginEnd="@dimen/view_dimen_40">
+                <FrameLayout
+                    android:layout_width="@dimen/view_dimen_304"
+                    android:layout_height="@dimen/view_dimen_204">
+                    <ImageView
+                        android:id="@+id/reading__single_image_view__image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"/>
+                    <ImageView
+                        android:layout_gravity="end|bottom"
+                        android:id="@+id/reading__app_ad_view__close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/reading__ad_view_close"/>
+                </FrameLayout>
+                <TextView
+                    android:textSize="@dimen/text_font_size_48"
+                    android:textColor="@color/black_70_transparent"
+                    android:ellipsize="end"
+                    android:id="@+id/reading__app_ad_view__summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginStart="@dimen/view_dimen_30"/>
+            </LinearLayout>
+            <include layout="@layout/reading__ad_view_title_icon_xout"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

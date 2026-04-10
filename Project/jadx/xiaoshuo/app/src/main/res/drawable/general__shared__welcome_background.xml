@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/general__day_night__ffffff"/>
+    <item android:bottom="50dp">
+        <bitmap
+            android:gravity="bottom|center_horizontal"
+            android:src="@drawable/general__shared__welcome_logo"/>
+    </item>
+</layer-list>

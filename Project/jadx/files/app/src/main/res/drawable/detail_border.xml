@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="5dp"/>
+    <padding
+        android:left="@dimen/dimen15dp"
+        android:top="@dimen/dimen5dp"
+        android:right="@dimen/dimen15dp"
+        android:bottom="@dimen/dimen5dp"/>
+    <stroke
+        android:width="1dp"
+        android:color="@color/text_33"
+        android:dashWidth="3dp"/>
+</shape>

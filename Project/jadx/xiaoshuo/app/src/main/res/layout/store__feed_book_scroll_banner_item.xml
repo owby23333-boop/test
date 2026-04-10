@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.duokan.reader.ui.general.RoundFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        style="@style/store_feed_banner_round_style">
+        <ImageView
+            android:id="@+id/store_feed_banner_common_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/store_feed_book_scroll_banner_img_height"
+            android:scaleType="fitXY"
+            style="@style/store_feed_book_cover_frame_style"/>
+    </com.duokan.reader.ui.general.RoundFrameLayout>
+    <TextView
+        android:textSize="@dimen/general_font__shared__t9"
+        android:textColor="@color/general__day_night__333333"
+        android:ellipsize="end"
+        android:id="@+id/store_feed_banner_common_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/store__share__interval_30"
+        android:singleLine="true"/>
+    <TextView
+        android:textSize="@dimen/general_font__shared__t5"
+        android:textColor="@color/general__day_night__9ca0a8"
+        android:ellipsize="end"
+        android:id="@+id/store_feed_banner_common_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/store__share__interval_15"
+        android:singleLine="true"/>
+</LinearLayout>

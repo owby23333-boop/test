@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen48dp">
+    <com.amgcyo.cuttadon.view.otherview.CustomTextView
+        android:textSize="@dimen/dimen18dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/tv_tab_title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dimen10dp"
+        android:text="今日大热榜"
+        android:layout_weight="1"/>
+    <TextView
+        android:textSize="@dimen/dimen13dp"
+        android:textColor="@color/a2a9b2"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_sub_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="百万书友阅读趋势"
+        android:layout_weight="1"/>
+    <TextView
+        android:textSize="@dimen/dimen13dp"
+        android:textColor="@color/a2a9b2"
+        android:gravity="center"
+        android:id="@+id/tv_data_day"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/dimen10dp"
+        android:text=""
+        android:layout_weight="1"/>
+</LinearLayout>

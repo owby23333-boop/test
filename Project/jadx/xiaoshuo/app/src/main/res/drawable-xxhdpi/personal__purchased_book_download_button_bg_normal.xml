@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/general__day_night__purchased_book_download_button_bg_f7f7f7"/>
+    <stroke
+        android:width="1px"
+        android:color="@color/general__day_night__cccccc"/>
+    <corners android:radius="14dp"/>
+</shape>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.imageview.ShapeableImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/store__feed_book_common_cover"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    app:radius="@dimen/view_dimen_12"
+    app:shapeAppearance="@style/RoundCorner12"
+    app:strokeWidth="@dimen/view_dimen_1"/>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/view_dimen_90"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp">
+    <TextView
+        android:textAppearance="@dimen/text_font_size_45"
+        android:gravity="center"
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/view_dimen_90"/>
+</RelativeLayout>

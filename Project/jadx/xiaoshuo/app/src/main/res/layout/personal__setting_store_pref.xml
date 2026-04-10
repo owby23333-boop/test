@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/personal__setting_store_pref__save">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_dimen_80"/>
+            <include layout="@layout/personal__setting_store_pref_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+    <TextView
+        android:textSize="@dimen/general__shared_dimen__16sp"
+        android:textStyle="bold"
+        android:textColor="@color/general__shared__ffffff_button_disabled"
+        android:gravity="center_horizontal"
+        android:id="@+id/personal__setting_store_pref__save"
+        android:background="@drawable/personal__setting_store_pref_button"
+        android:padding="@dimen/general__shared_dimen__12_7dp"
+        android:layout_width="@dimen/general__shared_dimen__306_7dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general__shared_dimen__20dp"
+        android:layout_marginBottom="@dimen/general__shared_dimen__42dp"
+        android:text="@string/personal__setting_store_pref__save"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

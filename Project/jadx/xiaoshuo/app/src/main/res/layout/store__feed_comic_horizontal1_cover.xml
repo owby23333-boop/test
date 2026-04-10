@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.reader.ui.general.RoundFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/store_feed_book_comic_card"
+    android:layout_margin="2dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    style="@style/store_feed_book_cover_round_style">
+    <ImageView
+        android:id="@+id/store_feed_book_comic_cover"
+        android:layout_width="@dimen/store__grid1_comic_cover_width"
+        android:layout_height="@dimen/store__grid1_comic_cover_height"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:textSize="@dimen/general_font__shared__e"
+        android:textColor="@color/white"
+        android:id="@+id/store_feed_book_comic_is_vip"
+        android:background="@drawable/store__feed_book_tag_free"
+        android:paddingLeft="5dp"
+        android:paddingTop="0.3dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="0.3dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/surfing__shared__vip_store"/>
+    <ImageView
+        android:id="@+id/store_feed_book_comic_img"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"/>
+</com.duokan.reader.ui.general.RoundFrameLayout>

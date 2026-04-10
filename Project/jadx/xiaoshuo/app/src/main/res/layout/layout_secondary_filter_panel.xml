@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.duokan.dkcategory.ui.secondary.SecondaryTagPanel
+        android:id="@+id/secondary__tag"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/general__shared_dimen__10_7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.duokan.dkcategory.ui.CategorySegmentView
+        android:id="@+id/secondary__sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general__shared_dimen__10dp"
+        android:layout_marginStart="@dimen/general__shared_dimen__11_3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondary__tag"
+        app:layout_goneMarginTop="0dp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/general__shared_dimen__12_67sp"
+        android:textColor="@color/general__day_night__1a1a1a_e5ffffff"
+        android:id="@+id/secondary__filter_btn"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category__list_filter"
+        android:drawablePadding="@dimen/general__shared_dimen__3_33dp"
+        android:layout_marginEnd="@dimen/general__shared_dimen__20dp"
+        app:drawableStartCompat="@drawable/ic_filter"
+        app:layout_constraintBottom_toBottomOf="@+id/secondary__sort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/secondary__sort"/>
+</merge>

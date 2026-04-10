@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.amgcyo.cuttadon.view.otherview.LeftDrawableCenterTextView
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/text_22"
+        android:gravity="center"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen5dp"
+        android:layout_marginTop="@dimen/dimen15dp"
+        android:drawableLeft="@drawable/pay_wx"
+        android:drawablePadding="@dimen/dimen5dp"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="bottom"
+    android:paddingTop="@dimen/view_dimen_33"
+    android:paddingBottom="@dimen/view_dimen_33"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/view_dimen_70">
+    <com.duokan.dkbookshelf.ui.drawable.DkShelfCoverView
+        android:id="@+id/bookshelf__inline_item_add_book__image"
+        android:background="@drawable/general__shared__book_free_grid_shadow"
+        android:layout_width="@dimen/view_dimen_148"
+        android:layout_height="@dimen/view_dimen_198"
+        android:src="@drawable/bookshelf__inline_item_add_book__icon"
+        android:scaleType="fitXY"/>
+</FrameLayout>

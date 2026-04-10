@@ -1,0 +1,102 @@
+package com.amgcyo.cuttadon.adapter.bookcity;
+
+import android.content.Context;
+import android.text.TextUtils;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+import androidx.annotation.CallSuper;
+import androidx.annotation.NonNull;
+import androidx.annotation.UiThread;
+import androidx.recyclerview.widget.RecyclerView;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
+import butterknife.internal.Utils;
+import com.amgcyo.cuttadon.api.entity.bookcity.ItemsGrid2Book;
+import com.amgcyo.cuttadon.utils.otherutils.r0;
+import com.fatcatfat.io.R;
+import me.jessyan.art.http.imageloader.glide.ImageConfigImpl;
+
+/* JADX INFO: loaded from: classes.dex */
+public class MkGrid2BookData extends me.drakeet.multitype.b<ItemsGrid2Book, ViewHolder> {
+    private me.jessyan.art.c.e.c b;
+
+    static class ViewHolder extends RecyclerView.ViewHolder {
+
+        @BindView(R.id.iv_bookImg)
+        ImageView iv_bookImg;
+
+        @BindView(R.id.tv_bookName)
+        TextView tv_bookName;
+
+        @BindView(R.id.tv_last_read_chapterName)
+        TextView tv_last_read_chapterName;
+
+        ViewHolder(View view) {
+            super(view);
+            ButterKnife.bind(this, view);
+        }
+    }
+
+    public class ViewHolder_ViewBinding implements Unbinder {
+        private ViewHolder a;
+
+        @UiThread
+        public ViewHolder_ViewBinding(ViewHolder viewHolder, View view) {
+            this.a = viewHolder;
+            viewHolder.iv_bookImg = (ImageView) Utils.findRequiredViewAsType(view, R.id.iv_bookImg, "field 'iv_bookImg'", ImageView.class);
+            viewHolder.tv_bookName = (TextView) Utils.findRequiredViewAsType(view, R.id.tv_bookName, "field 'tv_bookName'", TextView.class);
+            viewHolder.tv_last_read_chapterName = (TextView) Utils.findRequiredViewAsType(view, R.id.tv_last_read_chapterName, "field 'tv_last_read_chapterName'", TextView.class);
+        }
+
+        @Override // butterknife.Unbinder
+        @CallSuper
+        public void unbind() {
+            ViewHolder viewHolder = this.a;
+            if (viewHolder == null) {
+                throw new IllegalStateException("Bindings already cleared.");
+            }
+            this.a = null;
+            viewHolder.iv_bookImg = null;
+            viewHolder.tv_bookName = null;
+            viewHolder.tv_last_read_chapterName = null;
+        }
+    }
+
+    public MkGrid2BookData(me.jessyan.art.c.e.c cVar) {
+        this.b = cVar;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // me.drakeet.multitype.b
+    @NonNull
+    public ViewHolder a(@NonNull LayoutInflater layoutInflater, @NonNull ViewGroup viewGroup) {
+        return new ViewHolder(layoutInflater.inflate(R.layout.mk_item_city_hot, viewGroup, false));
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // me.drakeet.multitype.b
+    public void a(@NonNull ViewHolder viewHolder, @NonNull final ItemsGrid2Book itemsGrid2Book) {
+        final Context context = viewHolder.itemView.getContext();
+        this.b.a(context, ImageConfigImpl.builder().imageRadius(8).url(String.format("%s%s", com.amgcyo.cuttadon.utils.otherutils.g.e(itemsGrid2Book.getForm()), itemsGrid2Book.getImage())).imageView(viewHolder.iv_bookImg).build());
+        viewHolder.tv_bookName.setText(itemsGrid2Book.getName());
+        String author = itemsGrid2Book.getAuthor();
+        if (!TextUtils.isEmpty(author)) {
+            viewHolder.tv_last_read_chapterName.setText(author);
+            viewHolder.tv_last_read_chapterName.setVisibility(0);
+        } else {
+            viewHolder.tv_last_read_chapterName.setVisibility(8);
+        }
+        viewHolder.itemView.setOnClickListener(new View.OnClickListener() { // from class: com.amgcyo.cuttadon.adapter.bookcity.h
+            @Override // android.view.View.OnClickListener
+            public final void onClick(View view) {
+                Context context2 = context;
+                ItemsGrid2Book itemsGrid2Book2 = itemsGrid2Book;
+                r0.a(context2, itemsGrid2Book2.getBook_id(), itemsGrid2Book2.getForm());
+            }
+        });
+    }
+}

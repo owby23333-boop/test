@@ -1,0 +1,8 @@
+package com.bytedance.sdk.openadsdk.core.zk.d.e;
+
+/* JADX INFO: loaded from: classes10.dex */
+public interface e {
+    void bf();
+
+    void e();
+}

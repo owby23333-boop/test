@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/view_dimen_36"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/view_dimen_24">
+    <TextView
+        android:textSize="@dimen/view_dimen_36"
+        android:textColor="@color/general__day_night__000000_70"
+        android:gravity="center"
+        android:id="@+id/tv_title"
+        android:background="@drawable/bg_hot_category"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/view_dimen_78"
+        android:paddingHorizontal="@dimen/view_dimen_30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</FrameLayout>

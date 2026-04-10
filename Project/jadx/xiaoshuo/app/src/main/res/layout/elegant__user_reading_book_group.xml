@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="true">
+    <TextView
+        android:textSize="16.67sp"
+        android:textStyle="bold"
+        android:textColor="@color/general__day_night__1f2226"
+        android:id="@+id/elegant__user_reading_book_group__month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"/>
+    <TextView
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/general__day_night__1a1a1a"
+        android:layout_gravity="bottom"
+        android:id="@+id/elegant__user_reading_book_group__year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginStart="6dp"/>
+</LinearLayout>

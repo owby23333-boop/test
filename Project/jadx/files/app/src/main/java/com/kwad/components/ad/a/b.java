@@ -1,0 +1,10 @@
+package com.kwad.components.ad.a;
+
+import androidx.annotation.NonNull;
+import com.kwad.sdk.api.KsLoadManager;
+import com.kwad.sdk.api.KsScene;
+
+/* JADX INFO: loaded from: classes.dex */
+public interface b extends com.kwad.sdk.components.a {
+    void loadDrawAd(KsScene ksScene, @NonNull KsLoadManager.DrawAdListener drawAdListener);
+}

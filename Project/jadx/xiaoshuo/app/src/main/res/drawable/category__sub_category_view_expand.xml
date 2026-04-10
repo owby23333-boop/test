@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/category__sub_category_view_expand_selected"/>
+    <item android:drawable="@drawable/drawable_secondary_expand"/>
+</selector>

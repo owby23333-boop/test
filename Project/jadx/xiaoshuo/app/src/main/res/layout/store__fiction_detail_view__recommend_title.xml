@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.duokan.reader.ui.view.FontTextView
+        android:textSize="@dimen/text_font_size_56"
+        android:textColor="@color/general__text__day_night__000000"
+        android:id="@+id/store__fiction_detail_view__recommend_title_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_60"
+        android:layout_marginBottom="@dimen/view_dimen_30"
+        android:text="@string/store__fiction_detail_recommend"
+        android:layout_marginStart="@dimen/view_dimen_50"/>
+    <TextView
+        android:textSize="@dimen/text_font_size_38"
+        android:textColor="@color/store__fiction_detail_view__recommend_title__more_pressed"
+        android:id="@+id/store__fiction_detail_view__recommend_title_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/store__fiction_detail_all"
+        android:drawablePadding="@dimen/view_dimen_16"
+        android:layout_alignBottom="@+id/store__fiction_detail_view__recommend_title_title"
+        android:layout_centerVertical="true"
+        android:drawableEnd="@drawable/store__fiction_detail_view__right_arrow"
+        android:layout_marginEnd="@dimen/view_dimen_50"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/general__web_core_view__root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/general__web_core_view__swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.duokan.dkwebview.core.DkWebView
+                android:id="@+id/general__web_core_view__web"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+        <include
+            android:id="@+id/general__web_core_view__error"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/general__empty_view"/>
+    </FrameLayout>
+    <com.duokan.reader.ui.general.LoadingCircleView
+        android:layout_gravity="center"
+        android:id="@+id/general__web_core_view__first_load"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

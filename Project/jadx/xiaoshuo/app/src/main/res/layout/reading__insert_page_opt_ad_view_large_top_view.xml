@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:id="@+id/reading__insert_page_opt_ad_view_large_top_view_container"
+        android:background="@drawable/general__shared__rounded_corner_ad_express"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32.67dp"/>
+</merge>

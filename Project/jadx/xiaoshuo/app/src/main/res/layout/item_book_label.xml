@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/general__day_night__ffE9F1FC_49799A_12"
+    app:cardCornerRadius="@dimen/view_dimen_10"
+    app:cardElevation="0dp">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/view_dimen_30"
+        android:textColor="@color/general__day_night__49799A"
+        android:id="@+id/tv_book_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/view_dimen_18"
+        android:paddingVertical="@dimen/view_dimen_6"/>
+</androidx.cardview.widget.CardView>

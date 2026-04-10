@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <View
+        android:id="@+id/leftPaddingView"
+        android:background="@color/reader_menu_panel_background"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"/>
+    <View
+        android:id="@+id/rightPaddingView"
+        android:background="@color/reader_menu_panel_background"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"/>
+    <View
+        android:id="@+id/bottomPaddingView"
+        android:background="@color/reader_menu_panel_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/rightPaddingView"
+        android:layout_toRightOf="@+id/leftPaddingView"
+        android:layout_alignParentBottom="true"/>
+    <FrameLayout
+        android:id="@+id/layout_menuContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/rightPaddingView"
+        android:layout_toRightOf="@+id/leftPaddingView"
+        android:layout_above="@+id/bottomPaddingView"/>
+</merge>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill">
+        <shape android:shape="rectangle">
+            <solid android:color="#ff997c6b"/>
+        </shape>
+    </item>
+    <item android:gravity="top">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="@color/transparent"
+                android:endColor="@color/black_30_transparent"
+                android:angle="90"/>
+            <size
+                android:height="@dimen/view_dimen_828"
+                android:width="@dimen/view_dimen_1200"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="bottom"
+        android:top="@dimen/view_dimen_1248">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="@color/black_40_transparent"
+                android:endColor="@color/transparent"
+                android:angle="90"
+                android:gradientRadius="@dimen/view_dimen_500"/>
+            <size
+                android:height="@dimen/view_dimen_1080"
+                android:width="@dimen/view_dimen_1200"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="top"
+        android:top="@dimen/view_dimen_330">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#66cc7e52"
+                android:endColor="@color/transparent"
+                android:angle="0"
+                android:type="radial"
+                android:gradientRadius="@dimen/view_dimen_500"/>
+            <size
+                android:height="@dimen/view_dimen_1280"
+                android:width="@dimen/view_dimen_1400"/>
+        </shape>
+    </item>
+</layer-list>

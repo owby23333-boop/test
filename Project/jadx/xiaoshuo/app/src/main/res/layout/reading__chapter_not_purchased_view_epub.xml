@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.duokan.reader.ui.general.DkTextView
+        android:textSize="17sp"
+        android:gravity="center"
+        android:id="@+id/reading__chapter_not_purchased_view__name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"/>
+    <com.duokan.reader.ui.general.DkTextView
+        android:textSize="@dimen/general_font__shared__c"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/reading__chapter_not_purchased_view__tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:maxLines="1"/>
+    <com.duokan.reader.ui.reading.ChapterNotPurchasedContainerView
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@+id/reading__chapter_not_purchased_view__server_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/reading__chapter_not_purchased_view__server_content"
+            layout="@layout/reading__chapter_not_purchased_view_epub_vip"/>
+    </com.duokan.reader.ui.reading.ChapterNotPurchasedContainerView>
+</LinearLayout>

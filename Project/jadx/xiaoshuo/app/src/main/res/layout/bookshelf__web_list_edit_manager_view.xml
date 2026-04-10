@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.duokan.reader.ui.general.PageHeaderView
+        android:id="@+id/bookshelf__web_list_edit_manager_view__header"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/bookshelf__web_list_edit_manager_view__footer"
+        android:background="@color/general__day_night__ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+        <View
+            android:background="@color/general__day_night__cccccc"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <TextView
+            android:textSize="@dimen/general_font__shared__t3"
+            android:textColor="@color/general__shared__button_text_disabled"
+            android:gravity="center"
+            android:id="@+id/bookshelf__web_list_edit_manager_view__delete"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/bookshelf__general_shared__delete"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

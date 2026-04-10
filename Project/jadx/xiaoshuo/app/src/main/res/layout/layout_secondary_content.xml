@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/secondary__coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.duokan.dkcategory.ui.secondary.SecondaryFilterPanel
+        android:id="@+id/secondary__filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.duokan.dkcategory.ui.secondary.SecondaryFilterBehavior"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/secondary__list"
+        android:paddingTop="@dimen/general__shared_dimen__6_7dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.duokan.dkcategory.ui.secondary.SecondaryListBehavior"/>
+    <FrameLayout
+        android:id="@+id/secondary__sticker"
+        android:background="@color/general__day_night__ffffff_97_1c1c1c"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general__shared_dimen__30dp"
+        app:layout_behavior="com.duokan.dkcategory.ui.secondary.SecondaryStickerBehavior">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/general__shared_dimen__13_33dp"
+            android:textColor="@color/general__shared__FF7433"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/secondary__sticker_hint"
+            android:paddingTop="@dimen/general__shared_dimen__3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <com.duokan.dkcategory.ui.LoadingStatusPlaceHolder
+        android:id="@+id/category__secondary_book_loading_placeholder"
+        android:background="@color/general__day_night__ffffff_121212"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.duokan.dkcategory.ui.secondary.SecondaryListBehavior"/>
+    <com.duokan.dkcategory.ui.LoadingStatusPlaceHolder
+        android:id="@+id/category__secondary_page_loading_placeholder"
+        android:background="@color/general__day_night__ffffff_121212"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

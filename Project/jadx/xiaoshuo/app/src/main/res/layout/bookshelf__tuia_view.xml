@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="bottom|right"
+    android:visibility="gone"
+    android:layout_width="67.33dp"
+    android:layout_height="67.33dp"
+    android:layout_marginRight="27dp"
+    android:layout_marginBottom="135dp"
+    android:src="@drawable/reading__reading_menu_bottom_view__tuia"
+    android:scaleType="center"/>

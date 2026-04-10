@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:left="@dimen/dimen4dp"
+        android:right="@dimen/dimen8dp">
+        <shape>
+            <size
+                android:height="80dp"
+                android:width="@dimen/dimen15dp"/>
+            <solid android:color="@color/color_20_000000"/>
+            <corners android:radius="@dimen/dimen30dp"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:left="@dimen/dimen5dp"
+        android:right="@dimen/dimen9dp"
+        android:bottom="@dimen/dimen12dp">
+        <shape>
+            <size android:height="1dp"/>
+            <solid android:color="@color/white"/>
+            <corners android:radius="@dimen/dimen30dp"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:left="@dimen/dimen5dp"
+        android:right="@dimen/dimen9dp">
+        <shape>
+            <size android:height="1dp"/>
+            <solid android:color="@color/white"/>
+            <corners android:radius="@dimen/dimen45dp"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:left="@dimen/dimen5dp"
+        android:top="@dimen/dimen12dp"
+        android:right="@dimen/dimen9dp">
+        <shape>
+            <size android:height="1dp"/>
+            <solid android:color="@color/white"/>
+            <corners android:radius="@dimen/dimen45dp"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/image__back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/general__shared__back"
+        android:scaleType="centerInside"/>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="@dimen/general_font__shared__b"
+            android:gravity="center"
+            android:id="@+id/reading__chapter_error_view__tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/reading__history_error_view__nonetwork"/>
+        <Button
+            android:textSize="@dimen/general_font__shared__b"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:id="@+id/view__retry"
+            android:layout_width="207dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/reading__shared__click_to_retry"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="false">
+        <vector
+            android:height="@dimen/view_dimen_90"
+            android:width="@dimen/view_dimen_90"
+            android:viewportWidth="90"
+            android:viewportHeight="90">
+            <path
+                android:fillColor="#00000000"
+                android:pathData="M45,45m-42,0a42,42 0,1 1,84 0a42,42 0,1 1,-84 0"
+                android:strokeColor="#ffffff"
+                android:strokeWidth="6"
+                android:strokeAlpha="0.6"/>
+            <path
+                android:fillColor="#ffffff"
+                android:pathData="M35,41.785C35,36.284 35,33.533 36.154,31.952C37.161,30.573 38.708,29.689 40.407,29.52C42.355,29.326 44.726,30.721 49.467,33.51L54.933,36.725C59.561,39.448 61.875,40.809 62.655,42.577C63.336,44.121 63.336,45.879 62.655,47.423C61.875,49.191 59.561,50.552 54.933,53.275L49.467,56.49C44.726,59.279 42.355,60.674 40.407,60.48C38.708,60.311 37.161,59.427 36.154,58.048C35,56.467 35,53.716 35,48.215V41.785Z"
+                android:fillAlpha="0.9"/>
+        </vector>
+    </item>
+    <item android:state_selected="true">
+        <vector
+            android:height="@dimen/view_dimen_90"
+            android:width="@dimen/view_dimen_90"
+            android:viewportWidth="90"
+            android:viewportHeight="90">
+            <path
+                android:fillColor="#00000000"
+                android:pathData="M45,45m-42,0a42,42 0,1 1,84 0a42,42 0,1 1,-84 0"
+                android:strokeColor="#ffffff"
+                android:strokeWidth="6"
+                android:strokeAlpha="0.6"/>
+            <path
+                android:fillColor="#ffffff"
+                android:pathData="M35,28.332C37.761,28.332 40,30.571 40,33.332V57.331C40,60.092 37.761,62.331 35,62.331C32.239,62.331 30,60.092 30,57.331V33.332C30,30.571 32.239,28.332 35,28.332ZM55,28.332C57.761,28.332 60,30.571 60,33.332V57.331C60,60.092 57.761,62.331 55,62.331C52.239,62.331 50,60.092 50,57.331V33.332C50,30.571 52.239,28.332 55,28.332Z"
+                android:fillAlpha="0.9"/>
+        </vector>
+    </item>
+</selector>

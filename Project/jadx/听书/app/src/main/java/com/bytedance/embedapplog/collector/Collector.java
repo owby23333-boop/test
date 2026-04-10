@@ -1,0 +1,20 @@
+package com.bytedance.embedapplog.collector;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import com.bytedance.embedapplog.cb;
+import com.bytedance.embedapplog.ti;
+
+/* JADX INFO: loaded from: classes2.dex */
+public class Collector extends BroadcastReceiver {
+    @Override // android.content.BroadcastReceiver
+    public void onReceive(Context context, Intent intent) {
+        String[] stringArrayExtra = intent.getStringArrayExtra("EMBED_K_DATA");
+        if (stringArrayExtra != null && stringArrayExtra.length > 0) {
+            ti.z(stringArrayExtra);
+        } else {
+            cb.g((Throwable) null);
+        }
+    }
+}

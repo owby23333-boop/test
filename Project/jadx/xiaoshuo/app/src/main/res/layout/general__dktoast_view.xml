@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.core.ui.BoxView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/general__dktoast_view__bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.duokan.reader.ui.general.DkLabelView
+        android:textSize="13.33sp"
+        android:textColor="@color/general__text__day_night__333333"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/general__dktoast_view__textview"
+        android:padding="3.33dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</com.duokan.core.ui.BoxView>

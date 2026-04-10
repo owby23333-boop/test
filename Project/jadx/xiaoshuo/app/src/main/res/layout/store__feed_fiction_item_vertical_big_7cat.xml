@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <include
+        android:layout_width="@dimen/view_dimen_287"
+        android:layout_height="@dimen/view_dimen_383"
+        layout="@layout/store__feed_fiction_common_cover_7cat"/>
+    <TextView
+        android:textSize="@dimen/text_font_size_46"
+        android:textColor="@color/general__text__day_night__cc000000_ccffffff"
+        android:ellipsize="end"
+        android:id="@+id/store__feed_book_common_title"
+        android:layout_width="@dimen/view_dimen_287"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_28"
+        android:maxLines="2"/>
+</LinearLayout>

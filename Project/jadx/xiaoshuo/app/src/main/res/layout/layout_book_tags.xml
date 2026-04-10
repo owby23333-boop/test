@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textColor="@color/general__day_night__49799A"
+        android:id="@+id/book_tags_1"
+        android:background="@drawable/drawable_book_tag_blue"
+        style="@style/BookTagItem"/>
+    <TextView
+        android:textColor="@color/general__day_night__A27951"
+        android:id="@+id/book_tags_2"
+        android:background="@drawable/drawable_book_tag_yellow"
+        style="@style/BookTagItem"/>
+    <TextView
+        android:textColor="@color/general__day_night__6F8367"
+        android:id="@+id/book_tags_3"
+        android:background="@drawable/drawable_book_tag_green"
+        style="@style/BookTagItem"/>
+</merge>

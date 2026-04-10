@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/store__feed_book_big_cover_width"
+    android:layout_height="match_parent">
+    <include layout="@layout/store__feed_book_cover"/>
+    <TextView
+        android:textSize="@dimen/general_font__shared__t9"
+        android:textColor="@color/general__day_night__333333"
+        android:ellipsize="end"
+        android:id="@+id/store__feed_book_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/store__share__interval_30"
+        android:lines="2"/>
+    <TextView
+        android:textSize="@dimen/general_font__shared__t5"
+        android:textColor="@color/general__day_night__9ca0a8"
+        android:ellipsize="end"
+        android:id="@+id/store__feed_book_common_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="@dimen/general_font__shared__t5"
+        android:textColor="@color/general__shared__ff8400"
+        android:ellipsize="end"
+        android:id="@+id/store__feed_book_common_thirdtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="@dimen/general_font__shared__g"
+        android:textColor="@color/general__shared__ff8400"
+        android:gravity="center"
+        android:id="@+id/store__feed_book_common_action"
+        android:background="@drawable/store__feed_book_common_action__background"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:visibility="gone"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"/>
+</LinearLayout>

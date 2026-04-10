@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/img_coin"
+        android:layout_width="@dimen/dimen23dp"
+        android:layout_height="@dimen/dimen23dp"
+        android:src="@drawable/ic_circle_progress"/>
+    <TextView
+        android:textSize="@dimen/sp_10"
+        android:textColor="#ffcfad6c"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="阅读\10赚钱"
+        android:includeFontPadding="false"/>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/general__shared_dimen__14sp"
+        android:textColor="@color/black_50_transparent"
+        android:ellipsize="end"
+        android:id="@+id/reading__ad_bottom_free_try"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"/>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:textSize="10.67sp"
+            android:textColor="@color/general__day_night__ad_tips_color_1A1A1A"
+            android:id="@+id/reading__ad_bottom_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.67dp"
+            android:text="@string/reading__ad_view__user_tip"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.24"/>
+    </LinearLayout>
+</merge>

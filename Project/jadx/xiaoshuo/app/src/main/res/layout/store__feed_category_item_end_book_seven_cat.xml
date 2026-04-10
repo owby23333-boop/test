@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/view_dimen_312"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/store_feed_category_bg"
+        android:background="@drawable/store__feed_head_end_bg_seven_cate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_dimen_252"
+        android:paddingStart="@dimen/view_dimen_40">
+        <com.duokan.reader.ui.view.FontTextView
+            android:textSize="@dimen/text_font_size_50"
+            android:textColor="@color/general__text__day_night__222222"
+            android:id="@+id/store_feed_category_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_dimen_55"/>
+        <TextView
+            android:textSize="@dimen/text_font_size_34"
+            android:textColor="@color/general__text__day_night__8d7881"
+            android:id="@+id/store_feed_category_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_dimen_26"
+            android:layout_marginBottom="@dimen/view_dimen_55"
+            android:includeFontPadding="false"/>
+    </LinearLayout>
+</FrameLayout>

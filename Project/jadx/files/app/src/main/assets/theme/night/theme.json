@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "textcolor": "#707070",
+  "background_color": "#161616",
+  "footer_color": "#434343",
+  "source_bgcolor": "#3C3C3C",
+  "source_textcolor": "#707070",
+  "sb_thumb_color": "#707070",
+  "sk_sencond_color": "#1B1B1B",
+  "catalog_head_color": "#161616",
+  "catalog_cur_color": "#883F1E",
+  "btn_bg_color": "#1D1D1D",
+  "noread_bg_color": "#1B1B1B",
+  "readed_bg_color": "#2E2E2E",
+  "highLight": "#ed424b",
+  "tint": "#666666",
+  "line": "#1B1B1B",
+  "index": "bg5",
+  "name": "夜间",
+  "type": 0,
+  "image": "readBg.png"
+}

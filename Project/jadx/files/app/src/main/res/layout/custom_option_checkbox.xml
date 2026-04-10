@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Switch
+        android:id="@+id/custom_option_checkbox"
+        android:background="@null"
+        android:focusable="false"
+        android:visibility="visible"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:thumb="@drawable/switch_ios_thumb"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:track="@drawable/switch_ios_track_selector"/>
+    <TextView
+        android:textSize="@dimen/sp_14"
+        android:textColor="?android:attr/textColorPrimary"
+        android:id="@+id/custom_option_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/custom_option_checkbox"/>
+    <TextView
+        android:textSize="@dimen/sp_12"
+        android:id="@+id/custom_option_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/custom_option_checkbox"
+        android:layout_below="@+id/custom_option_title"/>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.duokan.reader.ui.general.RoundFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp"
+        style="@style/store_feed_book_cover_round_style">
+        <ImageView
+            android:id="@+id/reading__chapter_end_page_view_book_item_layout_cover"
+            android:layout_width="61dp"
+            android:layout_height="81.33dp"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:textSize="@dimen/general_font__shared__e"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_gravity="start|top"
+            android:id="@+id/reading__chapter_end_page_view_book_item_layout_label"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"/>
+    </com.duokan.reader.ui.general.RoundFrameLayout>
+    <TextView
+        android:textSize="@dimen/text_font_size_38"
+        android:textColor="@color/general__333333"
+        android:ellipsize="end"
+        android:id="@+id/reading__chapter_end_page_view_book_item_layout_title"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_24"
+        android:maxLines="2"/>
+</LinearLayout>

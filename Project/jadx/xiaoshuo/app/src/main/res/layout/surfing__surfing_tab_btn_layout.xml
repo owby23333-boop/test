@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_gravity="center"
+        android:id="@+id/surfing__surfing_tab_btn_layout_background"
+        android:background="@drawable/surfing__surfing_tab_icon_bg"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:scaleX="0"
+        android:scaleY="0"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/surfing__surfing_tab_btn_layout_icon"
+        android:layout_width="26dp"
+        android:layout_height="26dp"/>
+</merge>

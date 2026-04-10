@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/secondary__container"
+    android:background="@color/general__day_night__ffffff_121212"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/secondary__back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general__shared_dimen__10dp"
+        android:src="@drawable/general__shared__back"
+        android:contentDescription="@string/general__shared__back"
+        android:layout_marginStart="@dimen/general__shared_dimen__11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textSize="@dimen/general__shared_dimen__17_33sp"
+        android:textColor="@color/general__day_night__000000_e5ffffff"
+        android:id="@+id/secondary__title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/secondary__back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/secondary__back"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/secondary__search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/general__shared_search"
+        android:contentDescription="@string/general__shared__search"
+        android:layout_marginEnd="@dimen/general__shared_dimen__16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/secondary__back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/secondary__back"/>
+    <FrameLayout
+        android:id="@+id/secondary__content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/general__shared_dimen__15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondary__back"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

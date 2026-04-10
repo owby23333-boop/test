@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.layout.QMUILinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp">
+    <ImageView
+        android:id="@+id/ivRelationType"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_associate_album"/>
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/primary_text_color"
+        android:ellipsize="end"
+        android:id="@+id/tvAssociate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="联想词"
+        android:maxLines="1"
+        android:layout_marginStart="8dp"/>
+</com.qmuiteam.qmui.layout.QMUILinearLayout>

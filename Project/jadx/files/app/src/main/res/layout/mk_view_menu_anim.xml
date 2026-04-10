@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/layout_anim"
+        android:paddingLeft="@dimen/dimen16dp"
+        android:paddingRight="@dimen/dimen16dp"
+        style="@style/ReaderMenu.Panel">
+        <LinearLayout
+            android:gravity="center"
+            android:paddingTop="@dimen/dimen10dp"
+            android:paddingBottom="@dimen/dimen10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen65dp">
+            <TextView
+                android:id="@+id/textView_anim_fz"
+                android:text="@string/reader_anim_1"
+                style="@style/ReaderMenu.CheckText01"/>
+            <View style="@style/ReaderMenu.PaddingView"/>
+            <TextView
+                android:id="@+id/textView_anim_fg"
+                android:text="@string/reader_anim_2"
+                style="@style/ReaderMenu.CheckText01"/>
+            <View style="@style/ReaderMenu.PaddingView"/>
+            <TextView
+                android:id="@+id/textView_anim_py"
+                android:text="@string/reader_anim_3"
+                style="@style/ReaderMenu.CheckText01"/>
+            <View style="@style/ReaderMenu.PaddingView"/>
+            <TextView
+                android:id="@+id/textView_anim_sx"
+                android:text="@string/reader_anim_4"
+                style="@style/ReaderMenu.CheckText01"/>
+            <View style="@style/ReaderMenu.PaddingView"/>
+            <TextView
+                android:id="@+id/textView_anim_pt"
+                android:text="@string/reader_anim_5"
+                style="@style/ReaderMenu.CheckText01"/>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

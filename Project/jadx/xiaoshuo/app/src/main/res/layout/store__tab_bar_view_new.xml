@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/store__tab_bar_view__tabs_and_menu"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <HorizontalScrollView
+        android:id="@+id/store__tab_bar_view__tab_frame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general__shared_dimen__46_67dp"
+        android:layout_marginStart="@dimen/general__shared_dimen__10_33dp"
+        android:layout_toStartOf="@+id/store__tab_bar_view__menu">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/store__tab_bar_view__tab_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </HorizontalScrollView>
+    <ImageView
+        android:id="@+id/store__tab_bar_view__menu"
+        android:layout_width="@dimen/general__shared_dimen__42dp"
+        android:layout_height="@dimen/general__shared_dimen__46_67dp"
+        android:src="@drawable/store__store_tab_view__fav"
+        android:scaleType="center"
+        android:layout_alignParentEnd="true"
+        android:paddingVertical="5dp"/>
+</RelativeLayout>

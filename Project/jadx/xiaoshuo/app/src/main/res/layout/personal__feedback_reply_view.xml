@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.duokan.reader.ui.general.PageHeaderView
+        android:id="@+id/personal__feedback_reply_view__header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <FrameLayout
+        android:id="@+id/personal__feedback_reply_view__container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <EditText
+            android:textSize="@dimen/general_font__shared__c"
+            android:textColor="#7d7d7d"
+            android:textColorHint="#cccccc"
+            android:gravity="top"
+            android:id="@+id/personal__feedback_reply_view__content"
+            android:background="@drawable/personal_create_feedback_view__content_background"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:hint="@string/personal__create_feedback_view__hint"/>
+    </FrameLayout>
+</LinearLayout>

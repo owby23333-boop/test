@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/general__day_night__ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.duokan.reader.ui.general.DkLabelView
+        android:textSize="@dimen/general_font__shared__d"
+        android:textColor="@color/general__day_night__cacaca"
+        android:gravity="center_vertical"
+        android:id="@+id/store__hot_word_item_view__text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:singleLine="true"/>
+    <View
+        android:background="@color/general__day_night__bcbcbc"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+</LinearLayout>

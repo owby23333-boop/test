@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/personal__home_title_view__message_button"
+    android:paddingLeft="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/personal__account_summary_view__message"
+        android:scaleType="center"
+        android:contentDescription="@string/personal__account_summary_view__messages"/>
+    <ImageView
+        android:layout_gravity="top|right"
+        android:id="@+id/personal__home_title_view__unread_message_count_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/bookshelf__header_view__have_new_message"/>
+</FrameLayout>

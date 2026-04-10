@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="@dimen/view_dimen_30"
+    android:paddingBottom="@dimen/view_dimen_30"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/view_dimen_46"
+    android:paddingEnd="@dimen/view_dimen_40">
+    <include
+        android:id="@+id/store__feed_item1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        layout="@layout/store__feed_horizontal_2items_small"/>
+    <include
+        android:id="@+id/store__feed_item2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/view_dimen_64"
+        layout="@layout/store__feed_horizontal_2items_small"/>
+</LinearLayout>

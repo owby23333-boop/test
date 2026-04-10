@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_F6F6F6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/head"
+        android:background="#00000000"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen150dp"
+        android:layout_marginLeft="@dimen/dimen15dp"
+        android:layout_marginTop="@dimen/dimen10dp"
+        android:layout_marginRight="@dimen/dimen15dp"
+        android:layout_marginBottom="@dimen/dimen10dp"
+        android:layout_below="@+id/head"
+        app:cardCornerRadius="@dimen/dimen10dp"
+        app:cardElevation="@dimen/dimen1dp">
+        <com.amgcyo.cuttadon.view.otherview.ImageCycleView
+            android:id="@+id/icv_topView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+    <com.amgcyo.cuttadon.view.comic.ArcRoundImageView
+        android:id="@+id/iv_banner_head_bg"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen300dp"
+        android:src="@drawable/icon_pic_def"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_alignBottom="@+id/card_view_banner"/>
+</RelativeLayout>

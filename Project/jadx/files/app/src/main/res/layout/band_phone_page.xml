@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="@dimen/dimen100dp"
+        android:layout_height="@dimen/dimen100dp"
+        android:layout_marginTop="@dimen/dimen50dp"
+        android:layout_marginBottom="@dimen/dimen50dp"
+        android:src="@drawable/current_login_phone"/>
+    <TextView
+        android:textColor="@color/color_7B7B7B"
+        android:layout_gravity="center"
+        android:id="@+id/tv_current_login_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.amgcyo.cuttadon.view.otherview.CommonShapeButton
+        android:textSize="@dimen/sp_17"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/btn_change"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen48dp"
+        android:layout_marginLeft="@dimen/dimen24dp"
+        android:layout_marginTop="@dimen/dimen20dp"
+        android:layout_marginRight="@dimen/dimen24dp"
+        android:text="@string/change_phone"
+        app:csb_activeEnable="true"
+        app:csb_cornerRadius="@dimen/dimen10dp"
+        app:csb_fillColor="@color/colorPrimary"/>
+</LinearLayout>

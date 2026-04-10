@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "textcolor": "#272A26",
+  "background_color": "#D8E3CC",
+  "footer_color": "#808679",
+  "source_bgcolor": "#696F65",
+  "source_textcolor": "#CED9C3",
+  "sb_thumb_color": "#272A26",
+  "sk_sencond_color": "#CFD9C4",
+  "catalog_head_color": "#D4DFC8",
+  "catalog_cur_color": "#65992E",
+  "btn_bg_color": "#CFD9C4",
+  "noread_bg_color": "#CFD9C4",
+  "readed_bg_color": "#BFC9B6",
+  "highLight": "#ed424b",
+  "tint": "#666666",
+  "line": "#C6D0BB",
+  "index": "bg1",
+  "name": "磨砂白",
+  "type": 0,
+  "image": "readBg.png"
+}

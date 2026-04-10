@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="@dimen/view_dimen_60"
+    android:width="@dimen/view_dimen_60"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M30,30m-16,0a16,16 0,1 1,32 0a16,16 0,1 1,-32 0"
+        android:strokeColor="#e6e6e6"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+    <path
+        android:fillColor="#e6e6e6"
+        android:pathData="M29.8647,1L29.8647,1A3.5,3.5 0,0 1,33.3647 4.5L33.3647,4.5A3.5,3.5 0,0 1,29.8647 8L29.8647,8A3.5,3.5 0,0 1,26.3647 4.5L26.3647,4.5A3.5,3.5 0,0 1,29.8647 1z"/>
+    <path
+        android:fillColor="#e6e6e6"
+        android:pathData="M54.9795,15.5L54.9795,15.5A3.5,3.5 103.4438,0 1,53.6984 20.2811L53.6984,20.2811A3.5,3.5 104.0682,0 1,48.9173 19L48.9173,19A3.5,3.5 104.0682,0 1,50.1984 14.2189L50.1984,14.2189A3.5,3.5 103.4438,0 1,54.9795 15.5z"/>
+    <path
+        android:fillColor="#e6e6e6"
+        android:pathData="M54.9795,44.5L54.9795,44.5A3.5,3.5 87.1371,0 1,50.1984 45.7811L50.1984,45.7811A3.5,3.5 87.1371,0 1,48.9173 41L48.9173,41A3.5,3.5 87.1371,0 1,53.6984 39.7189L53.6984,39.7189A3.5,3.5 87.1371,0 1,54.9795 44.5z"/>
+    <path
+        android:fillColor="#e6e6e6"
+        android:pathData="M29.8647,59L29.8647,59A3.5,3.5 0,0 1,26.3647 55.5L26.3647,55.5A3.5,3.5 0,0 1,29.8647 52L29.8647,52A3.5,3.5 0,0 1,33.3647 55.5L33.3647,55.5A3.5,3.5 0,0 1,29.8647 59z"/>
+    <path
+        android:fillColor="#e6e6e6"
+        android:pathData="M4.75,44.5L4.75,44.5A3.5,3.5 58.2166,0 1,6.0311 39.7189L6.0311,39.7189A3.5,3.5 58.2166,0 1,10.8122 41L10.8122,41A3.5,3.5 58.2166,0 1,9.5311 45.7811L9.5311,45.7811A3.5,3.5 58.2166,0 1,4.75 44.5z"/>
+    <path
+        android:fillColor="#e6e6e6"
+        android:pathData="M4.75,15.5L4.75,15.5A3.5,3.5 62.2327,0 1,9.5311 14.2189L9.5311,14.2189A3.5,3.5 62.2327,0 1,10.8122 19L10.8122,19A3.5,3.5 62.2327,0 1,6.0311 20.2811L6.0311,20.2811A3.5,3.5 62.2327,0 1,4.75 15.5z"/>
+</vector>

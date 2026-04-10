@@ -1,0 +1,42 @@
+<resources>
+    <!-- 主主题色 -->
+    <color name="primary">#FF6B9D</color>
+    <color name="primary_variant">#C45F8D</color>
+    <color name="secondary">#6C5CE7</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#FFFFFF</color>
+
+    <!-- 背景色 -->
+    <color name="background">#FAFAFA</color>
+    <color name="surface">#FFFFFF</color>
+
+    <!-- 文字色 -->
+    <color name="on_background">#1C1C1E</color>
+    <color name="on_surface">#1C1C1E</color>
+    <color name="outline">#909090</color>
+
+    <!-- 功能色 -->
+    <color name="purple_500">#FF6B9D</color>
+    <color name="purple_700">#6C5CE7</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#006064</color>
+    <color name="orange_500">#FF8A65</color>
+
+    <!-- 状态色 -->
+    <color name="error">#BA1A1A</color>
+    <color name="success">#22C55E</color>
+    <color name="warning">#F59E0B</color>
+    <color name="info">#3B82F6</color>
+
+    <!-- 夜间模式 -->
+    <color name="night_background">#1A1A2E</color>
+    <color name="night_surface">#16213E</color>
+    <color name="night_on_background">#E0E0E0</color>
+    <color name="night_on_surface">#E0E0E0</color>
+
+    <!-- 护眼模式 -->
+    <color name="eye_protect_background">#E8DEC2</color>
+    <color name="eye_protect_surface">#F5F0E6</color>
+    <color name="eye_protect_on_background">#4A4238</color>
+    <color name="eye_protect_on_surface">#4A4238</color>
+</resources>

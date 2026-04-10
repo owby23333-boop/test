@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="@dimen/view_dimen_45"
+    android:paddingBottom="@dimen/view_dimen_45"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/reading__tts_speed_0.5"
+    android:paddingStart="@dimen/view_dimen_90"
+    android:paddingEnd="@dimen/view_dimen_90"
+    style="@style/reading__tts_popup_select_text"/>

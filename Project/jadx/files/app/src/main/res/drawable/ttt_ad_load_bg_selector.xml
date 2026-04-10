@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/ttt_ad_load_fail_bg_shape"/>
+    <item
+        android:state_selected="false"
+        android:drawable="@drawable/ttt_ad_load_success_bg_shape"/>
+    <item android:drawable="@drawable/ttt_ad_unload_bg_shape"/>
+</selector>

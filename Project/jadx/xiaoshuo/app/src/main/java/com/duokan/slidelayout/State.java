@@ -1,0 +1,16 @@
+package com.duokan.slidelayout;
+
+/* JADX INFO: loaded from: classes6.dex */
+public enum State {
+    NONE,
+    PULLING_DOWN,
+    PULLING_DOWN_RELEASE_TO_REFRESH,
+    REFRESHING,
+    FINISH_REFRESHING,
+    REFRESHING_ERROR,
+    PULLING_UP,
+    PULLING_UP_RELEASE_TO_LOAD_MORE,
+    LOADING_MORE,
+    FINISH_LOADING_MORE,
+    LOADING_MORE_ERROR
+}

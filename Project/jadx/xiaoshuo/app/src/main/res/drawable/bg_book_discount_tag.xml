@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:topLeftRadius="0dp"
+        android:topRightRadius="@dimen/general__shared_dimen__4dp"
+        android:bottomLeftRadius="@dimen/general__shared_dimen__4dp"
+        android:bottomRightRadius="0dp"/>
+    <gradient
+        android:startColor="@color/store__feed_book_tag_num_discount__start_color"
+        android:endColor="@color/store__feed_book_tag_num_discount__end_color"
+        android:angle="-45"/>
+</shape>

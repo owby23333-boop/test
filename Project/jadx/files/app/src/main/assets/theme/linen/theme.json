@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "textcolor": "#462E0B",
+  "background_color": "#DED9C5",
+  "footer_color": "#928367",
+  "source_bgcolor": "#7E6E51",
+  "source_textcolor": "#D4CFBC",
+  "sb_thumb_color": "#462E0B",
+  "sk_sencond_color": "#D7D0BC",
+  "catalog_head_color": "#DAD5C1",
+  "catalog_cur_color": "#CC8114",
+  "btn_bg_color": "#D6D0BB",
+  "noread_bg_color": "#D7D0BC",
+  "readed_bg_color": "#C8C0AA",
+  "highLight": "#ed424b",
+  "tint": "#666666",
+  "line": "#CFC8B2",
+  "index": "bg2",
+  "name": "黄色",
+  "type": 0,
+  "image": "readBg.png"
+}

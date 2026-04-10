@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/reading__add_book_to_launcher_controller__never_ask_again_checked_landscape"/>
+    <item
+        android:state_selected="false"
+        android:drawable="@drawable/reading__add_book_to_launcher_controller__never_ask_again_unchecked_landscape"/>
+</selector>

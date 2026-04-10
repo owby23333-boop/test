@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/general_font__shared__c"
+    android:textColor="@color/general__day_night__333333"
+    android:gravity="center"
+    android:id="@+id/general__shared_text_input_dialog_view__edit"
+    android:background="@drawable/general__shared__edit_text_box"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:selectAllOnFocus="true"
+    android:inputType="textCapSentences"
+    android:textCursorDrawable="@null"/>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_dimen_256">
+    <ImageView
+        android:id="@+id/store__simple_tab_bar__back"
+        android:visibility="gone"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/general__shared__back"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/general__shared__back"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/store__simple_tab_bar__tabs"
+        android:paddingBottom="@dimen/view_dimen_32"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="end"
+        android:id="@+id/store__simple_tab_bar__rightbox"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/store__simple_tab_bar__search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/general__shared_search"
+            android:scaleType="centerInside"
+            android:paddingStart="@dimen/view_dimen_40"
+            android:paddingEnd="@dimen/view_dimen_60"/>
+    </LinearLayout>
+</FrameLayout>

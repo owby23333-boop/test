@@ -1,0 +1,28 @@
+# OCR 配置
+ocr:
+  engine: easyocr  # easyocr | pytesseract
+  
+  # EasyOCR 配置
+  easyocr:
+    use_gpu: False  # Windows 上默认不使用 GPU
+    lang: 'ch_sim,en'  # 中文英文混合
+    
+  # Tesseract 配置
+  tesseract:
+    lang: 'chi_sim+eng+num'
+
+# 预处理配置
+preprocess:
+  brightness: 1.0
+  contrast: 1.0
+  gamma: 1.0
+
+# 输出配置
+output:
+  format: json  # json | text | markdown
+  encoding: utf-8
+
+# 性能优化
+performance:
+  batch_size: 10
+  use_parallel: True

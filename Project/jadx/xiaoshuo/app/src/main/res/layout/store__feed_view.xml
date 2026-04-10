@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_gravity="center"
+        android:id="@+id/store__feed_view__first_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/store__feed_view__header_bg"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"/>
+    <com.duokan.reader.ui.view.CSRefreshLayout
+        android:id="@+id/store__feed_view__refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/store__feed_view__content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.duokan.reader.ui.view.CSRefreshLayout>
+    <ViewStub
+        android:id="@+id/store__feed_view__error"
+        android:visibility="gone"
+        android:layout="@layout/general__empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.duokan.reader.ui.store.book.view.DiscountNotifyView
+        android:layout_gravity="bottom"
+        android:id="@+id/store__feed_view__book_discount"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

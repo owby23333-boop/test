@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/reading__tts_bottom_sheet_day_night_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/reading__tts_speaker_dash_line"
+        android:layout_width="@dimen/view_dimen_165"
+        android:layout_height="@dimen/view_dimen_8"
+        android:layout_marginTop="@dimen/view_dimen_25"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/account__share_choice_view__grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_126"
+        android:layout_marginBottom="@dimen/view_dimen_100"
+        android:layout_marginHorizontal="@dimen/view_dimen_72"/>
+</FrameLayout>

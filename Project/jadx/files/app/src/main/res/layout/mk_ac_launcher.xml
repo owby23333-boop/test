@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/rl_root"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="@color/text_33"
+        android:gravity="center"
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen24dp"
+        android:layout_marginLeft="@dimen/dimen10dp"
+        android:layout_marginBottom="@dimen/dimen120dp"
+        android:text="正在为你寻找高速线路"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"/>
+    <com.amgcyo.cuttadon.view.otherview.ProgressWheel
+        android:id="@+id/progresswheel"
+        android:padding="@dimen/dimen3dp"
+        android:layout_width="@dimen/dimen24dp"
+        android:layout_height="@dimen/dimen24dp"
+        android:layout_marginBottom="@dimen/dimen120dp"
+        android:layout_toLeftOf="@+id/tv_msg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        app:matProg_barColor="@color/colorPrimary"
+        app:matProg_barWidth="@dimen/dimen2dp"
+        app:matProg_progressIndeterminate="true"/>
+</RelativeLayout>

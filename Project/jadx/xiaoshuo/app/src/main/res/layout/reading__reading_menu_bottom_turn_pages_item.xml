@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/text_font_size_36"
+    android:textColor="#e6e6e6"
+    android:gravity="center"
+    android:layout_gravity="center_vertical"
+    android:id="@+id/turnpages_intro"
+    android:background="@drawable/reading__reading_menu_bottom_turn_pages_item_background"
+    android:layout_width="@dimen/view_dimen_168"
+    android:layout_height="@dimen/view_dimen_88"
+    android:layout_marginEnd="@dimen/view_dimen_30"/>

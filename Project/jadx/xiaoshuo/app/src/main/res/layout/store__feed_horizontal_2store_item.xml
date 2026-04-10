@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:layout_width="@dimen/view_dimen_128"
+        android:layout_height="@dimen/view_dimen_185"
+        layout="@layout/store__feed_fiction_card"/>
+    <TextView
+        android:textSize="@dimen/view_dimen_34"
+        android:id="@+id/store__feed_book_common_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_dimen_20"
+        android:layout_toEndOf="@+id/store__feed_book_cover_card"/>
+    <TextView
+        android:textSize="@dimen/view_dimen_38"
+        android:textColor="@color/general__day_night__1a1a1a"
+        android:ellipsize="end"
+        android:id="@+id/store__feed_book_common_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_marginStart="@dimen/view_dimen_14"
+        android:layout_toEndOf="@+id/store__feed_book_common_index"/>
+    <TextView
+        android:textSize="@dimen/view_dimen_32"
+        android:textColor="@color/general__day_night__999999"
+        android:ellipsize="end"
+        android:id="@+id/store__feed_book_common_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_alignBottom="@+id/store__feed_book_cover_card"
+        android:layout_marginStart="@dimen/view_dimen_50"
+        android:layout_toEndOf="@+id/store__feed_book_cover_card"/>
+</RelativeLayout>

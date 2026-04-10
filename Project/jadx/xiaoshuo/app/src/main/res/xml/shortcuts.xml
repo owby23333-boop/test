@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:icon="@drawable/ic_short_cut_sign_in"
+        android:enabled="true"
+        android:shortcutId="short_cuts_sign_in"
+        android:shortcutShortLabel="@string/short_cuts_sign_in"
+        android:shortcutDisabledMessage="@string/short_cuts_sign_in">
+        <intent
+            android:targetPackage="com.duokan.reader"
+            android:action="android.intent.action.VIEW"
+            android:data="duokan-reader://personal/newcheckin"
+            android:targetClass="com.duokan.reader.DkReaderActivity">
+            <extra
+                android:name="appOpen"
+                android:value="short_cuts_sign_in"/>
+        </intent>
+    </shortcut>
+    <shortcut
+        android:icon="@drawable/ic_short_cut_cache_clean"
+        android:enabled="true"
+        android:shortcutId="short_cuts_cache_clean"
+        android:shortcutShortLabel="@string/short_cuts_cache_clean"
+        android:shortcutDisabledMessage="@string/short_cuts_cache_clean">
+        <intent
+            android:targetPackage="com.duokan.reader"
+            android:action="android.intent.action.VIEW"
+            android:data="duokan-reader://personal/cache"
+            android:targetClass="com.duokan.reader.DkReaderActivity">
+            <extra
+                android:name="appOpen"
+                android:value="short_cuts_cache_clean"/>
+        </intent>
+    </shortcut>
+    <capability android:name="actions.intent.OPEN_APP_FEATURE"/>
+</shortcuts>

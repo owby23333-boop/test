@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/text_font_size_45"
+        android:gravity="center"
+        android:id="@+id/reading__app_ad_view__show_reward_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="@dimen/view_dimen_177"
+        android:text="@string/reading__shared__reward_video"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/reading__app_ad_view__no_ad_desc"
+        android:layout_width="@dimen/view_dimen_60"
+        android:layout_height="@dimen/view_dimen_60"
+        android:src="@drawable/reading__opt_ad_view_common_hint_bright"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/reading__app_ad_view__show_reward_video"
+        app:layout_constraintLeft_toRightOf="@+id/reading__app_ad_view__show_reward_video"
+        app:layout_constraintTop_toTopOf="@+id/reading__app_ad_view__show_reward_video"
+        app:layout_constraintVertical_bias="0.5"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="@dimen/view_dimen_50"
+    android:paddingBottom="@dimen/view_dimen_15"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/view_dimen_40"
+    android:paddingEnd="@dimen/view_dimen_40">
+    <TextView
+        android:textSize="@dimen/text_font_size_32"
+        android:textColor="@color/general__999999"
+        android:id="@+id/rank__top_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"/>
+</FrameLayout>

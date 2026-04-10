@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:background="@color/general__day_nigth_youth_tab_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tiny_screen__main_layout__tab_store"/>
+    <com.duokan.reader.main.home.ExtendTextView
+        android:gravity="center"
+        android:id="@+id/tiny_screen__main_layout__tab_store"
+        android:text="@string/general__shared__bookshelf"
+        android:drawableTop="@drawable/surfing__surfing_navigate_view__bookshelf"
+        app:imageSize="@dimen/general__shared_dimen__23_33dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tiny_screen__main_layout__tab_zone"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/youth__main_layout__tab_text"/>
+    <com.duokan.reader.main.home.ExtendTextView
+        android:gravity="center"
+        android:id="@+id/tiny_screen__main_layout__tab_zone"
+        android:text="专区"
+        android:drawableTop="@drawable/surfing__surfing_navigate_view__zone"
+        app:imageSize="@dimen/general__shared_dimen__23_33dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tiny_screen__main_layout__tab_store"
+        style="@style/youth__main_layout__tab_text"/>
+    <FrameLayout
+        android:id="@+id/tiny_screen__main_layout__tab_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tiny_screen__main_layout__tab_store"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <View
+        android:id="@+id/tiny_screen__main_layout__shadow_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general__shared_dimen__30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tiny_screen__main_layout__tab_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

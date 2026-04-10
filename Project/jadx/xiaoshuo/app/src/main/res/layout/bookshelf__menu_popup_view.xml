@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/bookshelf__menu_popup_view__dark_bg"
+        android:background="@color/general__000000_60"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.duokan.core.ui.BoxView
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/bookshelf__menu_popup_view__content"
+        android:background="@drawable/bookshelf__popup_menu_view__background"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxWidth="615dp"
+        android:maxHeight="470dp"/>
+</FrameLayout>

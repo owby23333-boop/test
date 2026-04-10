@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="general__light_status_bar">false</bool>
+    <bool name="passport_in_dark_mode">true</bool>
+    <bool name="passport_in_light_mode">false</bool>
+</resources>

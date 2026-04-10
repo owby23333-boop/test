@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/text_font_size_34"
+    android:textColor="@color/general__day_night__a27951"
+    android:background="@drawable/store__feed_label_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:includeFontPadding="false"
+    android:paddingHorizontal="@dimen/view_dimen_15"
+    android:paddingVertical="@dimen/view_dimen_5"/>

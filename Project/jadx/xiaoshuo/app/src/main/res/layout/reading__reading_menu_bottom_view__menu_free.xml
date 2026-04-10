@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enabled="false"
+    android:layout_gravity="bottom"
+    android:id="@+id/reading__reading_menu_bottom_container"
+    android:background="@color/general__day_night__fdfdfd_000000"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/reading__reading_menu_bottom_height_free">
+    <ImageView
+        android:id="@+id/reading__reading_menu_bottom_view__navigation"
+        android:src="@drawable/reading__reading_menu_bottom_view__navigation"
+        style="@style/reading__bottom_menu_icon"/>
+    <ImageView
+        android:id="@+id/reading__reading_menu_bottom_view__seek"
+        android:src="@drawable/reading__reading_menu_bottom_view_seek"
+        android:contentDescription="@string/reading__reading_menu_bottom_view__progress"
+        style="@style/reading__bottom_menu_icon"/>
+    <ImageView
+        android:id="@+id/reading__reading_menu_bottom_view__brightness"
+        android:layout_height="wrap_content"
+        android:src="@drawable/reading__reading_menu_bottom_view__daytime"
+        android:contentDescription="@string/reading__reading_brightness_view__brightness"
+        style="@style/reading__bottom_menu_icon"/>
+    <ImageView
+        android:id="@+id/reading__reading_menu_bottom_view__more"
+        android:src="@drawable/reading__reading_menu_bottom_view__more_selected"
+        android:contentDescription="@string/reading__reading_more_view__settings"
+        style="@style/reading__bottom_menu_icon"/>
+</LinearLayout>

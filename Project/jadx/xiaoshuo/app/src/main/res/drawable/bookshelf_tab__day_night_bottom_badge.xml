@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="15dp"
+    android:width="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="15">
+    <path
+        android:fillColor="@drawable/_bookshelf_tab__day_night_bottom_badge__0_res_0x7f080012"
+        android:pathData="M7.5,0L100.5,0A7.5,7.5 0,0 1,108 7.5L108,7.5A7.5,7.5 0,0 1,100.5 15L7.5,15A7.5,7.5 0,0 1,0 7.5L0,7.5A7.5,7.5 0,0 1,7.5 0z"/>
+</vector>

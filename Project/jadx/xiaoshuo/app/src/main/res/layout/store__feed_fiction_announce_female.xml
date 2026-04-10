@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@drawable/store__feed_announce_bg_female"
+    android:paddingLeft="@dimen/store__share__interval_30"
+    android:paddingRight="@dimen/store__share__interval_30"
+    android:layout_width="match_parent"
+    android:layout_height="28.7dp"
+    style="@style/store__shared__list_item_no_title">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/store__feed_announce_icon_female"/>
+    <TextSwitcher
+        android:layout_gravity="center_vertical"
+        android:id="@+id/store__feed_announce"
+        android:clipChildren="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/store__share__interval_30"
+        android:inAnimation="@anim/store__feed_announce_in"
+        android:outAnimation="@anim/store__feed_announce_out"/>
+</LinearLayout>

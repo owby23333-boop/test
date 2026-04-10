@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.layout.QMUIConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+        android:id="@+id/ivCover"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:scaleType="fitXY"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:qmui_border_width="0dp"
+        app:qmui_corner_radius="9dp"/>
+</com.qmuiteam.qmui.layout.QMUIConstraintLayout>

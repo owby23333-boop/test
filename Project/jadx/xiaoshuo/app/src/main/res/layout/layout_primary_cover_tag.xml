@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/general__shared_dimen__14sp"
+        android:textColor="@color/general__day_night__1a1a1a_e5ffffff"
+        android:id="@+id/category__primary_cover_tag_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/general__shared_dimen__14_67dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/category__primary_cover_tag_cover_1"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/category__primary_cover_tag_cover_2"
+        android:layout_width="@dimen/general__shared_dimen__22_33dp"
+        android:layout_height="@dimen/general__shared_dimen__32_33dp"
+        android:foreground="@drawable/drawable_primary_cover_shadow"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="@dimen/general__shared_dimen__13_67dp"
+        app:layout_constraintBottom_toBottomOf="@+id/category__primary_cover_tag_cover_1"
+        app:layout_constraintStart_toStartOf="@+id/category__primary_cover_tag_cover_1"
+        app:shapeAppearance="@style/PrimaryCoverRoundStyle"
+        app:strokeColor="@color/general__day_night__0000001a"
+        app:strokeWidth="@dimen/general__shared_dimen__1dp"/>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/category__primary_cover_tag_cover_1"
+        android:layout_width="@dimen/general__shared_dimen__29_33dp"
+        android:layout_height="@dimen/general__shared_dimen__42dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="@dimen/general__shared_dimen__22_33dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/category__primary_cover_tag_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/PrimaryCoverRoundStyle"
+        app:strokeColor="@color/general__day_night__0000001a"
+        app:strokeWidth="@dimen/general__shared_dimen__1dp"/>
+</merge>

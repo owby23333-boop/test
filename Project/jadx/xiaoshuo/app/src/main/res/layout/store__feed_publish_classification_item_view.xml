@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="11sp"
+    android:textColor="@color/general__day_night__000000_80"
+    android:background="@drawable/store__feed_publish_classification_item_view__background"
+    android:paddingLeft="13dp"
+    android:paddingTop="5dp"
+    android:paddingRight="13dp"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>

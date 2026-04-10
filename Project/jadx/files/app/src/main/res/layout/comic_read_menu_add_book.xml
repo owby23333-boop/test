@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/sp_16"
+    android:textColor="#c0ffffff"
+    android:gravity="center"
+    android:id="@+id/tv_menu_add_book"
+    android:background="@drawable/reader_bg_menu_add_book"
+    android:visibility="gone"
+    android:layout_width="120dp"
+    android:layout_height="50dp"
+    android:text="加入书架"
+    android:layout_centerVertical="true"
+    android:drawableStart="@drawable/reader_ic_menu_add_book"
+    android:paddingStart="12dp"
+    android:layout_alignParentEnd="true"/>

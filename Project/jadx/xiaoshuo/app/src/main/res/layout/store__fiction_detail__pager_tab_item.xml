@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/text_font_size_52"
+    android:textColor="@color/general__tab_text_color"
+    android:gravity="center"
+    android:id="@+id/store__fiction_detail__pager_tab_item__text"
+    android:layout_width="@dimen/view_dimen_200"
+    android:layout_height="@dimen/view_dimen_160"
+    android:includeFontPadding="false"/>

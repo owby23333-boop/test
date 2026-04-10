@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/view_dimen_27"
+    android:layout_marginBottom="@dimen/view_dimen_50"
+    android:paddingStart="@dimen/view_dimen_40"
+    android:paddingEnd="@dimen/view_dimen_40">
+    <TextView
+        android:textSize="@dimen/text_font_size_40"
+        android:textColor="#bebebe"
+        android:id="@+id/reading__app_ad_view__title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <com.duokan.reader.ui.general.RoundFrameLayout
+        android:background="@drawable/general__shared__rounded_button_yellow"
+        android:layout_width="@dimen/view_dimen_290"
+        android:layout_height="@dimen/view_dimen_90">
+        <TextView
+            android:textSize="@dimen/text_font_size_38"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:id="@+id/reading__app_ad_view__download"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/reading__light_editors_iv"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/reading__light_editors"
+            android:scaleType="centerCrop"/>
+    </com.duokan.reader.ui.general.RoundFrameLayout>
+</LinearLayout>

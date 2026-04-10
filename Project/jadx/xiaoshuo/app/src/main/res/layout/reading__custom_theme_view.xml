@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reading__custom_theme_view__picker_framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:id="@+id/reading__custom_theme_view__picker_linearlayout"
+        android:background="@color/reading__reading_menu_primary_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.duokan.reader.ui.reading.ColorPickerView
+            android:id="@+id/reading__custom_theme_view__picker"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"/>
+        <com.duokan.core.ui.TabBarView
+            android:id="@+id/reading__custom_theme_view__tab_bar"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

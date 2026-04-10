@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#a6000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/free_one_rmb__withdraw__image"
+        android:layout_width="290dp"
+        android:layout_height="358dp"
+        android:src="@drawable/free_one_rmb__withdraw_image"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/free__one_rmb__withdraw__close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="39.3dp"
+        android:src="@drawable/free_vip__grant_tips__close"/>
+</LinearLayout>

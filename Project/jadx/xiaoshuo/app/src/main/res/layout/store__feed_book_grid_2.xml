@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/store__share__list_margin_bottom"
+    style="@style/store__shared__item_parent">
+    <FrameLayout
+        android:id="@+id/store_feed_book_comic_gard1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <FrameLayout
+        android:id="@+id/store_feed_book_comic_gard2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/store__share__feed_item_margin"/>
+</LinearLayout>

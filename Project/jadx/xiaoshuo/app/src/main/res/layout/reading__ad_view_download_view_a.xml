@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.reader.ui.general.RoundFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/reading__app_ad_view__download_container"
+    android:background="@drawable/general__shared__rounded_button_yellow"
+    android:layout_width="@dimen/view_dimen_936"
+    android:layout_height="@dimen/view_dimen_120"
+    android:layout_marginTop="@dimen/view_dimen_60">
+    <TextView
+        android:textSize="@dimen/text_font_size_46"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/reading__app_ad_view__download"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/reading__light_editors_iv"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/reading__light_editors_c"
+        android:scaleType="centerCrop"/>
+</com.duokan.reader.ui.general.RoundFrameLayout>

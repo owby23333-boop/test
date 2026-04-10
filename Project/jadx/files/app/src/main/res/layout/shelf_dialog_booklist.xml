@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/tv_cate_name"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen48dp"/>
+        <View
+            android:background="@color/dddddd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0_5dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:scrollbarSize="2dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:id="@android:id/list"
+            android:background="@color/white"
+            android:scrollbars="none"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"/>
+    </LinearLayout>
+</LinearLayout>

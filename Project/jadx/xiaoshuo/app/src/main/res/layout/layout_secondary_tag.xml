@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/secondary__tag_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flexDirection="row"
+        app:flexWrap="wrap"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/secondary__tag_fold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/drawable_secondary_expand"
+        android:scaleType="center"
+        android:contentDescription="@string/tag_panel_expand"
+        android:paddingHorizontal="@dimen/general__shared_dimen__13_33dp"
+        android:paddingVertical="@dimen/general__shared_dimen__13_33dp"/>
+</merge>

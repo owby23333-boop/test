@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.reader.theme.themeview.ThemeLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/dkcommon__day_night__ffffff_gray"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.duokan.reader.theme.themeview.ThemeTextView
+        android:textSize="15sp"
+        android:textColor="@color/dkcommon__day_night__333333"
+        android:gravity="center"
+        android:id="@+id/shelf__setting_list_style"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:text="@string/shelf__shelf_show_list"
+        android:paddingStart="15dp"/>
+    <com.duokan.reader.theme.themeview.ThemeView
+        android:background="@color/dkcommon__day_night__cccccc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_dimen_1"/>
+    <com.duokan.reader.theme.themeview.ThemeTextView
+        android:textSize="15sp"
+        android:textColor="@color/dkcommon__day_night__333333"
+        android:gravity="center"
+        android:id="@+id/shelf__setting_gird_style"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:text="@string/shelf__shelf_show_grid"
+        android:paddingStart="15dp"/>
+</com.duokan.reader.theme.themeview.ThemeLinearLayout>

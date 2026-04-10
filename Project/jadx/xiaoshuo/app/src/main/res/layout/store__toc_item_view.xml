@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.duokan.reader.ui.general.DkLabelView
+        android:textSize="@dimen/general_font__shared__c"
+        android:textColor="@color/general__shared__333333"
+        android:id="@+id/store__toc_item_view__title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:background="@color/general__shared__bcbcbc"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="15dp"/>
+    <com.duokan.reader.ui.general.deprecatedDkTextView
+        android:textSize="@dimen/general_font__shared__c"
+        android:textColor="@color/general__shared__333333"
+        android:id="@+id/store__toc_item_view__preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"/>
+    <com.duokan.reader.ui.general.deprecatedDkTextView
+        android:textSize="@dimen/general_font__shared__c"
+        android:textColor="@color/general__shared__333333"
+        android:id="@+id/store__toc_item_view__second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"/>
+</LinearLayout>

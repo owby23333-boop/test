@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/bookshelf__bookshelf_header_view__recent_books"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_45">
+        <View
+            android:layout_gravity="bottom"
+            android:background="@drawable/bookshelf__hat_view__recent_books_frame__bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_dimen_42"
+            android:layout_marginEnd="@dimen/view_dimen_42"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/store_feed_footer_top"
+        android:background="@drawable/store__feed__card_bottom_bg"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general__shared_dimen__20dp"/>
+    <TextView
+        android:textColor="@color/general__day_night__333333"
+        android:gravity="center"
+        android:id="@+id/store_feed_footer"
+        android:paddingTop="26.6dp"
+        android:paddingBottom="33.3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

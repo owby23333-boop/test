@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/store_hot_category_tab_end_padding">
+    <TextView
+        android:textSize="@dimen/store_rank_item_label_size"
+        android:textColor="@color/store_hot_category_tab__day_night__text_unselected__66000000_66FFFFFF"
+        android:gravity="center"
+        android:id="@+id/tv_title"
+        android:background="@drawable/store_hot_category_tab_unselected_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/store_hot_category_tab_min_height"
+        android:paddingHorizontal="@dimen/store_hot_category_tab_horizontal_padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</FrameLayout>

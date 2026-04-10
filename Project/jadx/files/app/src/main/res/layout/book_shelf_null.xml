@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/ll_bookNull"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/dimen16dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这里竟然一本书都木有哦~"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen20dp"
+        android:src="@drawable/icon_bookshelf_null"
+        android:layout_above="@+id/tv"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:textSize="@dimen/dimen14dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_findBookCity"
+        android:background="@drawable/bg_corners_login"
+        android:layout_width="@dimen/dimen150dp"
+        android:layout_height="@dimen/dimen40dp"
+        android:layout_marginTop="@dimen/dimen20dp"
+        android:text="去书城看看"
+        android:layout_below="@+id/tv"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

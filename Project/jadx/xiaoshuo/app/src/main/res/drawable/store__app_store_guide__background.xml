@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:drawable="@color/general__day_night__f2f2f2_a88b16"/>
+    <item android:drawable="@color/general__day_night__ffffff_d1ab15"/>
+</selector>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/reading__app_ad_view__reward_ad_hint"
+        android:background="@drawable/reading__chapter_end_reward_ad_hint_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/view_dimen_177"
+        android:minHeight="@dimen/view_dimen_115"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <TextView
+            android:textSize="@dimen/text_font_size_42"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/reading__reward_get"
+            android:layout_marginEnd="@dimen/view_dimen_33"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/iv_no_ad"
+            app:layout_constraintRight_toRightOf="@+id/iv_no_ad"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_no_ad"
+            android:layout_width="@dimen/view_dimen_69"
+            android:layout_height="@dimen/view_dimen_69"
+            android:layout_marginTop="@dimen/view_dimen_23"
+            android:layout_marginBottom="@dimen/view_dimen_23"
+            android:layout_marginStart="@dimen/view_dimen_33"
+            android:layout_marginEnd="@dimen/view_dimen_18"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_hint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/reading__chapter_end_reward_no_ad"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,3 @@
+rootProject.name = '@stringapp_name_release'
+
+include 'app'

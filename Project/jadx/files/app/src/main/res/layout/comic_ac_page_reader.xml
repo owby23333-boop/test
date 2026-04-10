@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/reader_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.kathline.horizontalrefresh.HorizontalRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.amgcyo.cuttadon.view.comic.recyclerviewpager.RecyclerViewPager
+                android:id="@+id/reader_recycler_view"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:rvp_singlePageFling="true"/>
+        </com.kathline.horizontalrefresh.HorizontalRefreshLayout>
+        <include layout="@layout/comic_read_menu_loading"/>
+        <include layout="@layout/comic_read_menu_info"/>
+        <include layout="@layout/comic_read_menu_top"/>
+        <include layout="@layout/comic_read_menu_add_book"/>
+        <include layout="@layout/comic_read_floating_btn"/>
+        <include layout="@layout/comic_read_menu_brightness"/>
+        <include layout="@layout/comic_read_menu_bottom"/>
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/ll_continue_root"
+            android:background="#70000000"
+            android:focusable="true"
+            android:visibility="gone"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/dialog_continue_read"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.amgcyo.cuttadon.sdk.utils.AdFrameLayout
+        android:layout_gravity="bottom"
+        android:id="@+id/ad_comics_bottom"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

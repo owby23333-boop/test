@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reading__app_ad_view__close"
+    android:padding="@dimen/view_dimen_20"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/text_font_size_28"
+        android:textColor="@color/general__ffffff_90"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/reading__app_ad_view__close_text"
+        android:background="@drawable/general__page__close_ad_view_background"
+        android:paddingLeft="@dimen/view_dimen_12"
+        android:paddingRight="@dimen/view_dimen_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reading__close_ad_view__close_text"
+        android:drawableRight="@drawable/reading__app_ad_view__close_right_x_icon"
+        android:drawablePadding="@dimen/view_dimen_8"/>
+</FrameLayout>

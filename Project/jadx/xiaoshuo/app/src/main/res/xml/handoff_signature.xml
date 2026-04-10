@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<handoff-app>
+    <item
+        deviceTypes="phone"
+        packageName="com.duokan.reader"
+        signature="0E24E71701C0581158159182A0BA98AF2D146E35"/>
+    <item
+        deviceTypes="pad"
+        packageName="com.duokan.reader"
+        signature="0E24E71701C0581158159182A0BA98AF2D146E35"/>
+    <item
+        deviceTypes="pc"
+        packageName="com.duokan.reader"
+        signature="0E24E71701C0581158159182A0BA98AF2D146E35"/>
+</handoff-app>

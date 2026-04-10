@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground">
+    <TextView
+        android:id="@+id/store__feed_book_grid_banner_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/store__feed_book_grid_title_style"/>
+    <TextView
+        android:id="@+id/store__feed_book_grid_banner_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/store__feed_book_grid_banner_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/store__feed_book_grid_banner_title"
+        style="@style/store__feed_book_grid_banner_style"/>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/store__feed_book_grid_banner_banner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/store__feed_book_grid_desc_cover_gap"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintDimensionRatio="2.97:1"
+        app:layout_constraintTop_toBottomOf="@+id/store__feed_book_grid_banner_desc"
+        app:shapeAppearance="@style/RoundCorner12"
+        style="@style/store_feed_banner_frame_style"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

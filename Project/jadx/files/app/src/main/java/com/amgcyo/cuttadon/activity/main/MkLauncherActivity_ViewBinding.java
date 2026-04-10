@@ -1,0 +1,34 @@
+package com.amgcyo.cuttadon.activity.main;
+
+import android.view.View;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import androidx.annotation.CallSuper;
+import androidx.annotation.UiThread;
+import butterknife.Unbinder;
+import butterknife.internal.Utils;
+import com.fatcatfat.io.R;
+
+/* JADX INFO: loaded from: classes.dex */
+public class MkLauncherActivity_ViewBinding implements Unbinder {
+    private MkLauncherActivity a;
+
+    @UiThread
+    public MkLauncherActivity_ViewBinding(MkLauncherActivity mkLauncherActivity, View view) {
+        this.a = mkLauncherActivity;
+        mkLauncherActivity.rl_root = (RelativeLayout) Utils.findRequiredViewAsType(view, R.id.rl_root, "field 'rl_root'", RelativeLayout.class);
+        mkLauncherActivity.tv_msg = (TextView) Utils.findRequiredViewAsType(view, R.id.tv_msg, "field 'tv_msg'", TextView.class);
+    }
+
+    @Override // butterknife.Unbinder
+    @CallSuper
+    public void unbind() {
+        MkLauncherActivity mkLauncherActivity = this.a;
+        if (mkLauncherActivity == null) {
+            throw new IllegalStateException("Bindings already cleared.");
+        }
+        this.a = null;
+        mkLauncherActivity.rl_root = null;
+        mkLauncherActivity.tv_msg = null;
+    }
+}

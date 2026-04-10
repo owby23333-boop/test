@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/view_dimen_42"
+    android:layout_marginStart="@dimen/view_dimen_42"
+    android:layout_marginEnd="@dimen/view_dimen_42"
+    style="@style/store__shared__list_item">
+    <include
+        android:id="@+id/store_feed_book_item1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/view_dimen_42"
+        app:layout_constraintEnd_toStartOf="@+id/store_feed_book_item2"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        layout="@layout/store__feed_fiction_item_vertical_item_new_user"/>
+    <include
+        android:id="@+id/store_feed_book_item2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/view_dimen_42"
+        app:layout_constraintEnd_toStartOf="@+id/store_feed_book_item3"
+        app:layout_constraintStart_toEndOf="@+id/store_feed_book_item1"
+        layout="@layout/store__feed_fiction_item_vertical_item_new_user"/>
+    <include
+        android:id="@+id/store_feed_book_item3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/view_dimen_42"
+        app:layout_constraintEnd_toStartOf="@+id/store_feed_book_item4"
+        app:layout_constraintStart_toEndOf="@+id/store_feed_book_item2"
+        layout="@layout/store__feed_fiction_item_vertical_item_new_user"/>
+    <include
+        android:id="@+id/store_feed_book_item4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/store_feed_book_item3"
+        layout="@layout/store__feed_fiction_item_vertical_item_new_user"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

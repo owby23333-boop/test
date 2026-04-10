@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.reader.ui.store.book.view.HorizontalViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/store_feed_book_scroll_banner"
+    android:paddingLeft="@dimen/store__share__feed_item_margin"
+    android:paddingRight="@dimen/store__share__feed_item_margin"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/store__share__list_margin_top"
+    android:layout_marginBottom="@dimen/store__share__list_margin_bottom"/>

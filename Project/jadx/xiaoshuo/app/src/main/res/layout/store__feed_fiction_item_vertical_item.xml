@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/store__feed_fiction_card_container"
+        android:layout_width="@dimen/view_dimen_182"
+        android:layout_height="@dimen/view_dimen_263"
+        layout="@layout/store__feed_fiction_card"/>
+    <TextView
+        android:textSize="@dimen/general__shared_dimen__12_67sp"
+        android:textColor="@color/general__text__day_night__333333"
+        android:ellipsize="end"
+        android:id="@+id/store__feed_book_common_title"
+        android:layout_width="@dimen/store__feed_fiction_cover_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_24"
+        android:lines="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/store__feed_fiction_card_container"/>
+    <TextView
+        android:textSize="@dimen/general__shared_dimen__10_67sp"
+        android:textColor="@color/general__shared__FF7433"
+        android:id="@+id/store__feed_book_common_detail"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_24"
+        android:includeFontPadding="false"
+        android:layout_below="@+id/store__feed_fiction_card_container"
+        android:layout_alignParentLeft="true"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/store__feed_book_common_title"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

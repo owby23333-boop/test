@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/fragment_list"/>
+    <TextView
+        android:textSize="@dimen/dimen15dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:id="@+id/tv_collect"
+        android:background="@drawable/back_read"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen50dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="收藏该书单"/>
+</LinearLayout>

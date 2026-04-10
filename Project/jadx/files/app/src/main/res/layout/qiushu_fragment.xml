@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ll_bar"
+        android:background="@color/color_F6F6F6"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout
+        android:id="@+id/head"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen76dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <com.amgcyo.cuttadon.view.xtablayout.XTabLayout
+            android:layout_gravity="center"
+            android:id="@+id/tb_select"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen42dp"
+            android:layout_marginLeft="@dimen/dimen10dp"
+            android:layout_marginBottom="@dimen/dimen7dp"
+            app:xTabIndicatorColor="@color/text_33"
+            app:xTabIndicatorHeight="@dimen/dimen2dp"
+            app:xTabIndicatorWidth="@dimen/dimen10dp"
+            app:xTabMinWidth="@dimen/dimen10dp"
+            app:xTabMode="fixed"
+            app:xTabSelectedTextColor="@color/text_33"
+            app:xTabSelectedTextSize="@dimen/sp_20"
+            app:xTabTextAppearance="@color/text_33"
+            app:xTabTextColor="@color/text_33"
+            app:xTabTextSelectedBold="false"
+            app:xTabTextSize="@dimen/sp_16"/>
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_classify"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"/>
+</RelativeLayout>

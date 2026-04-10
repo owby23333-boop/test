@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:id="@+id/reading__navigation_tab_free_view__sort"
+    android:paddingRight="18dp"
+    android:layout_width="wrap_content"
+    android:layout_height="45dp">
+    <ImageView
+        android:id="@+id/general__toc_sort_view_sort_icon"
+        android:layout_width="7.4dp"
+        android:layout_height="11.46dp"
+        android:src="@drawable/reading__navigation_tab_free_view__normal_sort"/>
+    <TextView
+        android:textSize="13sp"
+        android:textColor="#ff1a1a1a"
+        android:id="@+id/general__toc_sort_view_sort_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:text="@string/reading__shared__toc_reverse"/>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reading__app_ad_view__close"
+    android:paddingTop="@dimen/view_dimen_8"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/view_dimen_8">
+    <ImageView
+        android:id="@+id/iv_csj"
+        android:visibility="gone"
+        android:layout_width="@dimen/view_dimen_100"
+        android:layout_height="@dimen/view_dimen_40"
+        android:src="@drawable/reading_ad_platform_csj"/>
+    <TextView
+        android:textSize="@dimen/view_dimen_24"
+        android:textColor="@color/general__ffffff_90"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/reading__app_ad_view__close_text"
+        android:background="@drawable/general__page__close_ad_view_background_style4"
+        android:paddingLeft="@dimen/view_dimen_12"
+        android:paddingTop="@dimen/view_dimen_8"
+        android:paddingRight="@dimen/view_dimen_8"
+        android:paddingBottom="@dimen/view_dimen_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reading__close_ad_view__close_text"
+        android:drawableRight="@drawable/reading__app_ad_view__close_right_x_icon"
+        android:drawablePadding="@dimen/view_dimen_4"/>
+</FrameLayout>

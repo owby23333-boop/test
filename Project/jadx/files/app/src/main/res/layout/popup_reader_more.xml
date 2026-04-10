@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_cardview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#ff262626"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="false"
+    app:contentPadding="0dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="@dimen/dimen136dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/dimen15dp"
+            android:textColor="#7fffffff"
+            android:gravity="center"
+            android:id="@+id/textView_shareBook"
+            android:background="@drawable/item_read_selector_rect"
+            android:paddingLeft="@dimen/dimen16dp"
+            android:paddingRight="@dimen/dimen16dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen48dp"
+            android:text="@string/str_share_book"/>
+        <ImageView
+            android:layout_marginLeft="@dimen/dimen16dp"
+            android:layout_marginRight="@dimen/dimen16dp"
+            style="@style/ReaderMenu.Line"/>
+        <TextView
+            android:textSize="@dimen/dimen15dp"
+            android:textColor="#7fffffff"
+            android:gravity="center"
+            android:id="@+id/textView_bookDetail"
+            android:background="@drawable/item_read_selector_rect_bottom"
+            android:paddingLeft="@dimen/dimen16dp"
+            android:paddingRight="@dimen/dimen16dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen48dp"
+            android:text="@string/book_detail"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

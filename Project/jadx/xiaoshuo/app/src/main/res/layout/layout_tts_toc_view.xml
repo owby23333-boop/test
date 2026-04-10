@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/close_dialog"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_dimen_420"
+        android:contentDescription="@string/general__shared__close"/>
+    <FrameLayout
+        android:id="@+id/fl_root"
+        android:background="@drawable/reading__tts_bottom_sheet_bg"
+        android:paddingTop="@dimen/view_dimen_24"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/view_dimen_420"/>
+</FrameLayout>

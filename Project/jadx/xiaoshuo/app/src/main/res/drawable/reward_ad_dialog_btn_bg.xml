@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="156dp"
+    android:width="736dp"
+    android:viewportWidth="736"
+    android:viewportHeight="156">
+    <path
+        android:fillColor="@drawable/_reward_ad_dialog_btn_bg__0_res_0x7f080070"
+        android:pathData="M78,6L658,6A72,72 0,0 1,730 78L730,78A72,72 0,0 1,658 150L78,150A72,72 0,0 1,6 78L6,78A72,72 0,0 1,78 6z"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M78,3L658,3A75,75 0,0 1,733 78L733,78A75,75 0,0 1,658 153L78,153A75,75 0,0 1,3 78L3,78A75,75 0,0 1,78 3z"
+        android:strokeColor="@drawable/_reward_ad_dialog_btn_bg__1_res_0x7f080071"
+        android:strokeWidth="6"/>
+    <path
+        android:fillColor="@drawable/_reward_ad_dialog_btn_bg__2_res_0x7f080072"
+        android:pathData="M78.5,12L657.5,12A65.5,65.5 0,0 1,723 77.5L723,77.5A65.5,65.5 0,0 1,657.5 143L78.5,143A65.5,65.5 0,0 1,13 77.5L13,77.5A65.5,65.5 0,0 1,78.5 12z"/>
+</vector>

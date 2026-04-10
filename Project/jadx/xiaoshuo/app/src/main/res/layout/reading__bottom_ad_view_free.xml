@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reading__bottom_ad_view__container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/general__shared_dimen__68_36dp"
+    android:layout_alignParentBottom="true">
+    <TextView
+        android:textSize="@dimen/general__shared_dimen__13.33sp"
+        android:textColor="@color/general__shared__000000"
+        android:layout_gravity="center"
+        android:id="@+id/reading__bottom_ad_view__free_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="海量小说，永久免费"
+        android:alpha="0.1"/>
+    <FrameLayout
+        android:id="@+id/reading__bottom_ad_view__root"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

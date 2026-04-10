@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="15.3sp"
+    android:textColor="@color/black"
+    android:gravity="center_vertical"
+    android:id="@+id/personal__feedback_problem_dialog_item_view__title"
+    android:paddingTop="16.5dp"
+    android:paddingBottom="16.5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>

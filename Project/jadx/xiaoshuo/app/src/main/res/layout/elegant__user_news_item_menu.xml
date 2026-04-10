@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:background="@drawable/bookshelf__bookshelf_menu_view_bg"
+    android:paddingTop="13dp"
+    android:paddingBottom="13dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:measureWithLargestChild="true">
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/general__day_night__1f2226"
+        android:gravity="center_vertical"
+        android:id="@+id/elegant__user_news_item__del"
+        android:background="@drawable/general__shared__dialog_list_item"
+        android:paddingLeft="16.67dp"
+        android:paddingRight="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:text="@string/bookshelf__general_shared__delete"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/elegant__mine__clear"
+        android:fontFamily="sans-serif-medium"/>
+</LinearLayout>

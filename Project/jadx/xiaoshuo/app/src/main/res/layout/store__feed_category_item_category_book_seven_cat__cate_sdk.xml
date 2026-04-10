@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.reader.ui.general.RoundRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/store__feed_category_item_cate_bg_sdk"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/view_dimen_40"
+    app:radius="@dimen/view_dimen_20">
+    <ImageView
+        android:background="@drawable/store__feed_category_item_book_category_bg_sdk"
+        android:layout_width="@dimen/view_dimen_118"
+        android:layout_height="@dimen/view_dimen_118"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+    <com.duokan.reader.ui.view.FontTextView
+        android:textSize="@dimen/text_font_size_50"
+        android:textColor="@color/general__222222"
+        android:id="@+id/store_feed_category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_50"/>
+    <TextView
+        android:textSize="@dimen/text_font_size_34"
+        android:textColor="#6f8497"
+        android:id="@+id/store_feed_category_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_24"
+        android:layout_marginBottom="@dimen/view_dimen_42"
+        android:includeFontPadding="false"
+        android:layout_below="@+id/store_feed_category_title"/>
+</com.duokan.reader.ui.general.RoundRelativeLayout>

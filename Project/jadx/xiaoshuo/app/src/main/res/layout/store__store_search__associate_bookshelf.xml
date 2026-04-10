@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/text_font_size_42"
+        android:textColor="@color/general__text__day_night__333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_50"
+        android:layout_marginBottom="@dimen/view_dimen_20"
+        android:text="@string/bookshelf__search_hint_hat_view__my_bookshelf"
+        android:layout_marginStart="@dimen/view_dimen_50"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/store__store_search__associate_bookshelf__recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/store__store_search__associate_bookshelf__arrow"
+        android:padding="@dimen/view_dimen_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_50"
+        android:layout_marginBottom="@dimen/view_dimen_70"
+        android:src="@drawable/store__fiction_detail_view_intro_arrow"
+        android:scaleType="fitCenter"/>
+    <include layout="@layout/store__fiction_detail_view__divider"/>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/view_dimen_120"
+    android:paddingEnd="@dimen/view_dimen_120">
+    <TextView
+        android:textSize="@dimen/text_font_size_60"
+        android:textStyle="bold"
+        android:textColor="@color/general__333333"
+        android:gravity="center"
+        android:id="@+id/reading__flow_confirm_xiaomi_id_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textSize="@dimen/text_font_size_36"
+        android:textColor="@color/general__1A1A1A_60"
+        android:id="@+id/reading__flow_confirm_xiaomi_id_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_60"
+        android:text="@string/reading__import_flow_confirm_mi_id_summary"
+        android:includeFontPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reading__flow_confirm_xiaomi_id_title"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

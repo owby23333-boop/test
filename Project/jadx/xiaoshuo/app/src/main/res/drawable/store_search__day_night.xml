@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="80dp"
+    android:width="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+    <path
+        android:fillColor="@color/store_search__day_night__B3000000_B3FFFFFF"
+        android:pathData="M73,38C73,44.627 67.627,50 61,50C54.373,50 49,44.627 49,38C49,31.373 54.373,26 61,26C67.627,26 73,31.373 73,38ZM70.362,50.977C67.73,52.879 64.496,54 61,54C52.163,54 45,46.837 45,38C45,29.163 52.163,22 61,22C69.837,22 77,29.163 77,38C77,41.913 75.595,45.498 73.263,48.278C73.315,48.32 73.366,48.366 73.414,48.414L79.071,54.071C79.852,54.852 79.852,56.118 79.071,56.9C78.29,57.681 77.024,57.681 76.243,56.9L70.586,51.243C70.502,51.159 70.428,51.07 70.362,50.977Z"
+        android:fillType="evenOdd"/>
+</vector>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/fl_onepointfive_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <View
+        android:background="@color/tt_white"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+    <com.bytedance.sdk.openadsdk.core.nativeexpress.onepointfive.PullToRefreshHorizontalRecyclerView
+        android:id="@+id/ptr_horizontal_recyclerview"
+        android:scrollbars="none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="10sp"
+        android:textColor="#57161823"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/tv_ad_title"
+        android:background="@color/tt_white"
+        android:paddingLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:singleLine="true"/>
+</LinearLayout>

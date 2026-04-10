@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/reading__navigation_read_book_top_container"
+    android:background="@color/general__day_night__efefef_000000"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include layout="@layout/reading__navigation_header_main_view"/>
+    <include layout="@layout/reading__navigation_header_toc_view"/>
+</LinearLayout>

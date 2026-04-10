@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <SurfaceView
+        android:id="@+id/account__scan_qrcode_login__surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.duokan.reader.ui.zxing.ViewfinderView
+        android:id="@+id/account__scan_qrcode_login__viewfinderview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/account__scan_qrcode_login__close"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="@dimen/view_dimen_135"
+        android:src="@drawable/account__scan_qrcode_login_capture__close"
+        android:layout_marginStart="18.33dp"/>
+</FrameLayout>

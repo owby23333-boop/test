@@ -1,0 +1,142 @@
+[
+  {
+    "enable": false,
+    "title": "漫画柜",
+    "sourceId": "mhg"
+  },
+  {
+    "enable": true,
+    "title": "动漫之家",
+    "sourceId": "dmzj"
+  },
+  {
+    "enable": true,
+    "title": "汗汗酷漫",
+    "sourceId": "hhkm"
+  },
+  {
+    "enable": false,
+    "title": "CC图库",
+    "sourceId": "cctk"
+  },
+  {
+    "enable": true,
+    "title": "有妖气",
+    "sourceId": "yyq"
+  },
+  {
+    "enable": true,
+    "title": "动漫屋",
+    "sourceId": "dmw"
+  },
+  {
+    "enable": true,
+    "title": "Webtoon",
+    "sourceId": "webtoon"
+  },
+  {
+    "enable": true,
+    "title": "57漫画",
+    "sourceId": "mh57"
+  },
+  {
+    "enable": true,
+    "title": "YYLS",
+    "sourceId": "yyls"
+  },
+  {
+    "enable": true,
+    "title": "动漫之家v2",
+    "sourceId": "dmzj_v2"
+  },
+  {
+    "enable": true,
+    "title": "咚漫漫画",
+    "sourceId": "dmmh"
+  },
+  {
+    "enable": true,
+    "title": "百年漫画",
+    "sourceId": "bnmh"
+  },
+  {
+    "enable": true,
+    "title": "CC漫画",
+    "sourceId": "ccmh"
+  },
+  {
+    "enable": true,
+    "title": "土豪漫画",
+    "sourceId": "thmh"
+  },
+  {
+    "enable": true,
+    "title": "古风漫画",
+    "sourceId": "gfmh"
+  },
+  {
+    "enable": true,
+    "title": "拷贝漫画",
+    "sourceId": "kbmh"
+  },
+  {
+    "enable": false,
+    "title": "漫画Love",
+    "sourceId": "mh_love"
+  },
+  {
+    "enable": true,
+    "title": "漫画160",
+    "sourceId": "mh160"
+  },
+  {
+    "enable": true,
+    "title": "漫画DB",
+    "sourceId": "mhdb"
+  },
+  {
+    "enable": true,
+    "title": "漫画台",
+    "sourceId": "mht"
+  },
+  {
+    "enable": true,
+    "title": "扑飞漫画",
+    "sourceId":"pfmh"
+  },
+  {
+    "enable": true,
+    "title": "布卡漫画",
+    "sourceId": "bkmh"
+  },
+  {
+    "enable": true,
+    "title": "奇漫屋",
+    "sourceId": "qmw"
+  },
+  {
+    "enable": true,
+    "title": "动漫狂",
+    "sourceId": "wmk"
+  },
+  {
+    "enable": true,
+    "title": "奇妙漫画",
+    "sourceId": "qmmh"
+  },
+  {
+    "enable": true,
+    "title": "吹雪漫画",
+    "sourceId": "cxmh"
+  },
+  {
+    "enable": true,
+    "title": "我要去漫画",
+    "sourceId": "wyqmh"
+  },
+  {
+    "enable": true,
+    "title": "漫画堆",
+    "sourceId": "mhd"
+  }
+]

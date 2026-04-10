@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/store__feed__card_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/store__feed_card_view__group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_42"
+        android:layout_marginStart="@dimen/view_dimen_42"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/store__feed_card_group_new"/>
+    <HorizontalScrollView
+        android:id="@+id/scroll_tabs"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/view_dimen_42"
+        android:paddingEnd="@dimen/view_dimen_50"
+        app:layout_constraintTop_toBottomOf="@+id/store__feed_card_view__group">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/tab_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </HorizontalScrollView>
+    <View
+        android:id="@+id/view_right"
+        android:background="@drawable/bg_hot_category_right"
+        android:layout_width="@dimen/view_dimen_75"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/view_dimen_36"
+        android:layout_marginEnd="@dimen/view_dimen_50"
+        app:layout_constraintBottom_toBottomOf="@+id/scroll_tabs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scroll_tabs"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/store__feed_card_view__items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_42"
+        android:layout_marginBottom="@dimen/view_dimen_10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll_tabs"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

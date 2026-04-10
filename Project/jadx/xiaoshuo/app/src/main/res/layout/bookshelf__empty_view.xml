@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/bookshelf__empty_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/general__shared_dimen__12_67sp"
+            android:textColor="@color/general__day_night__000000_30"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bookshelf__empty_view__shelf_wait_fill"
+            android:drawableTop="@drawable/personal__read_history_empty_view__image"
+            android:drawablePadding="@dimen/general__shared_dimen__16dp"/>
+        <TextView
+            android:textSize="@dimen/general_font__shared__c"
+            android:textColor="@color/general__shared__FF7433"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/bookshelf__empty_view__go_to_store"
+            android:background="@drawable/personal__read_history_empty_view__go_bookstore"
+            android:paddingTop="@dimen/general__shared_dimen__9dp"
+            android:paddingBottom="@dimen/general__shared_dimen__9dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/general__shared_dimen__20dp"
+            android:text="@string/bookshelf__empty_view__go_to_store"
+            android:paddingStart="@dimen/general__shared_dimen__35_67dp"
+            android:paddingEnd="@dimen/general__shared_dimen__35_67dp"/>
+    </LinearLayout>
+</FrameLayout>

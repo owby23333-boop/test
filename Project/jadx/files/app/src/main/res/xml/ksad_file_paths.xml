@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path
+        name="ksad_files_path"
+        path="/"/>
+    <cache-path
+        name="ksad_cache_path"
+        path="/"/>
+    <external-files-path
+        name="ksad_external_files_path"
+        path="/"/>
+    <external-cache-path
+        name="ksad_external_cache_path"
+        path="/"/>
+</paths>

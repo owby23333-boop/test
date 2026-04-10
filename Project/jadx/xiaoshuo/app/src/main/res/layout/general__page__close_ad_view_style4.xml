@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reading__app_ad_view__close"
+    android:paddingTop="@dimen/view_dimen_19"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/view_dimen_18">
+    <ImageView
+        android:id="@+id/reading__app_ad_view__close_text"
+        android:background="@drawable/ic___close_icon_v4"
+        android:layout_width="@dimen/view_dimen_26"
+        android:layout_height="@dimen/view_dimen_26"/>
+</FrameLayout>

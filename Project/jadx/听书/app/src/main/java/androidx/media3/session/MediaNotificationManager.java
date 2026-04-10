@@ -1,0 +1,347 @@
+package androidx.media3.session;
+
+import android.content.Intent;
+import android.media.session.MediaSession;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
+import androidx.core.content.ContextCompat;
+import androidx.media3.common.Player;
+import androidx.media3.common.util.Assertions;
+import androidx.media3.common.util.Log;
+import androidx.media3.common.util.Util;
+import androidx.media3.session.MediaController;
+import androidx.media3.session.MediaNotification;
+import com.google.common.collect.ImmutableList;
+import com.google.common.collect.UnmodifiableIterator;
+import com.google.common.util.concurrent.FutureCallback;
+import com.google.common.util.concurrent.Futures;
+import com.google.common.util.concurrent.ListenableFuture;
+import com.google.common.util.concurrent.MoreExecutors;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.CancellationException;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Executor;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
+
+/* JADX INFO: loaded from: classes.dex */
+final class MediaNotificationManager {
+    private static final String TAG = "MediaNtfMng";
+    private final MediaNotification.ActionFactory actionFactory;
+    private final Map<MediaSession, ListenableFuture<MediaController>> controllerMap;
+    private final Map<MediaSession, ImmutableList<CommandButton>> customLayoutMap;
+    private final Executor mainExecutor;
+    private MediaNotification mediaNotification;
+    private final MediaNotification.Provider mediaNotificationProvider;
+    private final MediaSessionService mediaSessionService;
+    private final NotificationManagerCompat notificationManagerCompat;
+    private final Intent startSelfIntent;
+    private boolean startedInForeground;
+    private int totalNotificationCount;
+
+    public MediaNotificationManager(MediaSessionService mediaSessionService, MediaNotification.Provider provider, MediaNotification.ActionFactory actionFactory) {
+        this.mediaSessionService = mediaSessionService;
+        this.mediaNotificationProvider = provider;
+        this.actionFactory = actionFactory;
+        this.notificationManagerCompat = NotificationManagerCompat.from(mediaSessionService);
+        final Handler handler = new Handler(Looper.getMainLooper());
+        this.mainExecutor = new Executor() { // from class: androidx.media3.session.MediaNotificationManager$$ExternalSyntheticLambda7
+            @Override // java.util.concurrent.Executor
+            public final void execute(Runnable runnable) {
+                Util.postOrRun(handler, runnable);
+            }
+        };
+        this.startSelfIntent = new Intent(mediaSessionService, mediaSessionService.getClass());
+        this.controllerMap = new HashMap();
+        this.customLayoutMap = new HashMap();
+        this.startedInForeground = false;
+    }
+
+    public void addSession(final MediaSession mediaSession) {
+        if (this.controllerMap.containsKey(mediaSession)) {
+            return;
+        }
+        this.customLayoutMap.put(mediaSession, ImmutableList.of());
+        final MediaControllerListener mediaControllerListener = new MediaControllerListener(this.mediaSessionService, mediaSession, this.customLayoutMap);
+        final ListenableFuture<MediaController> listenableFutureBuildAsync = new MediaController.Builder(this.mediaSessionService, mediaSession.getToken()).setListener(mediaControllerListener).setApplicationLooper(Looper.getMainLooper()).buildAsync();
+        this.controllerMap.put(mediaSession, listenableFutureBuildAsync);
+        listenableFutureBuildAsync.addListener(new Runnable() { // from class: androidx.media3.session.MediaNotificationManager$$ExternalSyntheticLambda5
+            @Override // java.lang.Runnable
+            public final void run() {
+                this.f$0.m351x67573ed4(listenableFutureBuildAsync, mediaControllerListener, mediaSession);
+            }
+        }, this.mainExecutor);
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX INFO: renamed from: lambda$addSession$1$androidx-media3-session-MediaNotificationManager, reason: not valid java name */
+    /* synthetic */ void m351x67573ed4(ListenableFuture listenableFuture, MediaControllerListener mediaControllerListener, MediaSession mediaSession) {
+        try {
+            MediaController mediaController = (MediaController) listenableFuture.get(0L, TimeUnit.MILLISECONDS);
+            mediaControllerListener.onConnected(shouldShowNotification(mediaSession));
+            mediaController.addListener(mediaControllerListener);
+        } catch (InterruptedException | CancellationException | ExecutionException | TimeoutException unused) {
+            this.mediaSessionService.removeSession(mediaSession);
+        }
+    }
+
+    public void removeSession(MediaSession mediaSession) {
+        this.customLayoutMap.remove(mediaSession);
+        ListenableFuture<MediaController> listenableFutureRemove = this.controllerMap.remove(mediaSession);
+        if (listenableFutureRemove != null) {
+            MediaController.releaseFuture(listenableFutureRemove);
+        }
+    }
+
+    public void onCustomAction(final MediaSession mediaSession, final String str, final Bundle bundle) {
+        final MediaController connectedControllerForSession = getConnectedControllerForSession(mediaSession);
+        if (connectedControllerForSession == null) {
+            return;
+        }
+        Util.postOrRun(new Handler(mediaSession.getPlayer().getApplicationLooper()), new Runnable() { // from class: androidx.media3.session.MediaNotificationManager$$ExternalSyntheticLambda0
+            @Override // java.lang.Runnable
+            public final void run() {
+                this.f$0.m353x54793c21(mediaSession, str, bundle, connectedControllerForSession);
+            }
+        });
+    }
+
+    /* JADX INFO: renamed from: lambda$onCustomAction$3$androidx-media3-session-MediaNotificationManager, reason: not valid java name */
+    /* synthetic */ void m353x54793c21(MediaSession mediaSession, final String str, Bundle bundle, final MediaController mediaController) {
+        if (this.mediaNotificationProvider.handleCustomCommand(mediaSession, str, bundle)) {
+            return;
+        }
+        this.mainExecutor.execute(new Runnable() { // from class: androidx.media3.session.MediaNotificationManager$$ExternalSyntheticLambda4
+            @Override // java.lang.Runnable
+            public final void run() {
+                this.f$0.m352x62cf9602(mediaController, str);
+            }
+        });
+    }
+
+    public void updateNotification(final MediaSession mediaSession, final boolean z) {
+        if (!this.mediaSessionService.isSessionAdded(mediaSession) || !shouldShowNotification(mediaSession)) {
+            maybeStopForegroundService(true);
+            return;
+        }
+        final int i = this.totalNotificationCount + 1;
+        this.totalNotificationCount = i;
+        final ImmutableList immutableList = (ImmutableList) Assertions.checkStateNotNull(this.customLayoutMap.get(mediaSession));
+        final MediaNotification.Provider.Callback callback = new MediaNotification.Provider.Callback() { // from class: androidx.media3.session.MediaNotificationManager$$ExternalSyntheticLambda2
+            @Override // androidx.media3.session.MediaNotification.Provider.Callback
+            public final void onNotificationChanged(MediaNotification mediaNotification) {
+                this.f$0.m355xb22eb051(i, mediaSession, mediaNotification);
+            }
+        };
+        Util.postOrRun(new Handler(mediaSession.getPlayer().getApplicationLooper()), new Runnable() { // from class: androidx.media3.session.MediaNotificationManager$$ExternalSyntheticLambda3
+            @Override // java.lang.Runnable
+            public final void run() {
+                this.f$0.m357x9581fc8f(mediaSession, immutableList, callback, z);
+            }
+        });
+    }
+
+    /* JADX INFO: renamed from: lambda$updateNotification$5$androidx-media3-session-MediaNotificationManager, reason: not valid java name */
+    /* synthetic */ void m355xb22eb051(final int i, final MediaSession mediaSession, final MediaNotification mediaNotification) {
+        this.mainExecutor.execute(new Runnable() { // from class: androidx.media3.session.MediaNotificationManager$$ExternalSyntheticLambda1
+            @Override // java.lang.Runnable
+            public final void run() {
+                this.f$0.m354xc0850a32(i, mediaSession, mediaNotification);
+            }
+        });
+    }
+
+    /* JADX INFO: renamed from: lambda$updateNotification$7$androidx-media3-session-MediaNotificationManager, reason: not valid java name */
+    /* synthetic */ void m357x9581fc8f(final MediaSession mediaSession, ImmutableList immutableList, MediaNotification.Provider.Callback callback, final boolean z) {
+        final MediaNotification mediaNotificationCreateNotification = this.mediaNotificationProvider.createNotification(mediaSession, immutableList, this.actionFactory, callback);
+        this.mainExecutor.execute(new Runnable() { // from class: androidx.media3.session.MediaNotificationManager$$ExternalSyntheticLambda6
+            @Override // java.lang.Runnable
+            public final void run() {
+                this.f$0.m356xa3d85670(mediaSession, mediaNotificationCreateNotification, z);
+            }
+        });
+    }
+
+    public boolean isStartedInForeground() {
+        return this.startedInForeground;
+    }
+
+    boolean shouldRunInForeground(MediaSession mediaSession, boolean z) {
+        MediaController connectedControllerForSession = getConnectedControllerForSession(mediaSession);
+        return connectedControllerForSession != null && (connectedControllerForSession.getPlayWhenReady() || z) && (connectedControllerForSession.getPlaybackState() == 3 || connectedControllerForSession.getPlaybackState() == 2);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* JADX INFO: renamed from: onNotificationUpdated, reason: merged with bridge method [inline-methods] */
+    public void m354xc0850a32(int i, MediaSession mediaSession, MediaNotification mediaNotification) {
+        if (i == this.totalNotificationCount) {
+            m356xa3d85670(mediaSession, mediaNotification, shouldRunInForeground(mediaSession, false));
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* JADX INFO: renamed from: updateNotificationInternal, reason: merged with bridge method [inline-methods] */
+    public void m356xa3d85670(MediaSession mediaSession, MediaNotification mediaNotification, boolean z) {
+        if (Util.SDK_INT >= 21) {
+            mediaNotification.notification.extras.putParcelable(NotificationCompat.EXTRA_MEDIA_SESSION, (MediaSession.Token) mediaSession.getSessionCompat().getSessionToken().getToken());
+        }
+        this.mediaNotification = mediaNotification;
+        if (z) {
+            startForeground(mediaNotification);
+        } else {
+            this.notificationManagerCompat.notify(mediaNotification.notificationId, mediaNotification.notification);
+            maybeStopForegroundService(false);
+        }
+    }
+
+    private void maybeStopForegroundService(boolean z) {
+        MediaNotification mediaNotification;
+        List<MediaSession> sessions = this.mediaSessionService.getSessions();
+        for (int i = 0; i < sessions.size(); i++) {
+            if (shouldRunInForeground(sessions.get(i), false)) {
+                return;
+            }
+        }
+        stopForeground(z);
+        if (!z || (mediaNotification = this.mediaNotification) == null) {
+            return;
+        }
+        this.notificationManagerCompat.cancel(mediaNotification.notificationId);
+        this.totalNotificationCount++;
+        this.mediaNotification = null;
+    }
+
+    private boolean shouldShowNotification(MediaSession mediaSession) {
+        MediaController connectedControllerForSession = getConnectedControllerForSession(mediaSession);
+        return (connectedControllerForSession == null || connectedControllerForSession.getCurrentTimeline().isEmpty() || connectedControllerForSession.getPlaybackState() == 1) ? false : true;
+    }
+
+    private MediaController getConnectedControllerForSession(MediaSession mediaSession) {
+        ListenableFuture<MediaController> listenableFuture = this.controllerMap.get(mediaSession);
+        if (listenableFuture == null) {
+            return null;
+        }
+        try {
+            return (MediaController) Futures.getDone(listenableFuture);
+        } catch (ExecutionException e) {
+            throw new IllegalStateException(e);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* JADX INFO: renamed from: sendCustomCommandIfCommandIsAvailable, reason: merged with bridge method [inline-methods] */
+    public void m352x62cf9602(MediaController mediaController, final String str) {
+        SessionCommand next;
+        UnmodifiableIterator<SessionCommand> it = mediaController.getAvailableSessionCommands().commands.iterator();
+        while (true) {
+            if (!it.hasNext()) {
+                next = null;
+                break;
+            }
+            next = it.next();
+            if (next.commandCode == 0 && next.customAction.equals(str)) {
+                break;
+            }
+        }
+        if (next == null || !mediaController.getAvailableSessionCommands().contains(next)) {
+            return;
+        }
+        Futures.addCallback(mediaController.sendCustomCommand(next, Bundle.EMPTY), new FutureCallback<SessionResult>() { // from class: androidx.media3.session.MediaNotificationManager.1
+            @Override // com.google.common.util.concurrent.FutureCallback
+            public void onSuccess(SessionResult sessionResult) {
+            }
+
+            @Override // com.google.common.util.concurrent.FutureCallback
+            public void onFailure(Throwable th) {
+                Log.w(MediaNotificationManager.TAG, "custom command " + str + " produced an error: " + th.getMessage(), th);
+            }
+        }, MoreExecutors.directExecutor());
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    static final class MediaControllerListener implements MediaController.Listener, Player.Listener {
+        private final Map<MediaSession, ImmutableList<CommandButton>> customLayoutMap;
+        private final MediaSessionService mediaSessionService;
+        private final MediaSession session;
+
+        public MediaControllerListener(MediaSessionService mediaSessionService, MediaSession mediaSession, Map<MediaSession, ImmutableList<CommandButton>> map) {
+            this.mediaSessionService = mediaSessionService;
+            this.session = mediaSession;
+            this.customLayoutMap = map;
+        }
+
+        public void onConnected(boolean z) {
+            if (z) {
+                this.mediaSessionService.onUpdateNotificationInternal(this.session, false);
+            }
+        }
+
+        @Override // androidx.media3.session.MediaController.Listener
+        public ListenableFuture<SessionResult> onSetCustomLayout(MediaController mediaController, List<CommandButton> list) {
+            this.customLayoutMap.put(this.session, ImmutableList.copyOf((Collection) list));
+            this.mediaSessionService.onUpdateNotificationInternal(this.session, false);
+            return Futures.immediateFuture(new SessionResult(0));
+        }
+
+        @Override // androidx.media3.common.Player.Listener
+        public void onEvents(Player player, Player.Events events) {
+            if (events.containsAny(4, 5, 14, 0)) {
+                this.mediaSessionService.onUpdateNotificationInternal(this.session, false);
+            }
+        }
+
+        @Override // androidx.media3.session.MediaController.Listener
+        public void onDisconnected(MediaController mediaController) {
+            this.mediaSessionService.removeSession(this.session);
+            this.mediaSessionService.onUpdateNotificationInternal(this.session, false);
+        }
+    }
+
+    private void startForeground(MediaNotification mediaNotification) {
+        ContextCompat.startForegroundService(this.mediaSessionService, this.startSelfIntent);
+        if (Util.SDK_INT >= 29) {
+            Api29.startForeground(this.mediaSessionService, mediaNotification);
+        } else {
+            this.mediaSessionService.startForeground(mediaNotification.notificationId, mediaNotification.notification);
+        }
+        this.startedInForeground = true;
+    }
+
+    private void stopForeground(boolean z) {
+        if (Util.SDK_INT >= 24) {
+            Api24.stopForeground(this.mediaSessionService, z);
+        } else {
+            this.mediaSessionService.stopForeground(z || Util.SDK_INT < 21);
+        }
+        this.startedInForeground = false;
+    }
+
+    private static class Api24 {
+        public static void stopForeground(MediaSessionService mediaSessionService, boolean z) {
+            mediaSessionService.stopForeground(z ? 1 : 2);
+        }
+
+        private Api24() {
+        }
+    }
+
+    private static class Api29 {
+        public static void startForeground(MediaSessionService mediaSessionService, MediaNotification mediaNotification) {
+            try {
+                mediaSessionService.startForeground(mediaNotification.notificationId, mediaNotification.notification, 2);
+            } catch (RuntimeException e) {
+                Log.e(MediaNotificationManager.TAG, "The service must be declared with a foregroundServiceType that includes  mediaPlayback");
+                throw e;
+            }
+        }
+
+        private Api29() {
+        }
+    }
+}

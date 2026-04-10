@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:background="@null"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/general__shared__ffffffe6"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/general__task_toast_view__title"
+        android:background="@drawable/general__task_toast_view__bg"
+        android:paddingTop="10.67dp"
+        android:paddingBottom="12.33dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:layout_marginStart="21.67dp"
+        android:layout_marginEnd="21.67dp"/>
+</FrameLayout>

@@ -1,0 +1,186 @@
+{
+  "id": "564783bb309d3524",
+  "code": "1012",
+  "name": "多看阅读_非米",
+  "adSpaces": [
+    {
+      "id": "1105",
+      "code": "1012001",
+      "name": "多看阅读-开屏",
+      "style": "100599999",
+      "type": "null",
+      "traffic": {
+        "id": "1234"
+      },
+      "strategy": {
+        "id": "1234",
+        "name": "多看_开屏",
+        "version": "1",
+        "templateStatus": 0,
+        "height": 0,
+        "width": 0,
+        "wholeTimeout": 6000,
+        "entryTimeout": 4000,
+        "parallel": 1,
+        "minCache": 1,
+        "maxCache": 2,
+        "entries": [
+          {
+            "channelCode": "csj",
+            "channelAppId": "",
+            "channelPosId": "887372019",
+            "loadSize": 1,
+            "exposureCount": 0,
+            "intervalTime": 0,
+            "templateCode": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "1108",
+      "code": "1012002",
+      "name": "多看阅读-章节页底部-信息流",
+      "style": "100199999",
+      "type": "null",
+      "traffic": {
+        "id": "1237"
+      },
+      "strategy": {
+        "id": "1237",
+        "name": "多看阅读_android_章节页信息流",
+        "version": "1",
+        "templateStatus": 0,
+        "height": 0,
+        "width": 0,
+        "wholeTimeout": 6000,
+        "entryTimeout": 3000,
+        "parallel": 1,
+        "minCache": 1,
+        "maxCache": 2,
+        "entries": [
+          {
+            "channelCode": "csj",
+            "channelAppId": "",
+            "channelPosId": "945434494",
+            "loadSize": 1,
+            "exposureCount": 0,
+            "intervalTime": 0,
+            "templateCode": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "1111",
+      "code": "1012003",
+      "name": "多看阅读-吸底广告",
+      "style": "100399999",
+      "type": "null",
+      "traffic": {
+        "id": "1231"
+      },
+      "strategy": {
+        "id": "1231",
+        "name": "多看阅读-吸底广告",
+        "version": "3",
+        "templateStatus": 0,
+        "height": 0,
+        "width": 0,
+        "wholeTimeout": 6000,
+        "entryTimeout": 3000,
+        "parallel": 2,
+        "minCache": 1,
+        "maxCache": 2,
+        "entries": [
+          {
+            "channelCode": "csj",
+            "channelAppId": "",
+            "channelPosId": "945434452",
+            "loadSize": 1,
+            "exposureCount": 0,
+            "intervalTime": 0,
+            "templateCode": 2
+          },
+          {
+            "channelCode": "ylh",
+            "channelAppId": "",
+            "channelPosId": "4071924608788814",
+            "loadSize": 1,
+            "exposureCount": 0,
+            "intervalTime": 0,
+            "templateCode": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "1114",
+      "code": "1012004",
+      "name": "多看阅读-签到页-信息流",
+      "style": "100199999",
+      "type": "null",
+      "traffic": {
+        "id": "1243"
+      },
+      "strategy": {
+        "id": "1243",
+        "name": "多看阅读_android_签到页-模版信息流",
+        "version": "1",
+        "templateStatus": 0,
+        "height": 0,
+        "width": 0,
+        "wholeTimeout": 6000,
+        "entryTimeout": 3000,
+        "parallel": 1,
+        "minCache": 1,
+        "maxCache": 2,
+        "entries": [
+          {
+            "channelCode": "csj",
+            "channelAppId": "",
+            "channelPosId": "945434546",
+            "loadSize": 1,
+            "exposureCount": 0,
+            "intervalTime": 0,
+            "templateCode": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "1117",
+      "code": "1012005",
+      "name": "多看阅读-签到页-激励视频",
+      "style": "100299999",
+      "type": "null",
+      "traffic": {
+        "id": "1240"
+      },
+      "strategy": {
+        "id": "1240",
+        "name": "多看阅读_android_签到页-激励视频",
+        "version": "2",
+        "templateStatus": 0,
+        "height": 0,
+        "width": 0,
+        "wholeTimeout": 6000,
+        "entryTimeout": 5000,
+        "parallel": 1,
+        "minCache": 1,
+        "maxCache": 2,
+        "entries": [
+          {
+            "channelCode": "csj",
+            "channelAppId": "",
+            "channelPosId": "945434532",
+            "loadSize": 1,
+            "exposureCount": 0,
+            "intervalTime": 0,
+            "templateCode": 1
+          }
+        ]
+      }
+    }
+  ]
+}

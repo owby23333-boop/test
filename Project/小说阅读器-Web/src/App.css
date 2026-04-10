@@ -1,0 +1,136 @@
+:root {
+  --bg-color: #1a1a2e;
+  --text-color: #e0e0e0;
+  --primary-color: #6c5ce7;
+  --secondary-color: #a29bfe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Microsoft YaHei', sans-serif;
+}
+
+.app.light {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+}
+
+.app.护眼 {
+  --bg-color: #fdf6e3;
+  --text-color: #5c4033;
+}
+
+.app header {
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.app nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.app nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+.app nav a.active,
+.app nav a:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.app main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app .library {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.app .book-card {
+  background-color: var(--bg-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.app .book-cover {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.app .reader {
+  background-color: var(--bg-color);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.app .reader-toolbar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.app .reader-content {
+  border: 1px solid var(--primary-color);
+  padding: 1rem;
+}
+
+.app .settings {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.app .setting-group {
+  margin-bottom: 2rem;
+}
+
+.app .setting-item {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.app .save-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.app .save-btn:hover {
+  background-color: var(--secondary-color);
+}

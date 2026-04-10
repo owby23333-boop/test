@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.reader.ui.personal.PersonalCommentFeedContentView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/personal__comment_feed_content_view__root"
+    android:paddingLeft="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.duokan.reader.ui.general.DkLabelView
+        android:textSize="@dimen/general_font__shared__c"
+        android:textColor="@color/general__shared__333333"
+        android:ellipsize="end"
+        android:id="@+id/personal__comment_feed_content_view__title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"/>
+    <com.duokan.reader.ui.store.comment.DkCommentScoreView
+        android:id="@+id/personal__comment_feed_content_view__score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"/>
+    <com.duokan.reader.ui.general.deprecatedDkTextView
+        android:textSize="@dimen/general_font__shared__c"
+        android:textColor="@color/general__shared__555555"
+        android:ellipsize="end"
+        android:gravity="fill"
+        android:id="@+id/personal__comment_feed_content_view__content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:singleLine="false"/>
+</com.duokan.reader.ui.personal.PersonalCommentFeedContentView>

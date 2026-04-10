@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/bookshelf__bookshelf_pull_down_view__event_logo"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:scaleType="fitCenter"
+        android:layout_marginStart="7dp"/>
+    <TextView
+        android:textSize="13sp"
+        android:textColor="@color/general__day_night__333333"
+        android:ellipsize="end"
+        android:id="@+id/bookshelf__bookshelf_pull_down_view__event_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:drawablePadding="8dp"
+        android:layout_weight="1"
+        android:layout_marginStart="13dp"/>
+</LinearLayout>

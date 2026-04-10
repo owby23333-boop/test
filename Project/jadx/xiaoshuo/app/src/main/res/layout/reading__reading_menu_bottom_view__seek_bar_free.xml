@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include layout="@layout/reading__reading_menu_bottom_view__seekbar_status"/>
+    <LinearLayout
+        android:enabled="false"
+        android:gravity="center"
+        android:id="@+id/reading__reading_menu_bottom_view_progress_container"
+        android:background="@color/general__fdfdfd"
+        android:paddingTop="@dimen/view_dimen_60"
+        android:paddingBottom="@dimen/view_dimen_30"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/reading__reading_menu_bottom_view__go_prev_chapter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/reading__reading__menu_bottom_view__go_pre_chapter"
+            android:contentDescription="@string/reading__seek_page_view__prev_chapter"
+            android:paddingStart="@dimen/view_dimen_80"
+            android:paddingEnd="@dimen/view_dimen_49"/>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <com.duokan.reader.ui.reading.BubbleSeekBar
+                android:id="@+id/reading__reading_menu_bottom_view__seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/reading__reading_menu_bottom_view__progress_bar"
+                app:bsb_hide_bubble="true"
+                app:bsb_persist_init_progress_mark="true"
+                app:bsb_persist_init_progress_mark_color="@color/black_04_transparent"
+                app:bsb_second_track_color="@color/black_04_transparent"
+                app:bsb_second_track_size="@dimen/view_dimen_100"
+                app:bsb_thumb_color="@color/white"
+                app:bsb_thumb_radius="@dimen/view_dimen_50"
+                app:bsb_thumb_radius_on_dragging="@dimen/view_dimen_50"
+                app:bsb_touch_to_seek="true"
+                app:bsb_track_color="@color/black_04_transparent"
+                app:bsb_track_size="@dimen/view_dimen_100"/>
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/reading__reading_menu_bottom_view__go_next_chapter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/reading__reading__menu_bottom_view__go_next_chapter"
+            android:contentDescription="@string/reading__seek_page_view__next_chapter"
+            android:paddingStart="@dimen/view_dimen_49"
+            android:paddingEnd="@dimen/view_dimen_80"/>
+    </LinearLayout>
+</LinearLayout>

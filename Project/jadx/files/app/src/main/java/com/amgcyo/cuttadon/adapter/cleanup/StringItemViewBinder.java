@@ -1,0 +1,65 @@
+package com.amgcyo.cuttadon.adapter.cleanup;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import androidx.annotation.CallSuper;
+import androidx.annotation.NonNull;
+import androidx.annotation.UiThread;
+import androidx.recyclerview.widget.RecyclerView;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
+import butterknife.internal.Utils;
+import com.fatcatfat.io.R;
+import me.drakeet.multitype.b;
+
+/* JADX INFO: loaded from: classes.dex */
+public class StringItemViewBinder extends b<String, ViewHolder> {
+
+    static class ViewHolder extends RecyclerView.ViewHolder {
+
+        @BindView(R.id.tv_title)
+        TextView tv_title;
+
+        ViewHolder(View view) {
+            super(view);
+            ButterKnife.bind(this, view);
+        }
+    }
+
+    public class ViewHolder_ViewBinding implements Unbinder {
+        private ViewHolder a;
+
+        @UiThread
+        public ViewHolder_ViewBinding(ViewHolder viewHolder, View view) {
+            this.a = viewHolder;
+            viewHolder.tv_title = (TextView) Utils.findRequiredViewAsType(view, R.id.tv_title, "field 'tv_title'", TextView.class);
+        }
+
+        @Override // butterknife.Unbinder
+        @CallSuper
+        public void unbind() {
+            ViewHolder viewHolder = this.a;
+            if (viewHolder == null) {
+                throw new IllegalStateException("Bindings already cleared.");
+            }
+            this.a = null;
+            viewHolder.tv_title = null;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // me.drakeet.multitype.b
+    @NonNull
+    public ViewHolder a(@NonNull LayoutInflater layoutInflater, @NonNull ViewGroup viewGroup) {
+        return new ViewHolder(layoutInflater.inflate(R.layout.cleanup_title, viewGroup, false));
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // me.drakeet.multitype.b
+    public void a(@NonNull ViewHolder viewHolder, @NonNull String str) {
+        viewHolder.tv_title.setText(str);
+    }
+}

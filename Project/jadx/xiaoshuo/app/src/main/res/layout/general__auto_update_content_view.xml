@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.core.ui.BoxView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/general__auto_update_content__boxview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.duokan.core.ui.FrameScrollView
+        android:id="@+id/general__auto_update_content__scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/view_dimen_50"
+        android:paddingEnd="@dimen/view_dimen_50">
+        <com.duokan.reader.ui.general.deprecatedDkTextView
+            android:textSize="@dimen/general_font__shared__b"
+            android:textColor="@color/general__666666"
+            android:gravity="fill"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/general__auto_update_content__text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+    </com.duokan.core.ui.FrameScrollView>
+</com.duokan.core.ui.BoxView>

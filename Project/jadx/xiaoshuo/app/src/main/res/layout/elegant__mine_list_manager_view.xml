@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.duokan.reader.ui.general.PageHeaderView
+        android:id="@+id/bookshelf__web_list_edit_manager_view__header"
+        android:background="@drawable/bookshelf__bookshelf_header_bg"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/bookshelf__web_list_edit_manager_view__footer"
+        android:background="@color/general__day_night__ffffff_1f1f1f"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_dimen_210"
+        android:layout_alignParentBottom="true">
+        <View
+            android:background="@color/general__day_night__cccccc"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <TextView
+            android:textSize="@dimen/general_font__shared__t3"
+            android:textColor="@color/general__shared__button_text_disabled"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:id="@+id/bookshelf__web_list_edit_manager_view__delete"
+            android:paddingTop="@dimen/view_dimen_45"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@string/bookshelf__general_shared__delete"
+            android:drawableTop="@drawable/bookshelf__book_manager_view__delete"
+            android:drawablePadding="-15dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

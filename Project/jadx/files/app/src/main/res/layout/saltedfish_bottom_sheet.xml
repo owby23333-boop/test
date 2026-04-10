@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.amgcyo.cuttadon.view.otherview.CustomTextView
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/text_33"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_bottom_popup_container"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:text="语音朗读设置"/>
+    <View
+        android:id="@+id/line"
+        android:background="@color/color_f1"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <com.amgcyo.cuttadon.view.xtablayout.XTabLayout
+        android:layout_gravity="center"
+        android:id="@+id/xtablayout"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40dp"
+        app:xTabIndicatorColor="@color/colorTheme"
+        app:xTabIndicatorHeight="@dimen/dimen2dp"
+        app:xTabIndicatorWidth="@dimen/dimen10dp"
+        app:xTabMinWidth="@dimen/dimen10dp"
+        app:xTabMode="fixed"
+        app:xTabSelectedTextColor="@color/colorTheme"
+        app:xTabSelectedTextSize="@dimen/dimen18dp"
+        app:xTabTextAppearance="@color/text_33"
+        app:xTabTextColor="@color/text_33"
+        app:xTabTextSelectedBold="false"
+        app:xTabTextSize="@dimen/dimen15dp"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

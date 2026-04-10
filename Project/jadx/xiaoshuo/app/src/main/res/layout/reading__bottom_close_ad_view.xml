@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/reading_close_ad_background"
+    android:layout_width="@dimen/view_dimen_501"
+    android:layout_height="@dimen/view_dimen_261">
+    <TextView
+        android:textSize="@dimen/text_font_size_48"
+        android:textColor="@color/general__text__day_night__333333"
+        android:id="@+id/reading__bottom_close_ad_view__title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_50"
+        android:text="@string/reading__close_ad_view__title_text"
+        android:includeFontPadding="false"
+        android:drawableLeft="@drawable/reading__bottom_close_ad_view__view_ad_icon"
+        android:drawablePadding="@dimen/view_dimen_12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textSize="@dimen/text_font_size_32"
+        android:textColor="@color/general__d0d0d0"
+        android:id="@+id/reading__bottom_close_ad_view__close_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_49"
+        android:text="@string/reading__close_ad_view__subtitle_text"
+        android:includeFontPadding="false"
+        android:drawableRight="@drawable/reading__bottom_close_ad_view__close_icon"
+        android:drawablePadding="@dimen/view_dimen_12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reading__bottom_close_ad_view__title_tv"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

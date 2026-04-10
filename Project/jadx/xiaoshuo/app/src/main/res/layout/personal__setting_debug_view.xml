@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/view_dimen_80"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.duokan.personal.ui.CodeEditText
+        android:textSize="@dimen/general__shared_dimen__16dp"
+        android:textStyle="bold"
+        android:id="@+id/ce_password"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/view_dimen_140"
+        android:inputType="numberPassword"
+        android:textCursorDrawable="@drawable/shape_cursor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeBackground="@drawable/shape_code_input"
+        app:strokeBackgroundSelected="@drawable/shape_code_input_selected"
+        app:strokeHeight="@dimen/view_dimen_120"
+        app:strokeLength="4"
+        app:strokePadding="@dimen/view_dimen_60"
+        app:strokeWidth="@dimen/view_dimen_120"/>
+    <TextView
+        android:textColor="@color/general__cc0000"
+        android:id="@+id/tv_error"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_30"
+        android:text="密码不正确，请重新输入"
+        android:layout_marginStart="@dimen/view_dimen_30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ce_password"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

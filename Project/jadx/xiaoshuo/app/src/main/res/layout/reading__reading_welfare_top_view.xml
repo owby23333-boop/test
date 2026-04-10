@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/reading__reading_welfare__root"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/view_dimen_28"
+        android:textColor="@color/general__333333"
+        android:gravity="center"
+        android:id="@+id/reading__reading_welfare__withdraw"
+        android:background="@drawable/reading__reading_walfare__withdraw__bacground"
+        android:layout_width="@dimen/view_dimen_223"
+        android:layout_height="@dimen/view_dimen_75"
+        android:layout_marginTop="@dimen/view_dimen_7"
+        android:text="@string/reading__reading_walfare__withdraw__title"
+        android:includeFontPadding="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textSize="@dimen/view_dimen_28"
+        android:textColor="@color/general__333333"
+        android:gravity="center"
+        android:id="@+id/reading__reading_welfare__today_task"
+        android:background="@drawable/reading__reading_walfare__withdraw__bacground"
+        android:layout_width="@dimen/view_dimen_183"
+        android:layout_height="@dimen/view_dimen_75"
+        android:text="@string/reading__reading_welfare__today_task__title"
+        android:includeFontPadding="false"
+        android:layout_marginStart="@dimen/view_dimen_17"
+        app:layout_constraintStart_toEndOf="@+id/reading__reading_welfare__withdraw"
+        app:layout_constraintTop_toTopOf="@+id/reading__reading_welfare__withdraw"/>
+    <ImageView
+        android:id="@+id/reading__reading_welfare__today_task__hint"
+        android:visibility="gone"
+        android:layout_width="@dimen/view_dimen_24"
+        android:layout_height="@dimen/view_dimen_24"
+        android:src="@drawable/reading__reading_welfare__today_task__hint_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

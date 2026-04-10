@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_gravity="end|top"
+    android:id="@+id/reading__taobao_item_ad_view__close"
+    android:background="@drawable/reading__taobao_item_ad_view__xout_bg"
+    android:paddingTop="1dp"
+    android:paddingBottom="1dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="4dp"
+    android:paddingEnd="5dp">
+    <TextView
+        android:textSize="9sp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/general__shared__ad"
+        android:includeFontPadding="false"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/reading__taobao_item_ad_view__xout"
+        android:layout_marginStart="3dp"/>
+</LinearLayout>

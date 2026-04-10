@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/account__wx_scan_qr_code__qr_code"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
+        <FrameLayout
+            android:layout_gravity="center"
+            android:id="@+id/account__wx_scan_qr_code__refresh"
+            android:background="#77999999"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="二维码过期，点击刷新"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

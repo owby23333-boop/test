@@ -1,0 +1,3 @@
+<?xml version ="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@string/boot_cta_name,@string/boot_cta_purpose,@string/cta_user_agreement_url,@string/cta_privacy_policy_url" />

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/teenager_night_mode_unlock_nav"
+    app:startDestination="@+id/teenagerPasswordFragment">
+    <fragment
+        android:label="fragment_teenager_password"
+        android:name="com.duokan.reader.teenager.fragment.TeenagerUnLockNightModeFragment"
+        android:id="@+id/teenagerPasswordFragment">
+        <action
+            android:id="@+id/action_teenagerPasswordFragment_to_teenagerForgetFragment"
+            app:destination="@+id/teenagerForgetFragment"/>
+    </fragment>
+    <fragment
+        android:label="fragment_teenager_forget"
+        android:name="com.duokan.reader.teenager.fragment.TeenagerForgetFragment"
+        android:id="@+id/teenagerForgetFragment"/>
+</navigation>

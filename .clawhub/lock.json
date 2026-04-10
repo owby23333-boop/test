@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "find-skills-skill": {
+      "version": "1.0.0",
+      "installedAt": 1775718922798
+    },
+    "memory-lancedb-pro": {
+      "version": "1.0.0",
+      "installedAt": 1775721123724
+    },
+    "github": {
+      "version": "1.0.0",
+      "installedAt": 1775729409055
+    }
+  }
+}

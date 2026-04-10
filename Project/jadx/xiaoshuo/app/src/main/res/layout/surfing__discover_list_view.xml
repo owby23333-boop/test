@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.duokan.reader.ui.store.view.RefreshListView
+        android:id="@+id/surfing__discover_list_view__list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.duokan.reader.ui.general.LoadingCircleView
+        android:layout_gravity="center"
+        android:id="@+id/surfing__discover_list_view__loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

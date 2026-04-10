@@ -1,0 +1,224 @@
+{
+  "id": "66febc8606610c1b",
+  "code": "1001",
+  "name": "全民小说",
+  "adSpaces": [
+    {
+      "id": "87",
+      "code": "1001008",
+      "name": "【全民】-开屏_miui",
+      "style": "100499999",
+      "type": "100400001",
+      "traffic": {
+        "id": "93"
+      },
+      "strategy": {
+        "id": "93",
+        "name": "【全民】-开屏_miui_保底",
+        "version": "1000000",
+        "templateStatus": 1,
+        "height": 1280,
+        "width": 720,
+        "wholeTimeout": 5000,
+        "entryTimeout": 4000,
+        "parallel": 2,
+        "minCache": 1,
+        "maxCache": 2,
+        "entries": [
+          {
+            "channelCode": "csj",
+            "channelAppId": "",
+            "channelPosId": "887316021",
+            "loadSize": 1,
+            "exposureCount": 0,
+            "intervalTime": 0,
+            "templateCode": 1
+          },
+          {
+            "channelCode": "ylh",
+            "channelAppId": "",
+            "channelPosId": "4071306033816444",
+            "loadSize": 1,
+            "exposureCount": 0,
+            "intervalTime": 0,
+            "templateCode": 1
+          },
+          {
+            "channelCode": "baidu",
+            "channelAppId": "",
+            "channelPosId": "6922936",
+            "loadSize": 1,
+            "exposureCount": 0,
+            "intervalTime": 0,
+            "templateCode": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "138",
+      "code": "1001025",
+      "name": "【全民】-阅读页_miui",
+      "style": "100199999",
+      "type": "100100001",
+      "traffic": {
+        "id": "144"
+      },
+      "strategy": {
+        "id": "144",
+        "name": "【全民】-阅读页_miui_保底",
+        "version": "1000000",
+        "templateStatus": 0,
+        "height": 0,
+        "width": 0,
+        "wholeTimeout": 4000,
+        "entryTimeout": 2000,
+        "parallel": 2,
+        "minCache": 1,
+        "maxCache": 2,
+        "entries": [
+          {
+            "channelCode": "csj",
+            "channelAppId": "",
+            "channelPosId": "945410452",
+            "loadSize": 1,
+            "exposureCount": 0,
+            "intervalTime": 0,
+            "templateCode": 0
+          },
+          {
+            "channelCode": "csj",
+            "channelAppId": "",
+            "channelPosId": "913250316",
+            "loadSize": 1,
+            "exposureCount": 0,
+            "intervalTime": 0,
+            "templateCode": 0
+          },
+          {
+            "channelCode": "ylh",
+            "channelAppId": "",
+            "channelPosId": "6041020347586401",
+            "loadSize": 1,
+            "exposureCount": 0,
+            "intervalTime": 0,
+            "templateCode": 1
+          },
+          {
+            "channelCode": "baidu",
+            "channelAppId": "",
+            "channelPosId": "7185093",
+            "loadSize": 1,
+            "exposureCount": 0,
+            "intervalTime": 0,
+            "templateCode": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "231",
+      "code": "1001056",
+      "name": "【全民】-书架_miui",
+      "style": "100199999",
+      "type": "100100001",
+      "traffic": {
+        "id": "237"
+      },
+      "strategy": {
+        "id": "237",
+        "name": "【全民】-书架_miui_保底",
+        "version": "1000000",
+        "templateStatus": 0,
+        "height": 0,
+        "width": 0,
+        "wholeTimeout": 4000,
+        "entryTimeout": 2000,
+        "parallel": 2,
+        "minCache": 1,
+        "maxCache": 2,
+        "entries": [
+          {
+            "channelCode": "csj",
+            "channelAppId": "",
+            "channelPosId": "945096096",
+            "loadSize": 1,
+            "exposureCount": 0,
+            "intervalTime": 0,
+            "templateCode": 0
+          },
+          {
+            "channelCode": "ylh",
+            "channelAppId": "",
+            "channelPosId": "1021024753880480",
+            "loadSize": 1,
+            "exposureCount": 0,
+            "intervalTime": 0,
+            "templateCode": 0
+          },
+          {
+            "channelCode": "baidu",
+            "channelAppId": "",
+            "channelPosId": "6923269",
+            "loadSize": 1,
+            "exposureCount": 0,
+            "intervalTime": 0,
+            "templateCode": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "1078",
+      "code": "1001234",
+      "name": "【全民】-吸底_miui",
+      "style": "100399999",
+      "type": "null",
+      "traffic": {
+        "id": "1204"
+      },
+      "strategy": {
+        "id": "1204",
+        "name": "【全民】-吸底_miui_保底",
+        "version": "1000000",
+        "templateStatus": 0,
+        "height": 0,
+        "width": 0,
+        "wholeTimeout": 5000,
+        "entryTimeout": 3000,
+        "parallel": 2,
+        "minCache": 1,
+        "maxCache": 2,
+        "entries": [
+          {
+            "channelCode": "csj",
+            "channelAppId": "",
+            "channelPosId": "945413070",
+            "loadSize": 1,
+            "exposureCount": 0,
+            "intervalTime": 0,
+            "templateCode": 0
+          },
+          {
+            "channelCode": "ylh",
+            "channelAppId": "",
+            "channelPosId": "5051724558415129",
+            "loadSize": 1,
+            "exposureCount": 0,
+            "intervalTime": 0,
+            "templateCode": 0
+          },
+          {
+            "channelCode": "baidu",
+            "channelAppId": "",
+            "channelPosId": "7195765",
+            "loadSize": 1,
+            "exposureCount": 0,
+            "intervalTime": 0,
+            "templateCode": 0
+          }
+        ]
+      }
+    }
+  ]
+}

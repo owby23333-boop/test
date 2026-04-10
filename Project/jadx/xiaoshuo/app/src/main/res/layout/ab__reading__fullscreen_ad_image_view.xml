@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_gravity="center"
+        android:id="@+id/reading__fullscreen_ad_image_view__response_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/reading__large_image_view__image"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"/>
+        <ImageView
+            android:layout_gravity="top|right"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reading__fullscreen_ad_view__ad_sign"/>
+    </FrameLayout>
+</FrameLayout>

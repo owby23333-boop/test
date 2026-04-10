@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/category__menu_selector"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_dimen_133">
+    <View
+        android:id="@+id/category__menu_selected_mark"
+        android:background="@drawable/category_menu_selected_mark_bg"
+        android:layout_width="@dimen/view_dimen_12"
+        android:layout_height="@dimen/view_dimen_62"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textSize="@dimen/text_font_size_38"
+        android:textColor="@color/general__text__day_night__333333"
+        android:layout_gravity="center"
+        android:id="@+id/category__menu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/category__menu_iv"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/category__menu_hot"
+        android:scaleType="centerInside"
+        android:layout_marginStart="@dimen/view_dimen_4"
+        app:layout_constraintBottom_toBottomOf="@+id/category__menu_name"
+        app:layout_constraintStart_toEndOf="@+id/category__menu_name"
+        app:layout_constraintTop_toTopOf="@+id/category__menu_name"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

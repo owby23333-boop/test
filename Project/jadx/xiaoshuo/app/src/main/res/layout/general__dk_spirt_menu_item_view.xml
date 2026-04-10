@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/general_font__shared__dialog_button"
+    android:textColor="@color/general__day_night__000000"
+    android:ellipsize="end"
+    android:gravity="center_vertical"
+    android:background="@drawable/general__shared__dialog_list_item"
+    android:paddingLeft="@dimen/general__shared__dialog_menu_item_padding"
+    android:paddingRight="@dimen/general__shared__dialog_menu_item_padding"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/general__shared__dialog_menu_item_height"
+    android:singleLine="true"
+    android:fontFamily="sans-serif-medium"/>

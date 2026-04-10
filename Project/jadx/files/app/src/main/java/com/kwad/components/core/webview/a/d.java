@@ -1,0 +1,35 @@
+package com.kwad.components.core.webview.a;
+
+import androidx.annotation.NonNull;
+import com.kwad.sdk.utils.bh;
+
+/* JADX INFO: loaded from: classes3.dex */
+public class d implements com.kwad.sdk.core.webview.b.a {
+    private com.kwad.sdk.core.webview.b.c nK;
+
+    @Override // com.kwad.sdk.core.webview.b.a
+    public void a(String str, @NonNull com.kwad.sdk.core.webview.b.c cVar) {
+        this.nK = cVar;
+    }
+
+    public final void b(final com.kwad.sdk.core.response.kwai.a aVar) {
+        if (this.nK != null) {
+            bh.runOnUiThread(new Runnable() { // from class: com.kwad.components.core.webview.a.d.1
+                @Override // java.lang.Runnable
+                public final void run() {
+                    d.this.nK.a(aVar);
+                }
+            });
+        }
+    }
+
+    @Override // com.kwad.sdk.core.webview.b.a
+    @NonNull
+    public final String getKey() {
+        return "giveRewardInAdvance";
+    }
+
+    @Override // com.kwad.sdk.core.webview.b.a
+    public final void onDestroy() {
+    }
+}

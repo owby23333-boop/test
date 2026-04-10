@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/view_dimen_19"
+    android:textColor="@color/general__ffffff_90"
+    android:id="@+id/reading__app_ad_view__ad_icon"
+    android:background="@drawable/general__page__close_ad_view_background_style4"
+    android:paddingLeft="@dimen/view_dimen_11"
+    android:paddingTop="@dimen/view_dimen_4"
+    android:paddingRight="@dimen/view_dimen_11"
+    android:paddingBottom="@dimen/view_dimen_4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/general__shared__ad"/>

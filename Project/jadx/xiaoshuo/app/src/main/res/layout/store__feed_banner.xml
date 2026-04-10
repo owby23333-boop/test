@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.reader.ui.general.RoundFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/store__banner_height"
+    android:layout_marginTop="@dimen/general__shared_dimen__7_3dp"
+    android:layout_marginBottom="@dimen/general__shared_dimen__7_3dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginStart="@dimen/view_dimen_46"
+    android:layout_marginEnd="@dimen/view_dimen_46"
+    app:radius="@dimen/general__shared_dimen__10dp"
+    style="@style/store__shared__item_parent">
+    <com.bigkoo.dkconvenientbanner.ConvenientBanner
+        android:id="@+id/store_feed_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:canLoop="true"/>
+</com.duokan.reader.ui.general.RoundFrameLayout>

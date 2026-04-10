@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:topLeftRadius="45dp"
+        android:bottomLeftRadius="45dp"/>
+    <stroke
+        android:width="1px"
+        android:color="@color/general__day_night__24000000"/>
+    <solid android:color="@color/general__day_night__purchased_sort_group_view__bg_ffffff"/>
+</shape>

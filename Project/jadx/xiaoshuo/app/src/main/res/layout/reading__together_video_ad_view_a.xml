@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/reading__app_ad_view_click"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/general__shared__corner_ad_bg"
+            android:paddingLeft="@dimen/view_dimen_42"
+            android:paddingTop="@dimen/view_dimen_50"
+            android:paddingRight="@dimen/view_dimen_42"
+            android:paddingBottom="@dimen/view_dimen_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_font_size_48"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:ellipsize="end"
+                android:id="@+id/reading__app_ad_view__summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"/>
+            <FrameLayout
+                android:id="@+id/reading__video_view__video_container"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="@dimen/view_dimen_42">
+                <FrameLayout
+                    android:id="@+id/reading__video_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <include
+                    android:layout_gravity="end|top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/general__page__close_ad_view"/>
+            </FrameLayout>
+            <include layout="@layout/reading__ad_view_title_icon_xout_a"/>
+        </LinearLayout>
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/view_dimen_10"
+            android:layout_marginTop="@dimen/view_dimen_10"
+            android:layout_marginRight="@dimen/view_dimen_10"
+            android:layout_marginBottom="@dimen/view_dimen_10"
+            layout="@layout/general__close_ad_view"/>
+    </FrameLayout>
+    <include layout="@layout/reading__ad_view_download_view_a"/>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground">
+    <include
+        android:id="@+id/store__feed_book_cover_card"
+        android:layout_width="@dimen/store__feed_ranking_cover_width_small"
+        android:layout_height="@dimen/store__feed_ranking_cover_height_small"
+        android:layout_centerVertical="true"
+        layout="@layout/store__feed_fiction_card"/>
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/general__shared__333333"
+        android:ellipsize="end"
+        android:id="@+id/store__feed_book_common_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/store__share__interval_35"
+        android:lines="2"
+        android:layout_toRightOf="@+id/store__feed_book_cover_card"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/general__shared__9CA0A8"
+        android:id="@+id/store__feed_book_common_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/store__share__interval_35"
+        android:layout_marginTop="@dimen/store__share__interval_10"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/store__feed_book_cover_card"
+        android:layout_below="@+id/store__feed_book_common_title"/>
+    <include layout="@layout/store__feed_ranking_item_hot"/>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/view_dimen_50"
+    android:layout_marginTop="@dimen/view_dimen_30"
+    android:layout_marginRight="@dimen/view_dimen_50"
+    android:layout_marginBottom="@dimen/view_dimen_30">
+    <include
+        android:id="@+id/store_feed_book_item1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/store_feed_book_item2"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        layout="@layout/store__feed_fiction_item_vertical_small"/>
+    <include
+        android:id="@+id/store_feed_book_item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/store_feed_book_item3"
+        app:layout_constraintStart_toEndOf="@+id/store_feed_book_item1"
+        layout="@layout/store__feed_fiction_item_vertical_small"/>
+    <include
+        android:id="@+id/store_feed_book_item3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/store_feed_book_item4"
+        app:layout_constraintStart_toEndOf="@+id/store_feed_book_item2"
+        layout="@layout/store__feed_fiction_item_vertical_small"/>
+    <include
+        android:id="@+id/store_feed_book_item4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/store_feed_book_item3"
+        layout="@layout/store__feed_fiction_item_vertical_small"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

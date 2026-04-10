@@ -1,0 +1,184 @@
+package com.kwad.sdk.core.a.kwai;
+
+import com.kwad.sdk.commercial.model.HybridLoadMsg;
+import com.kwad.sdk.commercial.model.SDKInitMsg;
+import com.kwad.sdk.commercial.model.WebCloseStatus;
+import com.kwad.sdk.commercial.model.WebViewCommercialMsg;
+import com.kwad.sdk.commercial.model.WebViewLoadMsg;
+import com.kwad.sdk.core.imageloader.ImageLoaderInfo;
+import com.kwad.sdk.core.request.model.StatusInfo;
+import com.kwad.sdk.core.response.model.ABParams;
+import com.kwad.sdk.core.response.model.AdInfo;
+import com.kwad.sdk.core.response.model.AdMatrixInfo;
+import com.kwad.sdk.core.response.model.AdProductInfo;
+import com.kwad.sdk.core.response.model.AdStatusInfo;
+import com.kwad.sdk.core.response.model.AdStyleInfo;
+import com.kwad.sdk.core.response.model.AdTemplate;
+import com.kwad.sdk.core.response.model.CouponInfo;
+import com.kwad.sdk.core.response.model.FeedSlideConf;
+import com.kwad.sdk.core.response.model.HttpDnsInfo;
+import com.kwad.sdk.core.response.model.PageInfo;
+import com.kwad.sdk.core.response.model.PhotoInfo;
+import com.kwad.sdk.core.response.model.TKAdLiveShopItemInfo;
+import com.kwad.sdk.core.response.model.TemplateConfig;
+import com.kwad.sdk.core.response.model.VideoPlayerStatus;
+import com.kwad.sdk.core.scene.URLPackage;
+import com.kwad.sdk.internal.api.NativeAdExtraDataImpl;
+import com.kwad.sdk.internal.api.SceneImpl;
+import java.util.HashMap;
+import java.util.Map;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final class el {
+    public static Map<Class<? extends com.kwad.sdk.core.response.kwai.a>, com.kwad.sdk.core.d> afs;
+
+    static {
+        HashMap map = new HashMap();
+        afs = map;
+        map.put(AdInfo.AdConversionInfo.class, new l());
+        afs.put(AdInfo.AdvertiserInfo.class, new al());
+        afs.put(StatusInfo.NativeAdStyleControl.class, new ff());
+        afs.put(AdInfo.AdMaterialInfo.MaterialFeature.class, new eu());
+        afs.put(AdInfo.UnDownloadRegionConf.class, new ih());
+        afs.put(AdMatrixInfo.NeoVideoInfo.class, new fg());
+        afs.put(AdStyleInfo.PlayEndInfo.EndTopToolBarInfo.class, new cq());
+        afs.put(AdProductInfo.SpikeInfo.class, new he());
+        afs.put(com.kwad.sdk.internal.api.a.class, new u());
+        afs.put(com.kwad.sdk.core.network.j.class, new fh());
+        afs.put(AdMatrixInfo.SplashEndCardTKInfo.class, new hh());
+        afs.put(com.kwad.sdk.core.threads.c.class, new ib());
+        afs.put(com.kwad.sdk.core.report.l.class, new cr());
+        afs.put(ImageLoaderInfo.class, new dy());
+        afs.put(AdProductInfo.class, new ab());
+        afs.put(AdInfo.class, new r());
+        afs.put(AdMatrixInfo.TemplateData.class, new ia());
+        afs.put(AdStyleInfo.ExposeTagInfo.class, new ct());
+        afs.put(com.kwad.sdk.core.network.k.class, new fi());
+        afs.put(ABParams.class, new a());
+        afs.put(AdMatrixInfo.AdDataV2.class, new n());
+        afs.put(AdMatrixInfo.RewardVideoTaskInfo.class, new go());
+        afs.put(AdStyleInfo.PlayDetailInfo.PatchEcInfo.class, new fs());
+        afs.put(AdStyleInfo.PlayDetailInfo.class, new fv());
+        afs.put(AdInfo.AdConversionInfo.DeeplinkItemInfo.class, new cd());
+        afs.put(com.kwad.sdk.internal.api.b.class, new hi());
+        afs.put(AdMatrixInfo.DownloadTexts.class, new cm());
+        afs.put(VideoPlayerStatus.class, new in());
+        afs.put(AdInfo.AdTrackInfo.class, new aj());
+        afs.put(AdMatrixInfo.FeedInfo.class, new cy());
+        afs.put(com.kwad.sdk.utils.a.a.class, new eo());
+        afs.put(PhotoInfo.VideoInfo.class, new il());
+        afs.put(AdStyleInfo.PlayDetailInfo.DetailCommonInfo.class, new ce());
+        afs.put(StatusInfo.NativeAdRequestInfo.class, new fd());
+        afs.put(AdMatrixInfo.BaseMatrixTemplate.class, new az());
+        afs.put(AdMatrixInfo.ActivityMiddlePageInfo.class, new g());
+        afs.put(CouponInfo.class, new by());
+        afs.put(PhotoInfo.BaseInfo.class, new ay());
+        afs.put(AdMatrixInfo.SplashSlideInfo.class, new hp());
+        afs.put(AdInfo.AdInsertScreenInfo.class, new s());
+        afs.put(AdMatrixInfo.Styles.class, new hu());
+        afs.put(AdMatrixInfo.AggregationCardInfo.class, new am());
+        afs.put(AdMatrixInfo.MerchantLiveReservationInfo.class, new ey());
+        afs.put(PhotoInfo.class, new ft());
+        afs.put(AdInfo.PlayableStyleInfo.class, new gb());
+        afs.put(AdMatrixInfo.ShakeInfo.class, new gx());
+        afs.put(AdMatrixInfo.BottomBannerInfo.class, new bd());
+        afs.put(AdStyleInfo.class, new ah());
+        afs.put(AdMatrixInfo.AdInteractionInfo.class, new t());
+        afs.put(com.kwad.sdk.core.request.model.b.class, new ch());
+        afs.put(AdInfo.AdFeedInfo.class, new o());
+        afs.put(AdMatrixInfo.PushTKInfo.class, new gf());
+        afs.put(AdInfo.MaterialSize.class, new ev());
+        afs.put(HttpDnsInfo.IpInfo.class, new eh());
+        afs.put(AdMatrixInfo.CycleAggregateInfo.class, new cb());
+        afs.put(AdMatrixInfo.MatrixTemplate.class, new ex());
+        afs.put(AdStyleInfo.PlayDetailInfo.PatchAdInfo.class, new fr());
+        afs.put(TKAdLiveShopItemInfo.class, new hv());
+        afs.put(AdInfo.AdRewardInfo.class, new ac());
+        afs.put(AdStyleInfo.PlayDetailInfo.DrawAdInfo.class, new cn());
+        afs.put(AdInfo.AdAggregateInfo.class, new h());
+        afs.put(AdStyleInfo.PlayDetailInfo.DetailWebCardInfo.class, new cg());
+        afs.put(com.kwad.sdk.core.threads.e.class, new ic());
+        afs.put(AdStyleInfo.FeedAdInfo.class, new cx());
+        afs.put(AdInfo.AdMaterialInfo.class, new y());
+        afs.put(AdInfo.AdStyleConfInfo.class, new ag());
+        afs.put(AdMatrixInfo.InterstitialCardInfo.class, new ee());
+        afs.put(AdInfo.H5Config.class, new dp());
+        afs.put(AdMatrixInfo.MatrixTag.class, new ew());
+        afs.put(NativeAdExtraDataImpl.class, new fb());
+        afs.put(WebCloseStatus.class, new ir());
+        afs.put(AdInfo.DownloadSafeInfo.class, new ck());
+        afs.put(AdMatrixInfo.class, new z());
+        afs.put(AdInfo.SmallAppJumpInfo.class, new hd());
+        afs.put(AdMatrixInfo.SplashActionBarInfo.class, new hf());
+        afs.put(PageInfo.class, new fp());
+        afs.put(AdStyleInfo.ExtraDisplayInfo.class, new cv());
+        afs.put(SceneImpl.class, new gw());
+        afs.put(SDKInitMsg.class, new gt());
+        afs.put(TemplateConfig.class, new hy());
+        afs.put(URLPackage.class, new Cif());
+        afs.put(AdInfo.ComplianceInfo.class, new bo());
+        afs.put(StatusInfo.SplashStyleControl.class, new hq());
+        afs.put(AdInfo.NativeAdShakeInfo.class, new fe());
+        afs.put(AdMatrixInfo.RotateDegreeInfo.class, new gr());
+        afs.put(HybridLoadMsg.class, new dw());
+        afs.put(WebViewLoadMsg.class, new it());
+        afs.put(AdMatrixInfo.EndCardInfo.class, new cp());
+        afs.put(AdStatusInfo.class, new af());
+        afs.put(AdMatrixInfo.RewardWebTaskCloseInfo.class, new gp());
+        afs.put(StatusInfo.class, new hs());
+        afs.put(FeedSlideConf.class, new da());
+        afs.put(com.kwad.sdk.e.kwai.a.class, new fm());
+        afs.put(AdInfo.FullScreenVideoInfo.class, new dj());
+        afs.put(AdStyleInfo.PlayDetailInfo.WidgetAdInfo.class, new iu());
+        afs.put(AdInfo.AdPreloadInfo.class, new aa());
+        afs.put(AdInfo.UnDownloadConf.class, new ig());
+        afs.put(AdInfo.AdShowVideoH5Info.class, new ad());
+        afs.put(WebViewCommercialMsg.class, new is());
+        afs.put(AdInfo.AdBaseInfo.class, new i());
+        afs.put(com.kwad.sdk.core.request.model.f.class, new hw());
+        afs.put(AdInfo.AdSplashInfo.class, new ae());
+        afs.put(com.kwad.sdk.e.kwai.b.class, new fn());
+        afs.put(AdMatrixInfo.ActionBarInfoNew.class, new d());
+        afs.put(AdMatrixInfo.RotateInfo.class, new gs());
+        afs.put(AdStyleInfo.PlayEndInfo.AdWebCardInfo.class, new ak());
+        afs.put(AdStyleInfo.PlayDetailInfo.ActionBarInfo.class, new c());
+        afs.put(AdMatrixInfo.StyleInfo.class, new ht());
+        afs.put(AdStyleInfo.PlayDetailInfo.DetailTopToolBarInfo.class, new cf());
+        afs.put(AdInfo.NativeAdInfo.class, new fc());
+        afs.put(StatusInfo.SplashAdInfo.class, new hg());
+        afs.put(AdMatrixInfo.FullScreenInfo.class, new di());
+        afs.put(HttpDnsInfo.class, new dv());
+        afs.put(AdMatrixInfo.SplashInfo.class, new hj());
+        afs.put(AdStyleInfo.PlayEndInfo.class, new fx());
+        afs.put(AdMatrixInfo.MerchantLiveReservationInfo.LiveReservationPlayEndInfo.class, new ep());
+        afs.put(AdMatrixInfo.RewardVideoInteractInfo.class, new gn());
+        afs.put(AdStyleInfo.AdBrowseInfo.class, new k());
+        afs.put(AdTemplate.class, new ai());
+        wa();
+    }
+
+    public static com.kwad.sdk.core.d getHolder(Class<? extends com.kwad.sdk.core.response.kwai.a> cls) {
+        return afs.get(cls);
+    }
+
+    private static void wa() {
+        bp.wa();
+        bq.wa();
+        br.wa();
+        bs.wa();
+        bt.wa();
+        bu.wa();
+        bv.wa();
+        bw.wa();
+        dc.wa();
+        dd.wa();
+        de.wa();
+        df.wa();
+        dg.wa();
+        dh.wa();
+    }
+
+    public static Map<Class<? extends com.kwad.sdk.core.response.kwai.a>, com.kwad.sdk.core.d> wb() {
+        return afs;
+    }
+}

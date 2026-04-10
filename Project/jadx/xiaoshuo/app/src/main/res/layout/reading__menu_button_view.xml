@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.duokan.reader.ui.general.DkLabelView
+        android:id="@+id/reading__menu_button_view__button"
+        android:background="@drawable/reading__menu_button_view__selector"
+        android:paddingTop="5dp"
+        android:paddingBottom="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/reading__menu__text"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/reading__menu_button_view__split"/>
+</LinearLayout>

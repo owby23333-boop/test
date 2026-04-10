@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/drawable_primary_card_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/general__shared_dimen__20dp"
+    android:layout_marginBottom="@dimen/general__shared_dimen__16_67dp"
+    android:layout_marginHorizontal="@dimen/general__shared_dimen__15_33dp"/>

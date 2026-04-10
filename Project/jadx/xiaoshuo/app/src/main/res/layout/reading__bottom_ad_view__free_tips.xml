@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.reader.ui.view.FontTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/text_font_size_52"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:visibility="invisible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="海量小说，永久免费"/>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/general__day_night__ffffff_14ffffff"
+    android:paddingTop="@dimen/general__shared_dimen__13_33dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/general__shared_dimen__15_33dp"
+    android:paddingHorizontal="@dimen/general__shared_dimen__18_7dp">
+    <com.duokan.dkcategory.ui.primary.PrimaryCoverTagView
+        android:id="@+id/category__primary_group_cover_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/category__primary_group_cover_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        style="@style/PrimaryGroupCoverTag"/>
+    <com.duokan.dkcategory.ui.primary.PrimaryCoverTagView
+        android:id="@+id/category__primary_group_cover_2"
+        android:layout_marginStart="@dimen/general__shared_dimen__12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/category__primary_group_cover_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/category__primary_group_cover_1"
+        app:layout_constraintTop_toTopOf="@+id/category__primary_group_cover_1"
+        style="@style/PrimaryGroupCoverTag"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

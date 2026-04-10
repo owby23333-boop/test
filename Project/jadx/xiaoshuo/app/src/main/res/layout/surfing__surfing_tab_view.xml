@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.reader.ui.general.DkLabelView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="16sp"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:singleLine="true"
+    android:layout_weight="1"/>

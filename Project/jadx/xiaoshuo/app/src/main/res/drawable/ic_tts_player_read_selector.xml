@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <layer-list>
+            <item
+                android:height="@dimen/view_dimen_84"
+                android:width="@dimen/view_dimen_84"
+                android:drawable="@drawable/ic_tts_player_read"/>
+        </layer-list>
+    </item>
+    <item android:state_pressed="true">
+        <layer-list>
+            <item
+                android:height="@dimen/view_dimen_84"
+                android:width="@dimen/view_dimen_84"
+                android:drawable="@drawable/ic_tts_player_read_pressed"/>
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/general__day_night__welcome_privacy_guide_view__content_bg"/>
+    <padding
+        android:left="28.33dp"
+        android:top="21.67dp"
+        android:right="23.67dp"
+        android:bottom="23.33dp"/>
+    <corners
+        android:topLeftRadius="22dp"
+        android:topRightRadius="22dp"
+        android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="0dp"/>
+</shape>

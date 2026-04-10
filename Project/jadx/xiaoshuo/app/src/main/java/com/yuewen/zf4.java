@@ -1,0 +1,6 @@
+package com.yuewen;
+
+/* JADX INFO: loaded from: classes15.dex */
+public interface zf4 extends w01 {
+    String getPageName();
+}

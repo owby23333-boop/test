@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/text_font_size_30"
+    android:textColor="#49799a"
+    android:gravity="center"
+    android:background="@drawable/store__feed_label_bg"
+    android:paddingTop="@dimen/view_dimen_8"
+    android:paddingBottom="@dimen/view_dimen_8"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:includeFontPadding="false"
+    android:paddingStart="@dimen/view_dimen_24"
+    android:paddingEnd="@dimen/view_dimen_24"/>

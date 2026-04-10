@@ -1,0 +1,40 @@
+package com.duokan.ad.video;
+
+import android.content.Context;
+import com.alibaba.android.arouter.facade.annotation.Route;
+import com.duokan.adbridge.service.IVideoAdServiceProvider;
+import com.yuewen.fc4;
+import com.yuewen.fi1;
+import com.yuewen.m7;
+import com.yuewen.q7;
+import com.yuewen.z1;
+import java.lang.ref.WeakReference;
+
+/* JADX INFO: loaded from: classes11.dex */
+@Route(path = m7.d)
+public class VideoAdServiceProviderImpl extends z1 implements IVideoAdServiceProvider {
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public final String f2446b = "VideoServiceProviderImpl";
+
+    @Override // com.duokan.adbridge.service.IAdServiceProvider
+    public fi1 X2(q7.a aVar) {
+        Context context = this.f20668a.get();
+        if (context == null) {
+            return null;
+        }
+        return new fc4(context, aVar);
+    }
+
+    @Override // com.alibaba.android.arouter.facade.template.IProvider
+    public void init(Context context) {
+        if (context != null) {
+            this.f20668a = new WeakReference<>(context);
+        }
+    }
+
+    @Override // com.duokan.adbridge.service.IAdServiceProvider
+    public boolean isInitSuccess() {
+        return true;
+    }
+}

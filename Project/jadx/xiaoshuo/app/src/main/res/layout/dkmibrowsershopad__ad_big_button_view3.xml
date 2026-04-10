@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dkmibrowsershopad__ad_view_big_button_area"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/view_dimen_60">
+    <com.duokan.core.ui.BoxView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="31.33dp"
+        android:maxWidth="262dp">
+        <com.duokan.reader.ui.general.RoundFrameLayout
+            android:background="@drawable/general__shared__rounded_button_grey_626262"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="@dimen/view_dimen_40"
+                android:textColor="@color/dkcommon__ffffff"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/dkmibrowsershopad__ad_view_big_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/dkmibrowsershopad__ad_view_big_button_light"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/reading__light_editors"
+                android:scaleType="centerCrop"
+                android:alpha="0.5"/>
+        </com.duokan.reader.ui.general.RoundFrameLayout>
+    </com.duokan.core.ui.BoxView>
+</FrameLayout>

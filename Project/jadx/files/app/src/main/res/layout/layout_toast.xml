@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_toast"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/toast_normal_icon"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:textSize="14dp"
+            android:textColor="@color/text_66"
+            android:gravity="center"
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:layout_alignTop="@+id/iv_icon"
+            android:layout_alignBottom="@+id/iv_icon"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

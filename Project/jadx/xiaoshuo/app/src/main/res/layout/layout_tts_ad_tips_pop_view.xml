@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/text_font_size_36"
+    android:textColor="@color/white_80_transparent"
+    android:background="@drawable/reading_tts_ad_pop_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/reading__tts_ad_tips_pop"
+    android:paddingHorizontal="@dimen/view_dimen_36"
+    android:paddingVertical="@dimen/view_dimen_36"/>

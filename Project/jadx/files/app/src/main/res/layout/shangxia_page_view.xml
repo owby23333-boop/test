@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.amgcyo.cuttadon.view.otherview.DarkFrameLayout
+        android:id="@+id/sx_ad_page_content"
+        android:background="@color/translucent"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include layout="@layout/left_right_page_view"/>
+</LinearLayout>

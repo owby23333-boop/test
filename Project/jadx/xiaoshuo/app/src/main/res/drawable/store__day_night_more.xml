@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="100dp"
+    android:width="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <path
+        android:fillColor="@color/store_rank_selected__day_night__CC000000_CCFFFFFF"
+        android:pathData="M100,32C100,30.34 98.66,29 97,29H59C57.34,29 56,30.34 56,32C56,33.66 57.34,35 59,35H97C98.66,35 100,33.66 100,32ZM100,50C100,48.34 98.66,47 97,47H59C57.34,47 56,48.34 56,50C56,51.66 57.34,53 59,53H97C98.66,53 100,51.66 100,50ZM97,65C98.66,65 100,66.34 100,68C100,69.66 98.66,71 97,71H59C57.34,71 56,69.66 56,68C56,66.34 57.34,65 59,65H97Z"
+        android:fillType="evenOdd"/>
+</vector>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.duokan.reader.ui.general.RoundImageView
+            android:id="@+id/store__feed_book_common_cover"
+            android:layout_width="@dimen/view_dimen_180"
+            android:layout_height="@dimen/view_dimen_260"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:radius="@dimen/view_dimen_12"
+            app:strokeWidth="@dimen/view_dimen_1"/>
+        <TextView
+            android:textColor="#e6333333"
+            android:ellipsize="end"
+            android:id="@+id/store__feed_book_common_title"
+            android:layout_width="@dimen/view_dimen_180"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:text="极品上门女婿"
+            android:maxLines="2"/>
+        <TextView
+            android:textSize="13sp"
+            android:textColor="@color/general__day_night__000000_40"
+            android:id="@+id/store__feed_book_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_add_book"
+            android:layout_marginTop="4dp"
+            style="@style/reading__recommend_add_bookshelf_text"/>
+    </LinearLayout>
+</FrameLayout>

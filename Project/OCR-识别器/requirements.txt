@@ -1,0 +1,21 @@
+# OCR 识别器依赖
+
+# OCR 核心库
+pytesseract>=0.3.10
+easyocr>=1.7.0
+
+# 图像处理
+opencv-python>=4.8.0
+Pillow>=9.0.0
+
+# 深度学习
+torch>=2.0.0
+numpy>=1.21.0
+scipy>=1.7.0
+
+# 工具库
+python-dotenv>=0.19.0
+tqdm>=4.65.0
+
+# 可选：GPU 支持
+# cuda-toolkit>=11.0  # 如果需要安装 CUDA

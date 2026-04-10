@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.core.ui.LinearScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/general__day_night__ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/bookshelf__sign_in_status_view__info_layout"
+        android:background="@color/general__day_night__fff4eb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.duokan.reader.ui.general.PageHeaderView
+            android:id="@+id/bookshelf__sign_in_status_view__header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:id="@+id/bookshelf__sign_in_status_view__sign_in_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+    <FrameLayout
+        android:orientation="vertical"
+        android:id="@+id/bookshelf__sign_in_status_view__task_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</com.duokan.core.ui.LinearScrollView>

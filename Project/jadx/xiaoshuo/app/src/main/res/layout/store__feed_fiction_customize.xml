@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/view_dimen_50"
+    style="@style/store__shared__item_parent">
+    <ImageView
+        android:id="@+id/store__feed_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_dimen_216"/>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:layout_width="@dimen/view_dimen_144"
+        android:layout_height="@dimen/view_dimen_144"
+        android:src="@drawable/store__feed__customize_book"
+        android:scaleType="centerInside"
+        android:layout_marginStart="@dimen/view_dimen_40"/>
+    <ImageView
+        android:layout_gravity="end|center_vertical"
+        android:layout_width="@dimen/view_dimen_50"
+        android:layout_height="@dimen/view_dimen_50"
+        android:src="@drawable/store__feed__customize_arrow"
+        android:scaleType="centerInside"
+        android:layout_marginEnd="@dimen/view_dimen_70"/>
+</FrameLayout>

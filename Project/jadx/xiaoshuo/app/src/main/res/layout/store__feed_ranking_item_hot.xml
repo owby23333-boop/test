@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:baselineAligned="true"
+    android:layout_below="@+id/store__feed_book_common_detail"
+    android:layout_marginStart="@dimen/store__share__interval_40"
+    android:layout_toEndOf="@+id/store__feed_book_cover_card">
+    <TextView
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="@color/general__shared__ff3900"
+        android:id="@+id/store__feed_ranking_item__top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOP"
+        android:singleLine="true"/>
+    <TextView
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/general__shared__ff3900"
+        android:id="@+id/store__feed_ranking_item__index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginStart="3dp"/>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/store__feed__card_bottom_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_dimen_947">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/view_dimen_39"
+        android:textStyle="bold"
+        android:textColor="@color/general__day_night__66000000_66ffffff"
+        android:id="@+id/tv_error_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reading_loading_error"
+        app:layout_constraintBottom_toTopOf="@+id/bt_error_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+    <TextView
+        android:textSize="@dimen/view_dimen_42"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/bt_error_button"
+        android:background="@drawable/shape_corner_60_solid_ff7433"
+        android:layout_width="@dimen/view_dimen_240"
+        android:layout_height="@dimen/view_dimen_100"
+        android:layout_marginTop="@dimen/view_dimen_36"
+        android:text="@string/reading_retry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_error_title"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

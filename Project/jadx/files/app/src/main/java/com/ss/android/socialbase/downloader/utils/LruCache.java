@@ -1,0 +1,32 @@
+package com.ss.android.socialbase.downloader.utils;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+/* JADX INFO: loaded from: classes3.dex */
+public class LruCache<K, T> extends LinkedHashMap<K, T> {
+    private static final int DEFAULT_SIZE = 4;
+    private int mMaxSize;
+
+    public LruCache() {
+        this(4, 4);
+    }
+
+    @Override // java.util.LinkedHashMap
+    protected boolean removeEldestEntry(Map.Entry<K, T> entry) {
+        return size() > this.mMaxSize;
+    }
+
+    public void setMaxSize(int i2) {
+        this.mMaxSize = i2;
+    }
+
+    public LruCache(int i2, int i3) {
+        this(i2, i3, true);
+    }
+
+    public LruCache(int i2, int i3, boolean z2) {
+        super(i2, 0.75f, z2);
+        setMaxSize(i3);
+    }
+}

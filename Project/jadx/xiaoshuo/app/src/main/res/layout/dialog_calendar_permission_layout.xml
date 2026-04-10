@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_sign_in_permission"
+    android:paddingTop="@dimen/view_dimen_48"
+    android:paddingBottom="@dimen/view_dimen_44"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/view_dimen_273"
+    android:paddingEnd="@dimen/view_dimen_60">
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/view_dimen_66"
+        android:layout_height="@dimen/view_dimen_66"
+        android:src="@drawable/dk_icon"
+        android:layout_marginStart="@dimen/view_dimen_43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textSize="@dimen/view_dimen_44"
+        android:textStyle="bold"
+        android:textColor="@color/general__day_night__000000_E6000000"
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/permission_explain"
+        android:layout_marginStart="@dimen/view_dimen_18"
+        app:layout_constraintStart_toEndOf="@+id/iv_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_icon"/>
+    <TextView
+        android:textSize="@dimen/view_dimen_40"
+        android:textColor="@color/general__day_night__B3000000_B3FFFFFF"
+        android:id="@+id/dialog_content"
+        android:layout_width="@dimen/view_dimen_810"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_8"
+        android:text="@string/permission_explain_detail"
+        app:layout_constraintStart_toStartOf="@+id/dialog_title"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_title"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

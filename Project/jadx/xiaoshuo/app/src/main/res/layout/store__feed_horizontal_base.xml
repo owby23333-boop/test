@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/tab_ll"
+        android:background="@drawable/store__feed_base_bg"
+        android:padding="@dimen/view_dimen_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_dimen_110"
+        android:layout_marginStart="@dimen/view_dimen_46"
+        android:layout_marginEnd="@dimen/view_dimen_46"/>
+    <FrameLayout
+        android:id="@+id/tab_content_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

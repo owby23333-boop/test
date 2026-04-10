@@ -1,0 +1,2262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="804200000"
+    android:versionName="8.4.20"
+    android:compileSdkVersion="35"
+    android:compileSdkVersionCodename="15"
+    package="com.duokan.reader"
+    platformBuildVersionCode="35"
+    platformBuildVersionName="15">
+    <uses-sdk
+        android:minSdkVersion="28"
+        android:targetSdkVersion="35"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE"/>
+        </intent>
+        <package android:name="com.ss.android.ugc.aweme"/>
+        <package android:name="com.ss.android.ugc.aweme.lite"/>
+        <package android:name="com.smile.gifmaker"/>
+        <package android:name="com.kuaishou.nebula"/>
+        <package android:name="com.taobao.taobao"/>
+        <package android:name="com.ss.android.article.lite"/>
+        <package android:name="com.jingdong.app.mall"/>
+        <package android:name="com.wuba"/>
+        <package android:name="com.anjuke.android.app"/>
+        <package android:name="com.ganji.android.haoche_c"/>
+        <package android:name="com.tencent.qqlive"/>
+        <package android:name="com.xunmeng.pinduoduo"/>
+        <package android:name="com.ss.android.article.news"/>
+        <package android:name="com.tmall.wireless"/>
+        <package android:name="com.lianjia.beike"/>
+        <package android:name="com.tencent.news"/>
+        <package android:name="com.baidu.searchbox"/>
+        <package android:name="com.sohu.newsclient"/>
+        <package android:name="com.achievo.vipshop"/>
+        <package android:name="com.sohu.sohuvideo"/>
+        <package android:name="com.alibaba.wireless"/>
+        <package android:name="com.ss.android.article.video"/>
+        <package android:name="com.xingin.xhs"/>
+        <package android:name="com.sup.android.superb"/>
+        <package android:name="com.baidu.searchbox.lite"/>
+        <package android:name="com.job.android"/>
+        <package android:name="air.tv.douyu.android"/>
+        <package android:name="com.wawj.app.t"/>
+        <package android:name="com.mosheng"/>
+        <package android:name="com.shusheng.JoJoRead"/>
+        <package android:name="com.cubic.autohome"/>
+        <package android:name="com.sankuai.meituan"/>
+        <package android:name="com.to8to.housekeeper"/>
+        <package android:name="com.youku.phone"/>
+        <package android:name="com.sina.weibo"/>
+        <package android:name="com.wedobest.shudu"/>
+        <package android:name="com.f100.android"/>
+        <package android:name="com.kaola"/>
+        <package android:name="com.dianping.v1"/>
+        <package android:name="com.wuba.zhuanzhuan"/>
+        <package android:name="com.yiche.autoeasy"/>
+        <package android:name="com.ximalaya.ting.android"/>
+        <package android:name="com.immomo.momo"/>
+        <package android:name="com.p1.mobile.putong"/>
+        <package android:name="com.wedobest.xiangqi.mi"/>
+        <package android:name="com.guotai.dazhihui"/>
+        <package android:name="com.homelink.android"/>
+        <package android:name="tv.danmaku.bili"/>
+        <package android:name="com.duowan.kiwi"/>
+        <package android:name="com.xingjiabi.shengsheng"/>
+        <package android:name="com.duowan.mobile"/>
+        <package android:name="com.zf.wkxns.mi"/>
+        <package android:name="cn.TuHu.android"/>
+        <package android:name="com.eg.android.AlipayGphone"/>
+        <package android:name="com.wedobest.HD1010.one.mi"/>
+        <package android:name="com.taou.maimai"/>
+        <package android:name="cn.xiaochuankeji.zuiyouLite"/>
+        <package android:name="com.wedobest.puzzlebubble.one.mi"/>
+        <package android:name="com.wedobest.szhrd.mi"/>
+        <package android:name="com.moji.mjweather"/>
+        <package android:name="com.tencent.qqmusic"/>
+        <package android:name="com.sinyee.babybus.recommendapp"/>
+        <package android:name="com.jojoread.huiben"/>
+        <package android:name="me.ele"/>
+        <package android:name="com.renrenche.carapp"/>
+        <package android:name="com.sinyee.babybus.chants"/>
+        <package android:name="com.yuwan.tmshipin"/>
+        <package android:name="com.cbest.xszd.mi"/>
+        <package android:name="com.meelive.ingkee"/>
+        <package android:name="com.xplaygame.zdjz.mi"/>
+        <package android:name="com.qiyi.video"/>
+        <package android:name="com.pdragon.HD1010"/>
+        <package android:name="com.pdragon.new2048.mi"/>
+        <package android:name="com.cqwx.jdelsfk.mi"/>
+        <package android:name="com.ss.android.auto"/>
+        <package android:name="com.xplaygame.qicheren.mi"/>
+        <package android:name="com.jd.game.fruitsmasher.mi"/>
+        <package android:name="com.ganji.android"/>
+        <package android:name="com.zhaopin.social"/>
+        <package android:name="com.shizhuang.duapp"/>
+        <package android:name="com.huaxiaozhu.rider"/>
+        <package android:name="com.tuyoo.fish3d.mi"/>
+        <package android:name="com.flightmanager.view"/>
+        <package android:name="com.samoyed.credit"/>
+        <package android:name="com.sdu.didi.gsui"/>
+        <package android:name="com.qiyi.video.lite"/>
+        <package android:name="com.baidu.searchbox.tomas"/>
+        <package android:name="com.autonavi.minimap"/>
+        <package android:name="com.huanyou.haituan"/>
+        <package android:name="com.UCMobile"/>
+        <package android:name="com.yiche.price"/>
+        <package android:name="com.wuba.wbdaojia"/>
+        <package android:name="com.huanyou.fjxasn"/>
+        <package android:name="com.taobao.trip"/>
+        <package android:name="com.netease.newsreader.activity"/>
+        <package android:name="com.baidu.BaiduMap"/>
+        <package android:name="com.miui.video"/>
+        <package android:name="com.ss.android.ugc.live"/>
+        <package android:name="com.baidu.haokan"/>
+        <package android:name="cn.soulapp.android"/>
+        <package android:name="com.liulishuo.engzo"/>
+        <package android:name="com.xiaomi.youpin"/>
+        <package android:name="com.hzfy.ddzbs.mi"/>
+        <package android:name="com.tencent.map"/>
+        <package android:name="com.baidu.netdisk"/>
+        <package android:name="com.sankuai.meituan.takeoutnew"/>
+        <package android:name="com.ygkj.chelaile.standard"/>
+        <package android:name="com.ziroom.ziroomcustomer"/>
+        <package android:name="cn.etouch.ecalendar"/>
+        <package android:name="com.taobao.live"/>
+        <package android:name="cn.xiaochuankeji.tieba"/>
+        <package android:name="com.yiyou.ga"/>
+        <package android:name="com.dragon.read"/>
+        <package android:name="com.hexin.android.futures"/>
+        <package android:name="com.ingka.ikea.app.cn.prod"/>
+        <package android:name="com.kmxs.reader"/>
+        <package android:name="com.xs.fm"/>
+        <package android:name="com.pandadastudio.ninjamustdie3.mi"/>
+        <package android:name="com.gbits.atm.mi"/>
+        <package android:name="com.xiaomi.shop"/>
+        <package android:name="ctrip.android.view"/>
+        <package android:name="com.Qunar"/>
+        <package android:name="com.qidian.QDReader"/>
+        <package android:name="com.tianyancha.skyeye"/>
+        <package android:name="com.jd.jrapp"/>
+        <package android:name="com.fenqile.fenqile"/>
+        <package android:name="com.chif.weather"/>
+        <package android:name="com.aligames.sgzzlb.mi"/>
+        <package android:name="com.minitech.miniworld.TMobile.mi"/>
+        <package android:name="com.wuba.bangjob"/>
+        <package android:name="com.hunantv.imgo.activity"/>
+        <package android:name="com.kuaikan.comic"/>
+        <package android:name="com.shiyue.sszg.mi"/>
+        <package android:name="com.duxiaoman.wallet"/>
+        <package android:name="com.lingyue.zebraloan"/>
+        <package android:name="com.ccb.longjiLife"/>
+        <package android:name="com.zzol.mi"/>
+        <package android:name="com.eastmoney.android.berlin"/>
+        <package android:name="com.tongcheng.android"/>
+        <package android:name="com.quark.browser"/>
+        <package android:name="com.wepie.ivy"/>
+        <package android:name="com.dangdang.buy2"/>
+        <package android:name="com.hexin.plat.android"/>
+        <package android:name="com.rong360.app"/>
+        <package android:name="com.zgylsg.mi"/>
+        <package android:name="com.yangcong345.android.phone"/>
+        <package android:name="com.lietou.mishu"/>
+        <package android:name="com.netease.sky.mi"/>
+        <package android:name="com.zeekrlife.mobile"/>
+        <package android:name="com.leniu.jlsy.mi"/>
+        <package android:name="com.tuyoo.doudizhu.android3d.mi"/>
+        <package android:name="com.android.dazhihui"/>
+        <package android:name="com.yaoji.yjby.mi"/>
+        <package android:name="com.ss.android.homed"/>
+        <package android:name="com.bf.sgs.hdexp.mi"/>
+        <package android:name="com.guosen.android"/>
+        <package android:name="com.kiloo.subwaysurf"/>
+        <package android:name="com.cat.readall"/>
+        <package android:name="com.wepie.weplay"/>
+        <package android:name="com.netease.mrzh.mi"/>
+        <package android:name="com.wodan.xianshijian"/>
+        <package android:name="com.hpbr.bosszhipin"/>
+        <package android:name="com.tencent.tmgp.pubgmhd"/>
+        <package android:name="com.sankuai.meituan.dispatch.crowdsource"/>
+        <package android:name="com.arvato.sephora.app"/>
+        <package android:name="com.sy.dldlhsdj.mi"/>
+        <package android:name="com.zaxd.loan"/>
+        <package android:name="com.tgfml2.mi"/>
+        <package android:name="com.qka.qkagamemobile.fish.mi"/>
+        <package android:name="com.miHoYo.bh3.mi"/>
+        <package android:name="com.netease.moyi"/>
+        <package android:name="com.jingyao.easybike"/>
+        <package android:name="com.bairimeng.dmmdzz.mi"/>
+        <package android:name="com.zuoyebang.airclass"/>
+        <package android:name="com.project.yueyueproject"/>
+        <package android:name="com.youkushengshi.buyudaka.mi"/>
+        <package android:name="com.gf.client"/>
+        <package android:name="com.tal.abctimelibrary"/>
+        <package android:name="com.qihoo.loan"/>
+        <package android:name="com.youxiang.soyoungapp"/>
+        <package android:name="com.pingan.carowner"/>
+        <package android:name="com.netease.dwrg.mi"/>
+        <package android:name="com.hellobike.majia"/>
+        <package android:name="com.tencent.mtt"/>
+        <package android:name="com.moliao.rabbit"/>
+        <package android:name="com.zxscnew"/>
+        <package android:name="com.renrendai.haohuan"/>
+        <package android:name="com.manmanbuy.bijia"/>
+        <package android:name="com.huajiao"/>
+        <package android:name="com.zengame.ttmjdjb.mi"/>
+        <package android:name="com.gotokeep.keep"/>
+        <package android:name="com.joym.legendhero.mi"/>
+        <package android:name="com.baidu.input"/>
+        <package android:name="com.datalink.miyi"/>
+        <package android:name="com.qileyx.ddz.mi"/>
+        <package android:name="com.shangshanhu.bear"/>
+        <package android:name="com.tencent.mf.uam"/>
+        <package android:name="com.wsy.wansuiye.mi"/>
+        <package android:name="com.miHoYo.ys.mi"/>
+        <package android:name="com.netease.party.mi"/>
+        <package android:name="com.msxf.ayh"/>
+        <package android:name="com.imassbank.loan"/>
+        <package android:name="com.ophone.reader.ui"/>
+        <package android:name="com.papegames.nn4.mi"/>
+        <package android:name="com.tencent.jkchess"/>
+        <package android:name="com.ez08.compass"/>
+        <package android:name="com.pokemon.awakening.mi"/>
+        <package android:name="com.dustglobal.jianghu.mi"/>
+        <package android:name="com.netease.my.mi"/>
+        <package android:name="com.wedobest.cyjl.mi"/>
+        <package android:name="com.huwei.fox"/>
+        <package android:name="com.galaxy.stock"/>
+        <package android:name="cn.com.gf.android_store"/>
+        <package android:name="com.ld.ring"/>
+        <package android:name="com.anzhuojpzmg.ckhd.mi"/>
+        <package android:name="com.immomo.vchat"/>
+        <package android:name="com.netease.stzb.mi"/>
+        <package android:name="com.yoka.sgstenth.mi"/>
+        <package android:name="com.citicsf.finance"/>
+        <package android:name="com.lingxi.cupid"/>
+        <package android:name="me.yidui"/>
+        <package android:name="com.lphtsccft"/>
+        <package android:name="com.eastmoney.android.fund"/>
+        <package android:name="com.netease.pes.mi"/>
+        <package android:name="com.hermes.h1game.mi"/>
+        <package android:name="com.huitouche.android.app"/>
+        <package android:name="com.app.pinealgland"/>
+        <package android:name="com.netease.tom.mi"/>
+        <package android:name="com.jjs.android.butler"/>
+        <package android:name="com.suning.mobile.ebuy"/>
+        <package android:name="com.netease.mc.mi"/>
+        <package android:name="com.eastmoney.app.qhsjkh"/>
+        <package android:name="com.dofun.zhw.pro"/>
+        <package android:name="com.c2vl.kgamebox"/>
+        <package android:name="com.qijia.o2o"/>
+        <package android:name="com.tjbfx.union.mi"/>
+        <package android:name="com.netease.aceracer.mi"/>
+        <package android:name="com.xiwei.logistics.consignor"/>
+        <package android:name="com.tencent.tmgp.djsy"/>
+        <package android:name="com.luna.music"/>
+        <package android:name="com.yipiao"/>
+        <package android:name="com.tanwan.yscq.mi"/>
+        <package android:name="com.tencent.lolm"/>
+        <package android:name="com.kurogame.haru.mi"/>
+        <package android:name="com.hundsun.winner.pazq"/>
+        <package android:name="io.dcloud.H576E6CC7"/>
+        <package android:name="com.happyelements.AndroidAnimal"/>
+        <package android:name="cn.huohua.edustudent"/>
+        <package android:name="com.huaxiaozhu.driver"/>
+        <package android:name="com.yuantiku.tutor"/>
+        <package android:name="com.aligames.kuang.kybc.mi"/>
+        <package android:name="com.tencent.tmgp.cod"/>
+        <package android:name="com.baitian.aqcs.aqcssy.mi"/>
+        <package android:name="com.program.dept"/>
+        <package android:name="com.lanjing.yanyu.mi"/>
+        <package android:name="com.yanzhiyu.dahai"/>
+        <package android:name="com.youdao.course"/>
+        <package android:name="com.jiankecom.jiankemall"/>
+        <package android:name="com.hongen.app.word"/>
+        <package android:name="com.jzyx.dyqlb.mi"/>
+        <package android:name="cn.emoney.emstock"/>
+        <package android:name="com.dzqh.online11"/>
+        <package android:name="com.ppdai.loan"/>
+        <package android:name="com.tencent.KiHan"/>
+        <package android:name="com.cqzzdlq.mi"/>
+        <package android:name="com.aligames.star.sgzhxdl.mi"/>
+        <package android:name="com.zmxyol.union.mi"/>
+        <package android:name="com.tenbillionbyte.catenglish"/>
+        <package android:name="com.dp.android.elong"/>
+        <package android:name="w2a.app7881.com"/>
+        <package android:name="com.popcap.pvz2cthdxm"/>
+        <package android:name="com.baidu.wenku"/>
+        <package android:name="com.xiwei.logistics"/>
+        <package android:name="com.ea.simcitymobile.mi"/>
+        <package android:name="com.ycgame.smsy.mi"/>
+        <package android:name="com.netease.onmyoji.mi"/>
+        <package android:name="com.knight.union.mi"/>
+        <package android:name="com.android.icredit"/>
+        <package android:name="com.fenbi.android.zenglish"/>
+        <package android:name="com.zhongan.insurance"/>
+        <package android:name="com.lalamove.huolala.client"/>
+        <package android:name="cn.jj.log.mi"/>
+        <package android:name="com.mula.mall"/>
+        <package android:name="com.quanmai.findu"/>
+        <package android:name="com.ifreetalk.ftalk"/>
+        <package android:name="com.yyzy.mi"/>
+        <package android:name="com.yixianghua"/>
+        <package android:name="com.tencent.tmgp.speedmobile"/>
+        <package android:name="com.lalamove.huolala.driver"/>
+        <package android:name="io.dushu.fandengreader"/>
+        <package android:name="com.saylove.wenliao"/>
+        <package android:name="com.hnhuyu.nearfastgate"/>
+        <package android:name="com.aisenhdj.tdpark"/>
+        <package android:name="com.zy.miyue"/>
+        <package android:name="com.cloudpower.netsale.activity"/>
+        <package android:name="com.didapinche.booking"/>
+        <package android:name="com.taobao.idlefish"/>
+        <package android:name="com.bbk.zyq"/>
+        <package android:name="com.shouxiu.tcjy"/>
+        <package android:name="com.xs.fm.lite"/>
+        <package android:name="com.bee.weathesafety"/>
+        <package android:name="com.shuqu.banyan"/>
+        <package android:name="com.msxf.loan"/>
+        <package android:name="com.yyk.knowchat"/>
+        <package android:name="com.intsig.camscanner"/>
+        <package android:name="me.ele.crowdsource"/>
+        <package android:name="com.zhenbang.wockaihei"/>
+        <package android:name="com.clzq.ccgdyq"/>
+        <package android:name="com.bee.rain"/>
+        <package android:name="com.colorful.widget.theme"/>
+        <package android:name="com.clzq.msyqsa"/>
+        <package android:name="com.sdu.didi.psnger"/>
+        <package android:name="android.nhctsmx.klys"/>
+        <package android:name="com.ddang.ldd"/>
+        <package android:name="com.tskj.jibuq"/>
+        <package android:name="com.zenmen.palmchat"/>
+        <package android:name="com.liquid.poros"/>
+        <package android:name="com.cloudpower.netsale.activity"/>
+        <package android:name="com.taobao.idlefish"/>
+        <package android:name="com.shouxiu.tcjy"/>
+        <package android:name="com.sdu.didi.psnger"/>
+        <package android:name="com.chinatelecom.bestpayclient"/>
+        <package android:name="com.didapinche.booking"/>
+        <package android:name="com.qiyi.video.child"/>
+        <package android:name="com.wuba.huoyun"/>
+        <package android:name="com.youxiang.soyoungapp.mock"/>
+        <package android:name="com.lphtsccft.zlqqt2"/>
+        <package android:name="com.liquid.poros.pro"/>
+        <package android:name="com.app.pinealgland.teachers"/>
+        <package android:name="com.tencent.mm"/>
+        <package android:name="com.zhihu.android"/>
+        <package android:name="com.taobao.litetao"/>
+        <package android:name="com.fanli.android.apps"/>
+        <package android:name="com.cmbchina.ccd.pluto.cmbActivity"/>
+        <package android:name="com.xiaomi.market"/>
+        <package android:name="com.fzandroiduz.usbctsoptic.bp"/>
+        <package android:name="com.meituan.turbo"/>
+        <package android:name="com.tencent.karaoke"/>
+        <package android:name="com.ms.ailiao"/>
+        <package android:name="cn.goodjobs.client"/>
+        <package android:name="com.muhandroidlyf.rsuctsratio"/>
+        <package android:name="com.lxd.hcrqszl.mi"/>
+        <package android:name="com.og.ttddz.mi"/>
+        <package android:name="com.chinamworld.main"/>
+        <package android:name="cn.xiuying.photoeditor.free"/>
+        <package android:name="com.czb.chezhubang"/>
+        <package android:name="com.sina.news"/>
+        <package android:name="com.phonefangdajing.word"/>
+        <package android:name="cn.emoney.level2"/>
+        <package android:name="com.nipai"/>
+        <package android:name="cn.jingzhuan.stock"/>
+        <package android:name="com.lxd.zsqcmnt.mi"/>
+        <package android:name="com.bokecc.dance"/>
+        <package android:name="com.midea.ai.appliances"/>
+        <package android:name="com.gzsd.csyxjjjy.mi"/>
+        <package android:name="com.yxhjandroid.uhouzz"/>
+        <package android:name="com.tc.sgbqlzz.nearme.mi"/>
+        <package android:name="com.zf.wdlscs.mi"/>
+        <package android:name="com.ned.energybox"/>
+        <package android:name="com.shyz.toutiao"/>
+        <package android:name="com.qingxiu.photo.editor"/>
+        <package android:name="com.fy.qxds.net.mi"/>
+        <package android:name="com.zf.mhjlxd.mi"/>
+        <package android:name="com.wb.xqgs.mi"/>
+        <package android:name="com.nizabushangtianne.mi"/>
+        <package android:name="com.lxd.cjtkds.mi"/>
+        <package android:name="com.xunlei.downloadprovider"/>
+        <package android:name="com.wedobest.llk"/>
+        <package android:name="com.heygame.jzggapk.mi"/>
+        <package android:name="com.jy.bzfd.mi"/>
+        <package android:name="com.qiqi.game.wjshw.mi"/>
+        <package android:name="com.pupumall.customer"/>
+        <package android:name="com.yupao.gongdijigong"/>
+        <package android:name="com.tc.anjidebuwawa.nearme.mi"/>
+        <package android:name="com.fy.fcds.mi"/>
+        <package android:name="com.wondertek.paper"/>
+        <package android:name="com.pdragon.junqi.mi"/>
+        <package android:name="com.jingpinddz.cy.mi"/>
+        <package android:name="com.tc.tcsmsdzz.mi"/>
+        <package android:name="com.nirvana.ylmc"/>
+        <package android:name="com.sm.yjdkhdzd"/>
+        <package android:name="com.wali.live"/>
+        <package android:name="com.gzqs.mnxqphtwo.mi"/>
+        <package android:name="com.deer.LookforDeer"/>
+        <package android:name="com.pdragon.tetris"/>
+        <package android:name="com.jixiangyouxuanop.com"/>
+        <package android:name="com.dw.xydg.net.mi"/>
+        <package android:name="com.hzhu.m"/>
+        <package android:name="com.fy.jldzz.mi"/>
+        <package android:name="com.mili.zskfsjmn.mi"/>
+        <package android:name="com.gzcc.mgby.mi"/>
+        <package android:name="com.gzsd.hcrwztwo.mi"/>
+        <package android:name="com.wedobest.puzzlebo.mi"/>
+        <package android:name="com.yzy.jymnq.mi"/>
+        <package android:name="com.pdragon.shudu.three.mi"/>
+        <package android:name="com.t3go.passenger"/>
+        <package android:name="com.dw.xprqj.mi"/>
+        <package android:name="com.fy.kxcf.mi"/>
+        <package android:name="com.gzqs.mnxqhmtwo.mi"/>
+        <package android:name="com.renyouwangluo.csxdr.mi"/>
+        <package android:name="com.lokinfo.android.gamemarket.mmshow"/>
+        <package android:name="com.gzwd.xbfkcy.mi"/>
+        <package android:name="com.taprun.fruitfrenzyline.mi"/>
+        <package android:name="com.lywx.lyxq.mi"/>
+        <package android:name="com.szjp.kld.mi"/>
+        <package android:name="com.martian.iaatkdmm.mi"/>
+        <package android:name="com.bcxgame.lw.summondragons.app.mi"/>
+        <package android:name="com.wedobest.fivechess.mi"/>
+        <package android:name="com.dl.dsds.mi"/>
+        <package android:name="com.jy.mstyt.mi"/>
+        <package android:name="com.find.out.hidden.objects.mi"/>
+        <package android:name="com.duoduo.child.story"/>
+        <package android:name="com.xplaygame.xcqdzz.mi"/>
+        <package android:name="com.heygame.xcyy2.mi"/>
+        <package android:name="com.ms.tapethrower.mi"/>
+        <package android:name="com.bcxgame.lw.wlq.fkzqnd.app.mi"/>
+        <package android:name="com.cubic.choosecar"/>
+        <package android:name="com.kindle.zhuayumao"/>
+        <package android:name="com.qiqi.game.wdrswzz.mi"/>
+        <package android:name="com.adriver.fklsgy.mi"/>
+        <package android:name="com.cbest.zszdjy.mi"/>
+        <package android:name="com.flyee.shoumuren.mi"/>
+        <package android:name="com.qiqi.game.ncmnq.mi"/>
+        <package android:name="com.game.fsayrztx.mi"/>
+        <package android:name="com.shinyv.cnr"/>
+        <package android:name="com.gzjh.zjhcrjdzl.mi"/>
+        <package android:name="com.ld.yzqz.mi"/>
+        <package android:name="com.snp.lqwz.mi"/>
+        <package android:name="com.mili.jdbdzz.mi"/>
+        <package android:name="com.wonder.xscwjh.mi"/>
+        <package android:name="com.qiqi.game.zjmnq.mi"/>
+        <package android:name="com.xiaomi.rzgtyx.mi"/>
+        <package android:name="com.cqwx.tyt.mi"/>
+        <package android:name="com.fdfds.fujin"/>
+        <package android:name="com.cbest.jtchmnq.mi"/>
+        <package android:name="com.cqwx.qmzz.mi"/>
+        <package android:name="com.memuu.mechapvp.mi"/>
+        <package android:name="com.martian.jjrywz.mi"/>
+        <package android:name="com.shoulietanxianmoniqi.mi"/>
+        <package android:name="com.gzlxd.shscmn.mi"/>
+        <package android:name="com.mwkj.zgxqfyzz.mi"/>
+        <package android:name="com.dreamgame.fruitbubble.mi"/>
+        <package android:name="com.tc.mnqq.nearme.mi"/>
+        <package android:name="com.xplaygame.tkdzz.mi"/>
+        <package android:name="com.wonder.shmnq.mi"/>
+        <package android:name="com.zf.zdwxr.mi"/>
+        <package android:name="com.gzgx.fkyjjh.mi"/>
+        <package android:name="com.xplaygame.qmsc.mi"/>
+        <package android:name="com.gzjh.mnmhds.mi"/>
+        <package android:name="com.wonder.hxhcrer.mi"/>
+        <package android:name="com.lywx.lwzgxq.mi"/>
+        <package android:name="com.zf.htdj.mi"/>
+        <package android:name="com.sz.yiqilaichaita.mi"/>
+        <package android:name="com.martian.tkdmm2iaa.mi"/>
+        <package android:name="com.zf.wdszd.mi"/>
+        <package android:name="com.cszs.gcdzz.mi"/>
+        <package android:name="com.xplaygame.nhxydb.mi"/>
+        <package android:name="com.wonder.hxhcr.mi"/>
+        <package android:name="com.cbest.hxjjqw.mi"/>
+        <package android:name="com.martian.iaassmnq.mi"/>
+        <package android:name="com.fy.zdxs.mi"/>
+        <package android:name="com.fy.tkdld.mi"/>
+        <package android:name="com.adriver.mnxqdzz.mi"/>
+        <package android:name="com.dartou.dtddz.mi"/>
+        <package android:name="com.quyou.turnintopeekaboo.mi"/>
+        <package android:name="com.dw.zynq.mi"/>
+        <package android:name="com.lxd.xbapk.mi"/>
+        <package android:name="com.adriver.mnyzdbz.mi"/>
+        <package android:name="com.cbest.qmpyjpfc.mi"/>
+        <package android:name="com.xplaygame.ppjymnq.mi"/>
+        <package android:name="com.martian.iaabfzz.mi"/>
+        <package android:name="com.qmhd.game.jjyl.mi"/>
+        <package android:name="com.martian.iaakljjmnsj.mi"/>
+        <package android:name="com.ymtx.elsdj.mi"/>
+        <package android:name="com.yzxx.btts.mi"/>
+        <package android:name="com.xplaygame.wxmdwmrj.mi"/>
+        <package android:name="com.qiqi.game.dmmtwo.mi"/>
+        <package android:name="com.chot.tpfy3d.mi"/>
+        <package android:name="com.melestudio.onetfruit.mi"/>
+        <package android:name="com.ph.mnhdqs.mi"/>
+        <package android:name="com.emay.cwyd.mi"/>
+        <package android:name="com.dw.jlds.mi"/>
+        <package android:name="com.cbest.fxjsmnq.mi"/>
+        <package android:name="com.game.gungod.mi"/>
+        <package android:name="com.wonder.fmsh.mi"/>
+        <package android:name="com.mampod.ergedd"/>
+        <package android:name="com.game.autobots.mi"/>
+        <package android:name="com.wonder.zqxb.mi"/>
+        <package android:name="com.ph.czndox.mi"/>
+        <package android:name="com.zhuoqu.eluosifangkuaixiaochu.mi"/>
+        <package android:name="com.yswx.kldzz.mi"/>
+        <package android:name="com.apicloud.A6999270760613"/>
+        <package android:name="com.adriver.ozhcmnq.mi"/>
+        <package android:name="com.gzcc.ermnyx.mi"/>
+        <package android:name="com.ywhy.zjxjy.mi"/>
+        <package android:name="com.fy.xdyqc.mi"/>
+        <package android:name="com.fy.kztgd.gs.mi"/>
+        <package android:name="com.lew.game.onet.mi"/>
+        <package android:name="com.bjyt.happyPiece.mi"/>
+        <package android:name="com.yingsoft.ksbao.Activity"/>
+        <package android:name="com.lew.game.jjkcg.mi"/>
+        <package android:name="com.gzjh.bbzcdzz.mi"/>
+        <package android:name="com.qmhd.wpqs.mi"/>
+        <package android:name="com.kn.jgfy.mi"/>
+        <package android:name="com.martian.iaadqwzn.mi"/>
+        <package android:name="com.dn.cpyr.hcdj.net.mi"/>
+        <package android:name="com.yt.qiuqiu.mi"/>
+        <package android:name="com.fy.jrxfd.mi"/>
+        <package android:name="com.ymtx.hgdxg.mi"/>
+        <package android:name="com.dfy.dstk.mi"/>
+        <package android:name="com.ks.wsjj.mi"/>
+        <package android:name="com.fy.mxrkp.mi"/>
+        <package android:name="com.xplaygame.zztsdnr2.mi"/>
+        <package android:name="com.cqwx.xxshsj.mi"/>
+        <package android:name="com.heygame.cnjydapk.mi"/>
+        <package android:name="com.cbest.xrdkzz.mi"/>
+        <package android:name="com.cszs.wnwzq.mi"/>
+        <package android:name="com.edu24ol.newclass"/>
+        <package android:name="com.cbest.csphdzz.mi"/>
+        <package android:name="com.qsybt.yswx.mi"/>
+        <package android:name="com.fengkuangpaotiao.mi"/>
+        <package android:name="com.fy.hbwq.mi"/>
+        <package android:name="com.zf.jldj.mi"/>
+        <package android:name="com.cbest.chjymnq.mi"/>
+        <package android:name="com.yswx.fkglsc.mi"/>
+        <package android:name="com.youlunjiashimoni.mi"/>
+        <package android:name="com.cbest.bztks.mi"/>
+        <package android:name="com.shilv.wouldyou"/>
+        <package android:name="com.gzsy.dycxy.mi"/>
+        <package android:name="test.sdk.market.xiaomi.com.testupdate3"/>
+        <package android:name="com.fy.qqkp.new.mi"/>
+        <package android:name="com.zf.ssjm.mi"/>
+        <package android:name="com.heygame.ctbtrapk.mi"/>
+        <package android:name="com.xt.cwsj.mi"/>
+        <package android:name="com.yxhd.cool.game.mi"/>
+        <package android:name="com.wonder.jywy.mi"/>
+        <package android:name="com.cssq.walker"/>
+        <package android:name="com.cbest.tjbsmnq.mi"/>
+        <package android:name="com.fy.jrls.mi"/>
+        <package android:name="com.kuaidiansheji.mi"/>
+        <package android:name="com.game.crazylabs.mi"/>
+        <package android:name="com.fnagzhenfeijijiashi.mi"/>
+        <package android:name="com.dw.wzsjkthk.gs.mi"/>
+        <package android:name="com.lyt.haizeijuanzou.mi"/>
+        <package android:name="com.gh.ppldr.net.mi"/>
+        <package android:name="com.dw.tyqs.net.mi"/>
+        <package android:name="com.zuiqiangsheshou.mi"/>
+        <package android:name="com.cqwx.bxgtryx3d.mi"/>
+        <package android:name="com.lew.game.fruitworld.mi"/>
+        <package android:name="com.fy.cjyxlm.mi"/>
+        <package android:name="com.xt.gsmstl.mi"/>
+        <package android:name="com.martian.ssdld.mi"/>
+        <package android:name="com.cbest.kblj.mi"/>
+        <package android:name="com.dw.wxpk.mi"/>
+        <package android:name="com.gzcc.sjhz.mi"/>
+        <package android:name="com.emay.catspa.mi"/>
+        <package android:name="com.ywhy.dsjxmt2.mi"/>
+        <package android:name="com.water.shengzi.mi"/>
+        <package android:name="com.yt.nanji.mi"/>
+        <package android:name="com.mwkj.yyjzgs.mi"/>
+        <package android:name="com.konglongdaoshengcun.mi"/>
+        <package android:name="com.girlscraftingz.girlings.blockworld.mi"/>
+        <package android:name="com.yzxx.jjsqjw.mi"/>
+        <package android:name="com.yly.hebfeiche.mi"/>
+        <package android:name="com.game.ghmnq.mi"/>
+        <package android:name="com.yzxx.yxmstx.mi"/>
+        <package android:name="com.baibianchaojiyingxiong.mi"/>
+        <package android:name="com.yzxx.xshyzc.mi"/>
+        <package android:name="com.tc.slbhrsr.nearme.mi"/>
+        <package android:name="com.ym.cspk.mi"/>
+        <package android:name="com.quyou.magic.mi"/>
+        <package android:name="com.cbest.fkzdy.mi"/>
+        <package android:name="com.cbest.zsjsmnq.mi"/>
+        <package android:name="com.sihai.feidaodazuozhanol.mi"/>
+        <package android:name="com.dw.jrccc.mi"/>
+        <package android:name="com.game.roast.mi"/>
+        <package android:name="com.xinjifeij.mi"/>
+        <package android:name="com.emay.tfxpr.mi"/>
+        <package android:name="com.ks.ldyy.mi"/>
+        <package android:name="com.zplay.popstarjdb.mi"/>
+        <package android:name="com.qiqi.game.kbdmm.mi"/>
+        <package android:name="com.cszs.fkmnq.mi"/>
+        <package android:name="com.yunbu.wuxiaomei.mi"/>
+        <package android:name="com.yzxx.wqzzmnsj.mi"/>
+        <package android:name="XuanShi.GFightMan.mi"/>
+        <package android:name="com.heygame.wzbddapk.mi"/>
+        <package android:name="com.cszs.zqdmx.mi"/>
+        <package android:name="com.kachejiashimoniqi.mi"/>
+        <package android:name="com.chot.xxgxcz.mi"/>
+        <package android:name="XuanShi.Dino.mi"/>
+        <package android:name="com.hshuochairenwangzhe.mi"/>
+        <package android:name="com.panshansaiche.mi"/>
+        <package android:name="com.yzxx.zdxsjjzc.mi"/>
+        <package android:name="com.yzxx.hgmxyj.mi"/>
+        <package android:name="com.fy.htfc.mi"/>
+        <package android:name="com.fy.rsds.net.mi"/>
+        <package android:name="com.ms.destinyrun.app.mi"/>
+        <package android:name="com.cszs.aycsmnq.mi"/>
+        <package android:name="com.jj.hcrdx.mi"/>
+        <package android:name="com.sxygame.xbadj.mi"/>
+        <package android:name="org.cocos2d.bingxue.mi"/>
+        <package android:name="com.ks.jjwbh.mi"/>
+        <package android:name="com.jixianyueyesaiche.mi"/>
+        <package android:name="com.martian.iaajxkdcpy.mi"/>
+        <package android:name="com.tc.xmelsfk.nearme.mi"/>
+        <package android:name="com.cszs.wncs.mi"/>
+        <package android:name="com.mili.wdtks.mi"/>
+        <package android:name="com.haidaohaiguaidazuozhan.mi"/>
+        <package android:name="com.tc.nzyd.nearme.mi"/>
+        <package android:name="com.shhq.glwzn.mi"/>
+        <package android:name="com.fy.kwdbj.mi"/>
+        <package android:name="com.hlcw.hcgtrsd.mi"/>
+        <package android:name="com.zf.cjyxdgz.mi"/>
+        <package android:name="com.mwkj.lsjmnq.mi"/>
+        <package android:name="com.dw.hcdpp.mi"/>
+        <package android:name="com.zy.game.klpx.mi"/>
+        <package android:name="com.lywx.gdnh.mi"/>
+        <package android:name="com.zy.game.thief.mi"/>
+        <package android:name="com.hhhgame.mdmxyx.mi"/>
+        <package android:name="com.fy.dbgwb.mi"/>
+        <package android:name="com.ph.wdzzsj.mi"/>
+        <package android:name="com.wonder.fcdld.mi"/>
+        <package android:name="com.ks.wyzhsl.mi"/>
+        <package android:name="com.gzjh.mhtqqtwo.mi"/>
+        <package android:name="com.heygame.cnjjbsapk.mi"/>
+        <package android:name="com.mxhd.mfzjqs.mi"/>
+        <package android:name="com.cszs.wnsc.mi"/>
+        <package android:name="com.jy.fcdmx.mi"/>
+        <package android:name="com.xplaygame.xuancaijiezou2.mi"/>
+        <package android:name="com.ms.castleraid.app.mi"/>
+        <package android:name="com.cqwx.hghcrsj.mi"/>
+        <package android:name="com.ms.dna.evolutionrunner.mi"/>
+        <package android:name="com.minixiaomaochengshi.mi"/>
+        <package android:name="com.martian.iaaxmkp.mi"/>
+        <package android:name="XuanShi.Shark.mi"/>
+        <package android:name="com.ht.kspdk.mi"/>
+        <package android:name="com.ks.jyzxs.mi"/>
+        <package android:name="com.xt.mylz.mi"/>
+        <package android:name="com.martian.iaacccs.mi"/>
+        <package android:name="com.xt.xxhj.mi"/>
+        <package android:name="com.ht.wdmhsj.mi"/>
+        <package android:name="com.mwkj.yjhcr.mi"/>
+        <package android:name="com.emay.zmjp.mi"/>
+        <package android:name="com.xt.zcdts.mi"/>
+        <package android:name="com.martian.mf2048.mi"/>
+        <package android:name="com.martian.iaarzqxds.mi"/>
+        <package android:name="com.dw.ttdezbj.mi"/>
+        <package android:name="com.meta.box"/>
+        <package android:name="com.jd.jdlite"/>
+        <package android:name="com.kugou.android"/>
+        <package android:name="com.bestv.app"/>
+        <package android:name="com.qnyx.jxtw.mi"/>
+        <package android:name="com.gome.eshopnew"/>
+        <package android:name="com.lywx.tttcs.zqxxx"/>
+        <package android:name="love.match.set"/>
+        <package android:name="cn.fprice.app"/>
+        <package android:name="com.fy.dmmdzz.mi"/>
+        <package android:name="com.liuweivvip.sje"/>
+        <package android:name="com.miui.knews"/>
+        <package android:name="com.gaizhuangdazuozhan.mi"/>
+        <package android:name="com.lew.game.lock.mi"/>
+        <package android:name="com.xiaoliequan.beago"/>
+        <package android:name="com.lechuan.mdxs"/>
+        <package android:name="com.martian.xyxdmx.mi"/>
+        <package android:name="com.yly.quannenglaosiji.mi"/>
+        <package android:name="com.ianleme"/>
+        <package android:name="com.meetyou.guailiao"/>
+        <package android:name="com.yzxx.qmssyj.mi"/>
+        <package android:name="com.togetyiqi.partjob"/>
+        <package android:name="com.yzxx.ljxtc.mi"/>
+        <package android:name="com.gzsd.hcrcjtj.mi"/>
+        <package android:name="com.gzsd.cjgdyx.mi"/>
+        <package android:name="com.fy.wdxd.mi"/>
+        <package android:name="com.lew.game.desserthouse.mi"/>
+        <package android:name="com.gzqs.dscjyxld.mi"/>
+        <package android:name="com.zy.game.psdc.mi"/>
+        <package android:name="com.pfu.xxxxl.mi"/>
+        <package android:name="com.dw.hzwzm.mi"/>
+        <package android:name="com.xd.mnccc.mi"/>
+        <package android:name="com.onepiece.wifiboers"/>
+        <package android:name="com.xt.sczl.mi"/>
+        <package android:name="com.fy.wdnc.mi"/>
+        <package android:name="com.ks.jybh.mi"/>
+        <package android:name="com.movexp.selfdress.mi"/>
+        <package android:name="com.gzqs.csjshx.mi"/>
+        <package android:name="uni.UNIEBAD67F"/>
+        <package android:name="com.ks.btrj.mi"/>
+        <package android:name="com.jd.game.babyfind.mi"/>
+        <package android:name="com.lanse.chinachess.mi"/>
+        <package android:name="com.ywhy.gzjc.mi"/>
+        <package android:name="com.xt.njscs.mi"/>
+        <package android:name="com.xplaygame.zztsdnr.mi"/>
+        <package android:name="com.hl.cjml.mi"/>
+        <package android:name="com.wonder.qmsnxb.mi"/>
+        <package android:name="com.fy.mlds.mi"/>
+        <package android:name="com.fy.aspt.mi"/>
+        <package android:name="com.sihai.lianxianlaile.mi"/>
+        <package android:name="com.yzg.shengun.mi"/>
+        <package android:name="com.xplaygame.xcxxx.mi"/>
+        <package android:name="com.slsmfx.union.mi"/>
+        <package android:name="com.kariqu.android.WoChiJiTeNiu.mi"/>
+        <package android:name="com.chuanqu.gameldwz.mi"/>
+        <package android:name="com.shilv.yueyuelite"/>
+        <package android:name="com.fy.rsds.mi"/>
+        <package android:name="com.bcxgame.lw.runningqueen.app.mi"/>
+        <package android:name="com.fy.mrzl.mi"/>
+        <package android:name="com.zip.rar.Puzzle.master.mi"/>
+        <package android:name="com.Antistress.wacky.jelly.mi"/>
+        <package android:name="com.clandroidxpe.pvctsspeed"/>
+        <package android:name="com.qiqi.game.jndnw.mi"/>
+        <package android:name="com.renyouwangluo.nbdj.mi"/>
+        <package android:name="com.suixinliao.app"/>
+        <package android:name="com.yzxx.xstksjdts.mi"/>
+        <package android:name="com.kn.jshnh.mi"/>
+        <package android:name="com.dw.dytxj.mi"/>
+        <package android:name="com.fy.czrs.mi"/>
+        <package android:name="com.dw.jgds.mi"/>
+        <package android:name="com.cqwx.bxzjyx2.mi"/>
+        <package android:name="com.fy.ylzz.net.mi"/>
+        <package android:name="com.ybgreate.wdyy.skcity.mi"/>
+        <package android:name="com.fy.yxxfd.mi"/>
+        <package android:name="com.fyhd.car.mi"/>
+        <package android:name="com.hanghaodazuzohan.mi"/>
+        <package android:name="com.ym.dwmxpd.mi"/>
+        <package android:name="com.Solar.Smash.Simulator.mi"/>
+        <package android:name="com.eding.wbtzz.mi"/>
+        <package android:name="com.water.courier.mi"/>
+        <package android:name="com.fyhd.spaceman.mi"/>
+        <package android:name="com.quyou.fightcrabs.mi"/>
+        <package android:name="com.fyhd.dog.mi"/>
+        <package android:name="com.ddchat.app"/>
+        <package android:name="com.miyang.kuaiyoudi"/>
+        <package android:name="com.hsbcfts.fintechapp"/>
+        <package android:name="com.cszs.mttjds.mi"/>
+        <package android:name="com.buluoshengcunzhanzheng.mi"/>
+        <package android:name="com.yzxx.cjxtc.mi"/>
+        <package android:name="com.gzcc.fmczsj.mi"/>
+        <package android:name="com.lxd.zjqq.mi"/>
+        <package android:name="com.wonder.zjhd.mi"/>
+        <package android:name="com.youliang.zdnkt.mi"/>
+        <package android:name="com.wonder.hcrmx.mi"/>
+        <package android:name="com.zf.zbdwb.mi"/>
+        <package android:name="com.uxqzd.qqllkyl.mi"/>
+        <package android:name="com.xingfudaziban.xfdzb"/>
+        <package android:name="com.zf.jqrdbs.mi"/>
+        <package android:name="com.yzxx.bttszhhtx.mi"/>
+        <package android:name="com.zf.kxlqq.mi"/>
+        <package android:name="com.wonder.hxjjhcr.mi"/>
+        <package android:name="com.tankecijidazhan.mi"/>
+        <package android:name="com.emay.mjrljh.mi"/>
+        <package android:name="com.cszs.bsdmmr.mi"/>
+        <package android:name="com.cszs.ghdw.mi"/>
+        <package android:name="com.zf.ssyj.mi"/>
+        <package android:name="com.gzcc.bsqpz.mi"/>
+        <package android:name="com.gzcc.mvaql.mi"/>
+        <package android:name="com.wonder.hxmtc.mi"/>
+        <package android:name="com.ld.hljp.mi"/>
+        <package android:name="com.tc.srmg.nearme.mi"/>
+        <package android:name="com.emay.ljrdts.mi"/>
+        <package android:name="com.fyhd.ants.mi"/>
+        <package android:name="com.gzjh.cqxxb.mi"/>
+        <package android:name="com.gzjh.qmgzsq.mi"/>
+        <package android:name="com.gzjh.qmpyp.mi"/>
+        <package android:name="com.heygame.lsxsapk.mi"/>
+        <package android:name="com.zf.dwmnq.mi"/>
+        <package android:name="com.mxhd.sbnjs.mi"/>
+        <package android:name="com.mxhd.dsdbg.mi"/>
+        <package android:name="com.mxhd.ddwzq.mi"/>
+        <package android:name="com.xt.fkys.mi"/>
+        <package android:name="com.mxhd.wncd.mi"/>
+        <package android:name="com.cszs.xcfm.mi"/>
+        <package android:name="com.xt.rzmmj.mi"/>
+        <package android:name="com.martian.iaatkcl.mi"/>
+        <package android:name="com.babytree.apps.pregnancy"/>
+        <package android:name="com.openlanguage.kaiyan"/>
+        <package android:name="cn.com.sina.finance"/>
+        <package android:name="com.ifeng.news2"/>
+        <package android:name="com.youdao.dict"/>
+        <package android:name="cn.kuwo.player"/>
+        <package android:name="com.smzdm.client.android"/>
+        <package android:name="com.tiange.miaolive"/>
+        <package android:name="com.elong.hotel.ui"/>
+        <package android:name="com.ks.kaishustory"/>
+        <package android:name="com.looktm.trademark"/>
+        <package android:name="com.gaotu100.superclass"/>
+        <package android:name="com.sinovatech.unicom.ui"/>
+        <package android:name="com.joygame.lerenfish.mi"/>
+        <package android:name="com.jd.game.popbear.mi"/>
+        <package android:name="com.yjs.android"/>
+        <package android:name="com.yaya.zone"/>
+        <package android:name="com.knew.feed"/>
+        <package android:name="com.yaoji.yaojibuyu.mi"/>
+        <package android:name="com.wb.elsfkx.mi"/>
+        <package android:name="com.kugou.viper"/>
+        <package android:name="com.mszmapp.detective"/>
+        <package android:name="com.jfjinye.jfjinye"/>
+        <package android:name="com.jd.game.mazedaren.mi"/>
+        <package android:name="com.tencent.portfolio"/>
+        <package android:name="com.lew.game.danceball.mi"/>
+        <package android:name="com.yueyou.adreader"/>
+        <package android:name="com.tencent.tmgp.WePop"/>
+        <package android:name="com.cynos.game.cfquickhidenew.mi"/>
+        <package android:name="com.xiaomi.gamecenter"/>
+        <package android:name="com.tencent.qqpimsecure"/>
+        <package android:name="com.jd.pingou"/>
+        <package android:name="com.xinhu.steward"/>
+        <package android:name="com.jym.mall"/>
+        <package android:name="com.e8game.whyxmxhw.mi"/>
+        <package android:name="com.alibaba.android.rimet"/>
+        <package android:name="com.xunai.sleep"/>
+        <package android:name="com.yuwan.tmyh"/>
+        <package android:name="com.cctv.yangshipin.app.androidp"/>
+        <package android:name="com.taobao.shoppingstreets"/>
+        <package android:name="com.android.wlctstux.toctsvoltage"/>
+        <package android:name="com.mwkj.mjfy.mi"/>
+        <package android:name="android.bsctsdx.mojctshome"/>
+        <package android:name="com.ppcy.ppcyapp"/>
+        <package android:name="android.fcctstro.enctstech"/>
+        <package android:name="com.android.hsctsbl.ywvctsccl"/>
+        <package android:name="com.cdfml.mi"/>
+        <package android:name="android.zlnctsnmy.kltctsalloy"/>
+        <package android:name="com.szdl.lfwl.complex.mi"/>
+        <package android:name="com.android.nctsoew.xvdctshome"/>
+        <package android:name="com.ex.kyysr.mi"/>
+        <package android:name="com.lywx.wzqgs.mi"/>
+        <package android:name="android.dsctsphv.clctsspeed"/>
+        <package android:name="yylsk.cxtqt.dosuxandroidmm.lctskkml"/>
+        <package android:name="qjjp.lda.weqandroidll.dactsq"/>
+        <package android:name="yali.koqp.xmldandroidgc.yxctsd"/>
+        <package android:name="llisp.jstqt.ttsopandroidls.mctstops"/>
+        <package android:name="netsls.jywnl.ossgandroidbd.qlsctsf"/>
+        <package android:name="bdgo.xals.ossdandroidcc.bdctsf"/>
+        <package android:name="tosda.xyjb.mmomandroidss.qctsgsm"/>
+        <package android:name="com.martian.ttbookhd"/>
+        <package android:name="com.yaoqi.shiyuweather"/>
+        <package android:name="com.android.kctsdfy.mibctssquare"/>
+        <package android:name="jarqts.hdwnl.kknetandroiduusa.actsluvass"/>
+        <package android:name="com.chongwuyangchengriji.mi"/>
+        <package android:name="com.netease.g67.mi"/>
+        <package android:name="com.android.lctspau.zictsalgebra"/>
+        <package android:name="com.wonder.wdgg.mi"/>
+        <package android:name="com.sqw.jwdzg.mi"/>
+        <package android:name="com.zf.myds.mi"/>
+        <package android:name="com.hcrzz.sticknmanfaight.Simulator.mi"/>
+        <package android:name="com.shucha.find"/>
+        <package android:name="com.cmcc.cmvideo"/>
+        <package android:name="com.netease.l10.mi"/>
+        <package android:name="com.yorcard.youxin"/>
+        <package android:name="com.onecent.qa.mimind"/>
+        <package android:name="com.woobest.sgwg.mi"/>
+        <package android:name="com.ntyy.scan.phone"/>
+        <package android:name="com.lfhy.yqxxq.mi"/>
+        <package android:name="com.tjgy.yingjijk"/>
+        <package android:name="com.ntyy.camera.anycolor"/>
+        <package android:name="com.monihuangyezhanchang.mi"/>
+        <package android:name="com.shanggufs.ghj.langfan.mi"/>
+        <package android:name="com.qy.bingxuewangzuo.mi"/>
+        <package android:name="com.cszs.ckdq.mi"/>
+        <package android:name="com.hlcw.bztntfksh.mi"/>
+        <package android:name="com.zm.yrts"/>
+        <package android:name="com.tianqi2345"/>
+        <package android:name="com.sdjuliang.lanrenjob"/>
+        <package android:name="com.ykydzygjrj.dzb"/>
+        <package android:name="com.lwby.breader.ad"/>
+        <package android:name="com.martian.iaajyxd.mi"/>
+        <package android:name="com.quyue.android"/>
+        <package android:name="com.jytvik.chat"/>
+        <package android:name="com.junhai.yzjq.mi"/>
+        <package android:name="com.yttxsy.langfanyx.zxc.mi"/>
+        <package android:name="com.sy.myshzg.mi"/>
+        <package android:name="cn.emagsoftware.gamehall"/>
+        <package android:name="com.zf.mrjj.mi"/>
+        <package android:name="com.csphzmnq.mi"/>
+        <package android:name="com.baitian.aobi.czs.mi"/>
+        <package android:name="com.olg.olg"/>
+        <package android:name="com.fy.bzzbc.mi"/>
+        <package android:name="com.bxydzsrj.dzb"/>
+        <package android:name="com.martian.iaamxmgc.mi"/>
+        <package android:name="com.moliao.main"/>
+        <package android:name="com.qiqi.game.zgbql.mi"/>
+        <package android:name="com.sankuai.youxuan"/>
+        <package android:name="com.cczh.gjs"/>
+        <package android:name="com.bilibili.comic"/>
+        <package android:name="com.bikann.mfxssk"/>
+        <package android:name="com.sports.douqiu"/>
+        <package android:name="com.yaoqi.zhiyuweather"/>
+        <package android:name="com.qiqi.game.lbmnq.mi"/>
+        <package android:name="com.hzins.mobile"/>
+        <package android:name="com.dq03.app"/>
+        <package android:name="com.ntyy.camera.coldplay"/>
+        <package android:name="com.pb.srjys.mi"/>
+        <package android:name="yyops.lyqx.goleandroidosg.qpsctslt"/>
+        <package android:name="com.xiaoying.cardloan"/>
+        <package android:name="top.airmart.mall"/>
+        <package android:name="com.tencent.tmgp.huojieyou.yujianxy.mi"/>
+        <package android:name="com.bikann.dzsk"/>
+        <package android:name="com.soft.blued"/>
+        <package android:name="com.nowcoder.app.florida"/>
+        <package android:name="com.qiqi.sns"/>
+        <package android:name="com.linkedin.android.injobs"/>
+        <package android:name="com.fy.sjmdbky.mi"/>
+        <package android:name="com.monichengshiqiangzhan.mi"/>
+        <package android:name="net.haozaixian"/>
+        <package android:name="com.chaojipaochejiashi.mi"/>
+        <package android:name="com.game.fmshyx.mi"/>
+        <package android:name="com.sohu.sohuhy"/>
+        <package android:name="com.jrjr.jrchina"/>
+        <package android:name="com.zf.xxzhg.mi"/>
+        <package android:name="com.netease.dhxy.mi"/>
+        <package android:name="com.xjh.qsct"/>
+        <package android:name="com.theone.aipeilian"/>
+        <package android:name="com.zm.game.kxnjy"/>
+        <package android:name="com.wisdom.lion"/>
+        <package android:name="com.jinsheng.jinsheng"/>
+        <package android:name="com.emay.mcwwj.mi"/>
+        <package android:name="com.kugou.fanxing"/>
+        <package android:name="com.tiaozhandaheji.mi"/>
+        <package android:name="com.jiayuan"/>
+        <package android:name="com.jc.mgss.mi"/>
+        <package android:name="com.mengmi.majiang.mi"/>
+        <package android:name="com.ntyy.scan.supers"/>
+        <package android:name="com.shaheshijieqiusheng.mi"/>
+        <package android:name="com.zf.gjds.mi"/>
+        <package android:name="com.qiqi.game.snwy.mi"/>
+        <package android:name="com.bianyizudazhan.mi"/>
+        <package android:name="com.tencent.weread"/>
+        <package android:name="com.cdel.medmobile"/>
+        <package android:name="com.shuhekeji"/>
+        <package android:name="com.xplaygame.xuancaijiezousand.mi"/>
+        <package android:name="com.cnss.ocking"/>
+        <package android:name="com.piaoliushengcunmaoxian.mi"/>
+        <package android:name="com.zhiqin.qsb"/>
+        <package android:name="com.qianniu.dingwei"/>
+        <package android:name="com.ssports.mobile.video"/>
+        <package android:name="com.shhq.kghgd.mi"/>
+        <package android:name="com.meitu.wink"/>
+        <package android:name="com.dw.wzsjkthk.new.mi"/>
+        <package android:name="com.berries.echat"/>
+        <package android:name="com.xiangsuchengshi.mi"/>
+        <package android:name="cn.com.gjzq.yjb2"/>
+        <package android:name="com.aplum.androidapp"/>
+        <package android:name="com.laidian.xiu"/>
+        <package android:name="com.tuyoo.ninestudio.ej.mi"/>
+        <package android:name="com.csxx.walker"/>
+        <package android:name="com.zhenai.android"/>
+        <package android:name="com.haimai.baletu"/>
+        <package android:name="me.czhd.venus"/>
+        <package android:name="com.gzjh.mmdsjj.mi"/>
+        <package android:name="com.codetime"/>
+        <package android:name="com.qsmy.walkmonkey"/>
+        <package android:name="com.sheshoujixunying.mi"/>
+        <package android:name="com.xm.freader"/>
+        <package android:name="com.shhq.ashnc.mi"/>
+        <package android:name="com.emay.wdxfd.mi"/>
+        <package android:name="com.klx.fkqc.mi"/>
+        <package android:name="com.jingsucijisaiche.mi"/>
+        <package android:name="com.youzu.xdmbj.mi"/>
+        <package android:name="com.yzy.jzhcr.mi"/>
+        <package android:name="com.baozoumotuo.mi"/>
+        <package android:name="com.martian.newzzxdtw.mi"/>
+        <package android:name="com.jd.game.singleonect.mi"/>
+        <package android:name="com.dw.jjbb.mi"/>
+        <package android:name="com.xiaomi.loan"/>
+        <package android:name="com.laowangtingche.mi"/>
+        <package android:name="com.game.tpssmnq.mi"/>
+        <package android:name="com.ccgi.mobile.frsjz.mi"/>
+        <package android:name="com.yqw.llfz.mi"/>
+        <package android:name="com.qichesijimoniqi.mi"/>
+        <package android:name="com.leniu.xlwy.mi"/>
+        <package android:name="com.xiaobaobeichongya.mi"/>
+        <package android:name="com.yxcps.trainning"/>
+        <package android:name="com.dianwanchengmoniqi.mi"/>
+        <package android:name="com.sy.xxyg.mi"/>
+        <package android:name="com.app.pinealgland.xinlizixun"/>
+        <package android:name="com.fungo.xmsport"/>
+        <package android:name="com.chuazhuang.mxhzs.mi"/>
+        <package android:name="com.jzsf.qiudai"/>
+        <package android:name="com.jsyc.driver"/>
+        <package android:name="com.ptg.mljt.mi"/>
+        <package android:name="com.eno.xyzq.page"/>
+        <package android:name="com.shuoqiu.app"/>
+        <package android:name="com.huayin.miyu"/>
+        <package android:name="com.xingmengyou.bsfksc.mi"/>
+        <package android:name="com.youzu.bs.mi"/>
+        <package android:name="tt.lt.tt"/>
+        <package android:name="com.hkydgj.dzb"/>
+        <package android:name="com.cpuzzlebo.pplxxl.mi"/>
+        <package android:name="de.robv.android.xposed.installer"/>
+        <package android:name="com.saurik.substrate"/>
+        <package android:name="com.xiaomi.account"/>
+        <package android:name="com.xiaomi.controlscreen.account"/>
+        <package android:name="com.tencent.mobileqq"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.xiaomi.smarthome"/>
+        <package android:name="com.miui.greenguard"/>
+        <package android:name="com.mi.health"/>
+        <package android:name="com.android.mms"/>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.camera.action.CROP"/>
+        </intent>
+        <intent>
+            <action android:name="*"/>
+            <data android:scheme="tbopen"/>
+        </intent>
+        <package android:name="com.eg.android.AlipayGphoneRC"/>
+        <package android:name="hk.alipay.wallet"/>
+        <package android:name="hk.alipay.walletRC"/>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="com.xiaomi.dist.intent.action.APP_HANDOFF"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="com.xiaomi.vip.permission.SERVICE"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29"/>
+    <uses-permission android:name="com.xiaomi.xmsf.permission.PAYMENT"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="com.xiaomi.market.sdk.UPDATE"/>
+    <uses-permission android:name="miui.permission.USE_INTERNAL_GENERAL_API"/>
+    <uses-permission android:name="com.miui.systemAdSolution.adSwitch.PROVIDER"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false"/>
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true"/>
+    <uses-permission android:name="com.miui.bugreport.permission.DUMP_CACHED_LOG"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <permission
+        android:name="com.duokan.reader.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.duokan.reader.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="com.duokan.reader.openadsdk.permission.TT_PANGOLIN"/>
+    <permission
+        android:name="com.duokan.reader.openadsdk.permission.TT_PANGOLIN"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.xiaomi.dist.permission.ACCESS_APP_HANDOFF"/>
+    <application
+        android:theme="@style/general__shared__app_theme"
+        android:label="@string/app__shared__shortcut_name"
+        android:icon="@drawable/logo"
+        android:name="com.duokan.reader.DkReaderPhone"
+        android:allowClearUserData="false"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:supportsRtl="false"
+        android:extractNativeLibs="true"
+        android:usesCleartextTraffic="true"
+        android:resizeableActivity="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true"
+        android:preserveLegacyExternalStorage="true">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"/>
+        <meta-data
+            android:name="cta_provision"
+            android:value="true"/>
+        <meta-data
+            android:name="cta_name"
+            android:value="boot_cta_name"/>
+        <meta-data
+            android:name="cta_purpose"
+            android:value="boot_cta_purpose"/>
+        <meta-data
+            android:name="cta_use_network"
+            android:value="true"/>
+        <meta-data
+            android:name="cta_user_agreement"
+            android:value="cta_user_agreement_url"/>
+        <meta-data
+            android:name="cta_privacy_policy"
+            android:value="cta_privacy_policy_url"/>
+        <meta-data
+            android:name="cta_user_agreement_offline"
+            android:value="cta_user_agreement_offline"/>
+        <meta-data
+            android:name="cta_privacy_policy_offline"
+            android:value="cta_privacy_policy_offline"/>
+        <meta-data
+            android:name="cta_version"
+            android:value="2024-04-29"/>
+        <meta-data
+            android:name="support_minors_mode"
+            android:value="1"/>
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait"/>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="4e45f361431fe3248f000490"/>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="@string/umeng_channel_name"/>
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="1020511"/>
+        <meta-data
+            android:name="DK_DIST_CHANNEL"
+            android:value="@string/dk_dist_channel"/>
+        <meta-data
+            android:name="STORE_INDEX"
+            android:value="0"/>
+        <meta-data
+            android:name="app_description_title"
+            android:resource="@string/remove__app_description_title"/>
+        <meta-data
+            android:name="app_description_content"
+            android:resource="@string/remove__app_description_content"/>
+        <meta-data
+            android:name="com.xiaomi.mirror.relay_version"
+            android:value="0"/>
+        <activity
+            android:theme="@style/general__shared__main_theme"
+            android:label="@string/general__shared__click_upload"
+            android:icon="@drawable/general___bookshelf_upload_file__logo"
+            android:name="com.duokan.reader.DkCloudActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+                <data android:pathPattern=".*\\.txt"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/pdf"/>
+                <data android:pathPattern=".*\\.pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/epub+zip"/>
+                <data android:pathPattern=".*\\.epub"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/general__shared__welcome_theme"
+            android:name="com.duokan.reader.DkReaderActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden"
+            android:windowBackground="@null">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DERECT_READ"/>
+                <data android:mimeType="text/plain"/>
+                <data android:pathPattern=".*\\.txt"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts"/>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DERECT_READ"/>
+                <data android:mimeType="application/pdf"/>
+                <data android:pathPattern=".*\\.pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DERECT_READ"/>
+                <data android:mimeType="application/epub+zip"/>
+                <data android:pathPattern=".*\\.epub"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+                <data android:pathPattern=".*\\.txt"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts"/>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/pdf"/>
+                <data android:pathPattern=".*\\.pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/epub+zip"/>
+                <data android:pathPattern=".*\\.epub"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="duokan-reader"
+                    android:host="personal"/>
+                <data
+                    android:scheme="duokan-reader"
+                    android:host="private"/>
+                <data
+                    android:scheme="duokan-reader"
+                    android:host="store"/>
+                <data
+                    android:scheme="duokan-reader"
+                    android:host="tts"/>
+                <data
+                    android:scheme="duokan-reader"
+                    android:host="store_free"/>
+                <data
+                    android:scheme="duokan-reader"
+                    android:host="market"/>
+                <data
+                    android:scheme="duokan-reader"
+                    android:host="bookshelf"/>
+                <data
+                    android:scheme="duokan-reader"
+                    android:host="reading"/>
+                <data
+                    android:scheme="duokan-reader"
+                    android:host="category"/>
+                <data
+                    android:scheme="duokan-reader"
+                    android:host="search"/>
+                <data
+                    android:scheme="duokan-reader"
+                    android:host="http"/>
+                <data
+                    android:scheme="duokan-reader"
+                    android:host="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="http"
+                    android:host="www.duokan.com"
+                    android:pathPattern="/m/book/.*"/>
+                <data
+                    android:scheme="http"
+                    android:host="www.duokan.com"
+                    android:pathPattern="/m/special/.*"/>
+                <data
+                    android:scheme="http"
+                    android:host="www.duokan.com"
+                    android:pathPattern="/m/u/coupon"/>
+                <data
+                    android:scheme="http"
+                    android:host="www.duokan.com"
+                    android:pathPattern="/subtle/event/.*"/>
+                <data
+                    android:scheme="http"
+                    android:host="www.duokan.com"
+                    android:pathPattern="/search/.*"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.duokan.com"
+                    android:pathPattern="/m/book/.*"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.duokan.com"
+                    android:pathPattern="/m/special/.*"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.duokan.com"
+                    android:pathPattern="/m/u/coupon"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.duokan.com"
+                    android:pathPattern="/subtle/event/.*"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.duokan.com"
+                    android:pathPattern="/search/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="mi.quicksearch.intent.action.RETRIEVE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/general__shared__main_theme"
+            android:name="com.duokan.reader.DkMainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.app.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.duokan.reader.wxapi.WXEntryActivity"
+            android:exported="true"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.duokan.reader.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"/>
+        <receiver
+            android:name="com.duokan.account.SystemAccountLogoutReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.LOGIN_ACCOUNTS_POST_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="com.sensorsdata.analytics.android.sdk.dialog.SchemeActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:configChanges="screenSize|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="sa0eb391a6"/>
+                <data android:scheme="sa692490a5"/>
+                <data android:scheme="sa0b03e140"/>
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.xiaomi.dist.handoff.sdk.HandoffClientService"
+            android:permission="com.xiaomi.dist.permission.ACCESS_HANDOFF_CLIENT"
+            android:exported="true">
+            <meta-data
+                android:name="com.xiaomi.dist.handoff.metadata.SECURITY_CONFIG"
+                android:resource="@xml/handoff_signature"/>
+            <intent-filter>
+                <action android:name="com.xiaomi.dist.intent.action.HANDOFF_CLIENT"/>
+            </intent-filter>
+            <meta-data
+                android:name="com.xiaomi.dist.handoff.metadata.SDK_VERSION"
+                android:value="15000006"/>
+        </service>
+        <activity android:name="com.duokan.dksearch.ui.SearchWebActivity"/>
+        <activity
+            android:name="com.duokan.dksearch.ui.SearchActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|density|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden"/>
+        <activity
+            android:name="com.mibi.sdk.channel.alipay.AlipayMiniProgramCallbackActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.duokan.detail.activity.DetailErrorReportActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.duokan.detail.activity.DetailIntroductionActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.duokan.detail.activity.RecommendFictionActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.duokan.detail.activity.StoreTabActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.duokan.reader.access.AccessWithBgActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.duokan.reader.ui.personal.PersonalizationManagerActivity"
+            android:screenOrientation="portrait"/>
+        <service
+            android:name="com.duokan.reader.domain.job.JobManagerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"/>
+        <service
+            android:name="com.duokan.reader.domain.job.WorkJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"/>
+        <service
+            android:name="com.duokan.reader.domain.job.JobTriggerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"/>
+        <meta-data
+            android:name="miui_push_app"
+            android:value=""/>
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="3"/>
+        <meta-data
+            android:name="com.miui.bugreport.LOG_DIR"
+            android:resource="@xml/log_path"/>
+        <meta-data
+            android:name="sync_data_to_system_service"
+            android:value="true"/>
+        <service
+            android:name="com.duokan.reader.domain.cloud.push.DkPushService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.xmsf.push.SCAN"/>
+            </intent-filter>
+        </service>
+        <receiver
+            android:name="com.duokan.reader.domain.cloud.push.DkPushMessageReceiver"
+            android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:theme="@style/general__shared__main_theme"
+            android:name="com.duokan.reader.WifiBookTransferActivity"
+            android:exported="true"
+            android:launchMode="standard"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden"
+            android:windowSoftInputMode="adjustNothing"> android:theme=&quot;@style/general__shared__main_theme&quot;&gt; 
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="duokan-reader"
+                    android:host="wifi"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.duokan.reader.ui.ScanQRCodeLogin.ScanQRCodeLoginCaptureActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.duokan.reader.ui.personal.PrivacyRevokeWebActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <meta-data
+            android:name="supportGetAndroidID"
+            android:value="false"/>
+        <receiver
+            android:name="com.duokan.advertisement.DkAppDownloadReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.market.DOWNLOAD_INSTALL_RESULT"/>
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.duokan.reader.provider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider
+            android:name="com.duokan.update.UpdateFileProvider"
+            android:exported="false"
+            android:authorities="com.duokan.reader.selfupdate.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/xiaomi_update_sdk_file_paths"/>
+        </provider>
+        <service
+            android:name="com.duokan.reader.domain.bookshelf.BookUploadService"
+            android:exported="false"/>
+        <service
+            android:name="com.duokan.reader.domain.audio.AudioPlayerService"
+            android:exported="false"/>
+        <service
+            android:name="com.duokan.reader.ui.reading.TtsNotificationService"
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback"/>
+        <service
+            android:name="com.duokan.reader.ui.audio.AbkNotificationService"
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback"/>
+        <activity
+            android:name="com.duokan.personal.ui.free.AboutActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|density|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden"/>
+        <activity
+            android:name="com.duokan.personal.ui.PersonalSettingsActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|density|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden"/>
+        <activity
+            android:name="com.duokan.personal.ui.debug.DebugActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.duokan.personal.ui.debug.DevMockFcActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden"/>
+        <activity
+            android:name="com.duokan.dkbookshelf.ui.ReadHistoryActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|density|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden"/>
+        <activity
+            android:name="com.duokan.detail.ReaderActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|density|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="duokan"
+                    android:host="com.duokan.reader"
+                    android:path="/detail_activity"/>
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name="com.duokan.advertisement.AppDownloadReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaomi.market.DOWNLOAD_INSTALL_RESULT"/>
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.TTFileProvider"
+            android:exported="false"
+            android:authorities="com.duokan.reader.TTFileProvider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/anythink_bk_tt_file_path"/>
+        </provider>
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:exported="false"
+            android:authorities="com.duokan.reader.TTMultiProvider"/>
+        <activity
+            android:theme="@style/TransparentAppTheme"
+            android:name="com.duokan.download.domain.DownloadNotificationActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"/>
+        <service
+            android:name="com.duokan.download.domain.DownloadService"
+            android:exported="false"/>
+        <service
+            android:name="com.duokan.download.domain.DownloadNotificationService"
+            android:exported="false"/>
+        <activity
+            android:name="com.duokan.dkwebview.ui.StoreWebActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|density|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden"/>
+        <service
+            android:name="com.duokan.free.tts.service.ReadingMediaService"
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback">
+            <intent-filter>
+                <action android:name="com.duokan.free.tts.try_play"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.duokan.free.tts.resume"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.duokan.free.tts.pause"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.duokan.free.tts.next_sentence"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.duokan.free.tts.previous_sentence"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.duokan.free.tts.reset"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.duokan.free.tts.retry"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.duokan.free.tts.stop"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.duokan.free.tts.previous_chapter"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.duokan.free.tts.next_chapter"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.duokan.free.tts.set_tts_tone"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.duokan.free.tts.set_speed"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.duokan.free.tts.set_timer"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.duokan.free.tts.preload"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:theme="@style/BaseTheme"
+            android:name="com.duokan.dkcategory.ui.secondary.SecondaryCategoryActivity"
+            android:exported="false"
+            android:configChanges="uiMode"/>
+        <activity
+            android:theme="@style/BaseTheme"
+            android:name="com.duokan.dkcategory.ui.primary.PrimaryCategoryActivity"
+            android:exported="false"
+            android:configChanges="uiMode"/>
+        <activity
+            android:name="com.duokan.reader.teenager.activity.TeenagerActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.duokan.searchable.LauncherActivity"
+            android:exported="true"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="duokan-searchable"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable_apps"/>
+        </activity>
+        <provider
+            android:name="com.duokan.searchable.BooksProvider"
+            android:exported="true"
+            android:authorities="com.duokan.searchable.books"/>
+        <meta-data
+            android:name="nestedheader"
+            android:value="1"/>
+        <meta-data
+            android:name="recyclerview"
+            android:value="1"/>
+        <meta-data
+            android:name="appcompat"
+            android:value="3.1"/>
+        <meta-data
+            android:name="os_private_label"
+            android:value="PRIVATE_OS020"/>
+        <meta-data
+            android:name="recyclerview_animator"
+            android:value="1"/>
+        <meta-data
+            android:name="popupwidget"
+            android:value="1"/>
+        <meta-data
+            android:name="springback"
+            android:value="3.1"/>
+        <meta-data
+            android:name="androidbasewidget"
+            android:value="1"/>
+        <meta-data
+            android:name="miuixstretchablewidget"
+            android:value="1"/>
+        <meta-data
+            android:name="slidingwidget"
+            android:value="1"/>
+        <meta-data
+            android:name="pickerwidget"
+            android:value="1"/>
+        <meta-data
+            android:name="miuixbasewidget"
+            android:value="1"/>
+        <meta-data
+            android:name="nest"
+            android:value="2"/>
+        <meta-data
+            android:name="dynamicoverscroller"
+            android:value="2"/>
+        <meta-data
+            android:name="folme"
+            android:value="2"/>
+        <service
+            android:name="com.xiaomi.passport.accountmanager.OwnAppXiaomiAccountAuthenticatorService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaomi.accounts.AccountAuthenticator"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.xiaomi.account.service.AppAccountExchangeService"
+            android:permission="com.xiaomi.permission.CLOUD_MANAGER"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.account.action.BIND_ACCOUNT_EXCHANGE_SERVICE_V2"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:theme="@style/PassportTheme.NoActionBar"
+            android:name="com.xiaomi.passport.ui.internal.PickCountryCodeActivity"
+            android:exported="false"/>
+        <activity
+            android:theme="@style/PassportTheme.Transparent"
+            android:label=""
+            android:name="com.xiaomi.passport.ui.page.UserAvatarUpdateActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <provider
+            android:name="com.xiaomi.passport.ui.settings.provider.PassportFileProvider"
+            android:exported="false"
+            android:authorities="com.duokan.reader.passport.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/passport_provider_file_paths"/>
+        </provider>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.xiaomi.passport.ui.sns.WXEntryActivity"
+            android:exported="true"/>
+        <activity
+            android:theme="@style/PassportTheme.NoActionBar"
+            android:name="com.xiaomi.passport.ui.internal.ConfirmCredentialActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.xiaomi.account.action.XIAOMI_ACCOUNT_QUICK_LOGIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/PassportTheme.NoActionBar"
+            android:name="com.xiaomi.passport.ui.page.AccountLoginActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:theme="@style/PassportTheme.NoActionBar"
+            android:label="@string/passport_account_user_details"
+            android:name="com.xiaomi.passport.ui.page.UserInfoActivity"
+            android:exported="false"/>
+        <activity
+            android:theme="@style/PassportTheme.NoActionBar"
+            android:name="com.xiaomi.passport.ui.internal.PassportJsbWebViewActivity"
+            android:exported="false"
+            android:launchMode="singleTop"/>
+        <meta-data
+            android:name="viewpager"
+            android:value="2"/>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.duokan.reader.androidx-startup">
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup"/>
+        </provider>
+        <meta-data
+            android:name="graphics"
+            android:value="2"/>
+        <meta-data
+            android:name="haptic"
+            android:value="1"/>
+        <meta-data
+            android:name="smooth"
+            android:value="1"/>
+        <meta-data
+            android:name="core"
+            android:value="2"/>
+        <meta-data
+            android:name="spring"
+            android:value="1"/>
+        <meta-data
+            android:name="animation"
+            android:value="1"/>
+        <activity
+            android:name="fm.qingting.qtsdk.auth.QTAuthActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="fm.qingting.qtsdk.pay.QTPayActivity"
+            android:screenOrientation="portrait"/>
+        <provider
+            android:name="fm.qingting.log.LogProvider"
+            android:exported="false"
+            android:authorities="com.duokan.reader.fm.qingting.log"/>
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true"/>
+        <meta-data
+            android:name="com.miui.bugreport.DEFAULT_LOG_DIR"
+            android:resource="@xml/default_log_paths"/>
+        <provider
+            android:name="com.miui.bugreport.logprovider.DumpLogProvider"
+            android:permission="com.miui.bugreport.permission.DUMP_CACHED_LOG"
+            android:exported="true"
+            android:authorities="com.duokan.reader.provider.bugreport">
+            <intent-filter>
+                <action android:name="com.miui.bugreport.intent.ACTION_DUMP_CACHED_LOG"/>
+            </intent-filter>
+        </provider>
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:exported="false"
+            android:configChanges="fontScale|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:exported="false"
+            android:configChanges="fontScale|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.alipay.sdk.app.PayResultActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:configChanges="fontScale|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.alipay.sdk.app.AlipayResultActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:configChanges="fontScale|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:name="com.alipay.sdk.app.H5OpenAuthActivity"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:configChanges="fontScale|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.alipay.sdk.app.APayEntranceActivity"
+            android:exported="false"
+            android:configChanges="fontScale|layoutDirection|density|smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|locale"/>
+        <meta-data
+            android:name="market_sdk_version"
+            android:value="3.2.24"/>
+        <receiver
+            android:name="com.xiaomi.milogsdk.PushUploadLogReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.milogsdk.UPLOAD_LOG_BY_SDK"/>
+                <data android:mimeType="application/zip"/>
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="MIPUSH_SDK_VERSION_CODE"
+            android:value="50708"/>
+        <meta-data
+            android:name="MIPUSH_SDK_VERSION_NAME"
+            android:value="5_7_8-C"/>
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice"/>
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":pushservice"/>
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE"
+            android:enabled="true"
+            android:exported="true"/>
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true"/>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance">
+            <meta-data
+                android:name="supportStyle"
+                android:value="scene|voip"/>
+        </activity>
+        <provider
+            android:name="com.yuewen.datareporter.report.disk.db.YWDataContentProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.duokan.reader.YWDataContentProvider"/>
+        <activity
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:name="com.miui.zeus.landingpage.sdk.activity.WebViewActivity"/>
+        <activity
+            android:theme="@style/MipayPub.Theme.TranslucentStatus"
+            android:name="com.mibi.sdk.pay.ui.ma.PaymentOrderActivity"
+            android:exported="false"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard">
+            <intent-filter>
+                <action android:name="com.mibi.sdk.action.ORDER_UI"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/MipayPub.Theme.TranslucentStatus"
+            android:name="com.mibi.sdk.pay.ChannelPayEntryActivity"
+            android:exported="false"
+            android:configChanges="fontScale|density|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc">
+            <intent-filter>
+                <action android:name="com.mibi.sdk.action.PAY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/MipayPub.Theme.TranslucentStatus"
+            android:name="com.mibi.sdk.pay.prepare.PrepareActivity"
+            android:configChanges="fontScale|density|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc"/>
+        <meta-data
+            android:name="PPPaySDK"
+            android:value="true"/>
+        <meta-data
+            android:name="CurrentEnvironment"
+            android:value="PROD"/>
+        <activity
+            android:theme="@style/MipayPub.Theme.TranslucentStatus"
+            android:name="com.mibi.sdk.channel.alipay.AlipayChannelActivity"
+            android:exported="false"
+            android:configChanges="fontScale|density|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc">
+            <intent-filter>
+                <action android:name="com.mibi.sdk.action.ALIPAY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/MipayPub.Theme.TranslucentStatus"
+            android:name="com.mibi.sdk.channel.wxpay.WXEntryActivity"
+            android:exported="true"
+            android:taskAffinity="com.duokan.reader"
+            android:launchMode="singleTask"/>
+        <activity
+            android:theme="@style/MipayPub.Theme.TranslucentStatus"
+            android:name="com.mibi.sdk.channel.wxpay.WxpayChannelActivity"
+            android:exported="false"
+            android:configChanges="fontScale|density|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc">
+            <intent-filter>
+                <action android:name="com.mibi.sdk.action.WXPAY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/MipayPub.Theme.TranslucentStatus"
+            android:name="com.mibi.sdk.channel.wxpay.WXPayEntryActivity"
+            android:exported="false"
+            android:taskAffinity="com.xiaomi.payment.WX"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.ss.android.downloadlib.addownload.compliance.AppPrivacyPolicyActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.ss.android.downloadlib.addownload.compliance.AppDetailInfoActivity"
+            android:exported="false"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.ss.android.downloadlib.activity.TTDelegateActivity"
+            android:exported="false"
+            android:launchMode="singleTask"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.ss.android.downloadlib.activity.JumpKllkActivity"
+            android:exported="false"
+            android:launchMode="singleTask"/>
+        <receiver
+            android:name="com.ss.android.downloadlib.core.download.DownloadReceiver"
+            android:exported="false"/>
+        <service
+            android:name="com.ss.android.socialbase.appdownloader.DownloadHandlerService"
+            android:exported="false"
+            android:stopWithTask="true"/>
+        <activity
+            android:theme="@android:style/Theme.Dialog"
+            android:name="com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity"
+            android:exported="false"
+            android:launchMode="singleTask"/>
+        <activity
+            android:theme="@android:style/Theme.Dialog"
+            android:name="com.ss.android.socialbase.appdownloader.view.JumpUnknownSourceActivity"
+            android:exported="false"
+            android:launchMode="singleTask"/>
+        <service
+            android:name="com.ss.android.socialbase.appdownloader.RetryJobSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="true"/>
+        <service
+            android:name="com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService"
+            android:exported="false"
+            android:process=":downloader">
+            <intent-filter>
+                <action android:name="com.ss.android.socialbase.downloader.remote"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.ss.android.socialbase.downloader.notification.DownloadNotificationService"
+            android:exported="false"
+            android:stopWithTask="true"/>
+        <service
+            android:name="com.ss.android.socialbase.downloader.downloader.DownloadService"
+            android:exported="false"
+            android:stopWithTask="true"/>
+        <service
+            android:name="com.ss.android.socialbase.downloader.impls.DownloadHandleService"
+            android:exported="false"
+            android:stopWithTask="true"/>
+        <service
+            android:name="com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService"
+            android:exported="false"
+            android:stopWithTask="true"/>
+        <receiver
+            android:name="com.bytedance.embedapplog.collector.Collector"
+            android:enabled="true"
+            android:exported="false"/>
+        <activity
+            android:theme="@style/tt_landing_page"
+            android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTNativePageActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:theme="@style/tt_landing_page"
+            android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTWebPageActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:theme="@style/tt_landing_page"
+            android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTMiddlePageActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:theme="@style/tt_landing_page"
+            android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTPlayableWebPageActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:theme="@style/tt_landing_page"
+            android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTVideoWebPageActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:theme="@style/tt_landing_page"
+            android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTVideoScrollWebPageActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTDelegateActivity"
+            android:exported="false"
+            android:launchMode="standard"/>
+        <activity
+            android:theme="@style/tt_full_screen_no_animation"
+            android:name="com.bytedance.sdk.openadsdk.core.component.reward.activity.TTRewardVideoActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/tt_full_screen_no_animation"
+            android:name="com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/tt_full_screen_no_animation"
+            android:name="com.bytedance.sdk.openadsdk.core.component.reward.activity.TTRewardVideoLandscapeActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/tt_full_screen_no_animation"
+            android:name="com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoLandscapeActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <service
+            android:name="com.bytedance.sdk.openadsdk.core.multipro.aidl.BinderPoolService"
+            android:exported="false"/>
+        <activity
+            android:theme="@style/MipayPub.Theme.TranslucentStatus"
+            android:name="com.mibi.sdk.basic.auth.PaymentCheckPasswordActivity"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:theme="@style/MipayPub.Theme.TranslucentStatus"
+            android:name="com.mibi.sdk.basic.sms.PaymentVerifySMSCodeActivity"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:theme="@style/MipayPub.Theme.TranslucentStatus"
+            android:name="com.mibi.sdk.pay.ui.PayTypeListActivity"
+            android:exported="false"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard">
+            <intent-filter>
+                <action android:name="com.mibi.sdk.action.PAYTYPES"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/MipayPub.Theme.TranslucentStatus"
+            android:name="com.mibi.sdk.pay.ui.BalanceInfoActivity"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@style/Mibi.Theme.TranslucentStatus"
+            android:name="com.mibi.sdk.common.account.AccountInteractActivity"
+            android:configChanges="fontScale|density|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc"/>
+        <meta-data
+            android:name="devicebaseinfo"
+            android:value="1"/>
+        <meta-data
+            android:name="theme"
+            android:value="1"/>
+        <activity
+            android:theme="@style/general__shared__main_theme"
+            android:name="com.duokan.networkswitch.ServerSettingActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/general__shared__main_theme"
+            android:name="com.duokan.networkswitch.ServerChangeActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="fullSensor"
+            android:configChanges="orientation|keyboardHidden"/>
+    </application>
+</manifest>

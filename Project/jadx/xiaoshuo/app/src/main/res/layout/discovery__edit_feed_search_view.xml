@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/general__day_night__ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.duokan.reader.ui.general.PageHeaderView
+        android:id="@+id/discovery__edit_feed_search_view__header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:textSize="13dp"
+        android:textColor="@color/general__day_night__333333"
+        android:textColorHint="@color/general__shared__8d8d8d"
+        android:id="@+id/discovery__edit_feed_search_view__title"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/discovery__edit_feed_search_view__hint"
+        android:singleLine="true"/>
+    <View
+        android:background="@color/general__day_night__cccccc"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <com.duokan.reader.ui.general.DkWebListView
+        android:id="@+id/discovery__edit_feed_search_view__list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

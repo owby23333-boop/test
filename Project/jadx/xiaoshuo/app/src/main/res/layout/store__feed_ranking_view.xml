@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/view_dimen_26"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/view_dimen_40"
+    android:layout_marginEnd="@dimen/view_dimen_40">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/store__feed_rank_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/store__feed_ranking_2item_1"
+            layout="@layout/store__feed_horizontal_ranking_2item"/>
+        <include
+            android:id="@+id/store__feed_ranking_2item_2"
+            layout="@layout/store__feed_horizontal_ranking_2item"/>
+        <include
+            android:id="@+id/store__feed_ranking_2item_3"
+            layout="@layout/store__feed_horizontal_ranking_2item"/>
+    </LinearLayout>
+</LinearLayout>

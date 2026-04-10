@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/reading__reading_welfare__root"
+    android:background="@drawable/reading__reading_walfare_today_task_background"
+    android:visibility="visible"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/text_font_size_36"
+        android:textColor="#99672e"
+        android:gravity="center_vertical"
+        android:id="@+id/reading__reading_welfare__today_task"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/view_dimen_75"
+        android:text="@string/reading__reading_welfare__today_task__title"
+        android:includeFontPadding="false"
+        android:layout_marginStart="@dimen/view_dimen_40"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/reading_reading_welfare_top_arror_dk"
+        android:layout_marginEnd="@dimen/view_dimen_24"/>
+</LinearLayout>

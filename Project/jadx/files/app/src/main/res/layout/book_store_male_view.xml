@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.amgcyo.cuttadon.view.otherview.SegmentControlView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/seg_male"
+        android:paddingLeft="@dimen/dimen5dp"
+        android:paddingRight="@dimen/dimen5dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen38dp"
+        android:layout_marginLeft="@dimen/dimen8dp"
+        android:layout_marginRight="@dimen/dimen8dp"
+        android:layout_marginBottom="@dimen/dimen8dp"
+        app:scv_BackgroundNormalColor="@color/color_f7f7f7"
+        app:scv_BackgroundSelectedColor="@color/color_EC5C07"
+        app:scv_FrameColor="@color/white"
+        app:scv_FrameCornerRadius="@dimen/dimen10dp"
+        app:scv_FrameWidth="@dimen/dimen2dp"
+        app:scv_Gradient="false"
+        app:scv_TextNormalColor="@color/color_8C8C8C"
+        app:scv_TextSize="@dimen/sp_14"/>
+    <com.amgcyo.cuttadon.view.otherview.EnhancedWrapContentViewPager
+        android:id="@+id/vp_male"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen5dp"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+package com.bytedance.msdk.api.v2.ad.custom.nativeAd;
+
+/* JADX INFO: loaded from: classes2.dex */
+public interface IGMCustomNativeDislikeConvert {
+    boolean hasDislike();
+}

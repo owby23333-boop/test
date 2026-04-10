@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/view_dimen_20"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/text_font_size_38"
+        android:textColor="@color/general__day_night__333333_90"
+        android:gravity="center"
+        android:id="@+id/reading__tts_reload_button"
+        android:background="@drawable/general__shared__button_corner70_f7f7f7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/view_dimen_110"
+        android:layout_marginStart="@dimen/view_dimen_60"
+        android:layout_marginEnd="@dimen/view_dimen_60"/>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.duokan.reader.ui.general.DkLabelView
+        android:textSize="@dimen/general_font__shared__b"
+        android:textColor="@color/general__shared__dfe0e1"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/bookshelf__customshelf_header_view__title_text"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="@string/general__shared__bookshelf"/>
+</LinearLayout>

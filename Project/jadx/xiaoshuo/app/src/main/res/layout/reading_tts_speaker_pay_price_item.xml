@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/view_dimen_22"
+    android:paddingBottom="@dimen/view_dimen_22"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <CheckBox
+        android:enabled="false"
+        android:id="@+id/checkbox"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="@dimen/view_dimen_66"
+        android:layout_height="@dimen/view_dimen_66"
+        android:button="@drawable/general__shared__multi_checkbox_checked_button"/>
+    <TextView
+        android:textSize="@dimen/text_font_size_45"
+        android:textColor="@color/general__day_night__cc000000_ccFFFFFF"
+        android:id="@+id/tv_show_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_dimen_22"
+        android:textFontWeight="330"/>
+    <TextView
+        android:textSize="@dimen/text_font_size_45"
+        android:textColor="@color/general__day_night__66000000_66ffffff"
+        android:gravity="end"
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textFontWeight="330"/>
+</LinearLayout>

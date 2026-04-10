@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <View
+        android:layout_gravity="top"
+        android:id="@+id/general__shared_spirt_menu_item_view__top_line"
+        android:background="@color/general__day_night__cccccc"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/general__shared__menu_item_view__bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.duokan.reader.ui.general.DkLabelView
+            android:textSize="16sp"
+            android:textColor="@color/general__day_night__ff000000"
+            android:gravity="center"
+            android:id="@+id/general__shared_spirt_menu_item_view__text"
+            android:paddingLeft="25dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+</FrameLayout>

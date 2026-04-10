@@ -1,0 +1,259 @@
+package com.kwad.sdk.utils;
+
+import android.content.Context;
+import android.os.Build;
+import android.os.Environment;
+import android.os.Process;
+import android.text.TextUtils;
+import android.util.Log;
+import com.kwad.sdk.service.ServiceProvider;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.HashSet;
+
+/* JADX INFO: loaded from: classes4.dex */
+public final class r {
+    public static com.kwad.sdk.l.a.d aYY;
+
+    static class b extends com.kwad.sdk.l.a.a {
+    }
+
+    static class c extends com.kwad.sdk.l.a.a {
+    }
+
+    public static synchronized com.kwad.sdk.l.a.d PQ() {
+        if (!((com.kwad.sdk.service.a.h) ServiceProvider.get(com.kwad.sdk.service.a.h.class)).By()) {
+            return null;
+        }
+        com.kwad.sdk.l.a.d dVar = aYY;
+        if (dVar != null) {
+            return dVar;
+        }
+        Context applicationContext = ServiceProvider.getContext().getApplicationContext();
+        com.kwad.sdk.l.a.d dVar2 = new com.kwad.sdk.l.a.d(applicationContext);
+        boolean zCl = new d().cl(applicationContext);
+        boolean zCl2 = new e().cl(applicationContext);
+        boolean zCl3 = new b().cl(applicationContext);
+        boolean zCl4 = new a().cl(applicationContext);
+        boolean zCl5 = new c().cl(applicationContext);
+        dVar2.bT(zCl);
+        dVar2.bU(zCl2);
+        dVar2.bV(zCl3);
+        dVar2.bX(zCl4);
+        dVar2.bY(zCl5);
+        aYY = dVar2;
+        return dVar2;
+    }
+
+    public static String g(String[] strArr) {
+        try {
+            return com.kwad.sdk.crash.utils.h.c(Runtime.getRuntime().exec(strArr).getInputStream());
+        } catch (Exception unused) {
+            return null;
+        }
+    }
+
+    static class d extends com.kwad.sdk.l.a.a {
+        public d() {
+            PR();
+        }
+
+        private void PR() {
+            this.aWE = new ArrayList();
+            this.aWE.add(new com.kwad.sdk.l.a.a(this.enabled) { // from class: com.kwad.sdk.utils.r.d.1
+                @Override // com.kwad.sdk.l.a.a
+                public final boolean cm(Context context) {
+                    return new File("/system/app/Superuser.apk").exists();
+                }
+            });
+            this.aWE.add(new com.kwad.sdk.l.a.a(this.enabled) { // from class: com.kwad.sdk.utils.r.d.2
+                @Override // com.kwad.sdk.l.a.a
+                public final boolean cm(Context context) {
+                    String[] strArr = {"/system/bin/", "/system/xbin/", "/system/sbin/", "/sbin/", "/vendor/bin/"};
+                    for (int i = 0; i < 5; i++) {
+                        if (new File(strArr[i] + "su").exists()) {
+                            return true;
+                        }
+                    }
+                    return false;
+                }
+            });
+            this.aWE.add(new com.kwad.sdk.l.a.a(this.enabled) { // from class: com.kwad.sdk.utils.r.d.3
+                @Override // com.kwad.sdk.l.a.a
+                public final boolean cm(Context context) {
+                    return !TextUtils.isEmpty(r.g(new String[]{"/system/xbin/which", "su"}));
+                }
+            });
+            this.aWE.add(new com.kwad.sdk.l.a.a(this.enabled) { // from class: com.kwad.sdk.utils.r.d.4
+                @Override // com.kwad.sdk.l.a.a
+                public final boolean cm(Context context) {
+                    Charset charsetForName = Charset.forName("UTF-8");
+                    File file = new File("/data/su_test");
+                    try {
+                        w.a(file, "ok", charsetForName, false);
+                        return w.a(file, charsetForName).equals("ok");
+                    } catch (Throwable unused) {
+                        return false;
+                    }
+                }
+            });
+        }
+    }
+
+    static class e extends com.kwad.sdk.l.a.a {
+        public e() {
+            PR();
+        }
+
+        private void PR() {
+            this.aWE = new ArrayList();
+            this.aWE.add(new com.kwad.sdk.l.a.a(this.enabled) { // from class: com.kwad.sdk.utils.r.e.1
+                @Override // com.kwad.sdk.l.a.a
+                public final boolean cm(Context context) {
+                    return as.ap(context, "de.robv.android.xposed.installer") || as.ap(context, "com.saurik.substrate");
+                }
+            });
+            this.aWE.add(new com.kwad.sdk.l.a.a(this.enabled) { // from class: com.kwad.sdk.utils.r.e.2
+                @Override // com.kwad.sdk.l.a.a
+                public final boolean cm(Context context) {
+                    try {
+                        throw new Exception("empty");
+                    } catch (Exception e) {
+                        boolean z = false;
+                        int i = 0;
+                        for (StackTraceElement stackTraceElement : e.getStackTrace()) {
+                            String className = stackTraceElement.getClassName();
+                            String methodName = stackTraceElement.getMethodName();
+                            if (className.equals("com.android.internal.os.ZygoteInit") && (i = i + 1) == 2) {
+                                z = true;
+                            }
+                            if (className.equals("com.saurik.substrate.MS$2") && methodName.equals("invoked")) {
+                                Log.wtf("HookDetection", "A method on the stack trace has been hooked using Substrate.");
+                                z = true;
+                            }
+                            if (className.equals(com.kuaishou.weapon.p0.an.b) && methodName.equals("main")) {
+                                z = true;
+                            }
+                            if (className.equals(com.kuaishou.weapon.p0.an.b) && methodName.equals("handleHookedMethod")) {
+                                z = true;
+                            }
+                        }
+                        return z;
+                    }
+                }
+            });
+            this.aWE.add(new com.kwad.sdk.l.a.a(this.enabled) { // from class: com.kwad.sdk.utils.r.e.3
+                @Override // com.kwad.sdk.l.a.a
+                public final boolean cm(Context context) throws Throwable {
+                    FileReader fileReader;
+                    HashSet<String> hashSet;
+                    BufferedReader bufferedReader;
+                    boolean z = false;
+                    BufferedReader bufferedReader2 = null;
+                    try {
+                        hashSet = new HashSet();
+                        fileReader = new FileReader("/proc/" + Process.myPid() + "/maps");
+                        try {
+                            bufferedReader = new BufferedReader(fileReader);
+                        } catch (Exception unused) {
+                        } catch (Throwable th) {
+                            th = th;
+                        }
+                    } catch (Exception unused2) {
+                        fileReader = null;
+                    } catch (Throwable th2) {
+                        th = th2;
+                        fileReader = null;
+                    }
+                    while (true) {
+                        try {
+                            String line = bufferedReader.readLine();
+                            if (line == null) {
+                                break;
+                            }
+                            if (line.endsWith(".so") || line.endsWith(".jar")) {
+                                hashSet.add(line.substring(line.lastIndexOf(" ") + 1));
+                            }
+                        } catch (Exception unused3) {
+                            bufferedReader2 = bufferedReader;
+                            com.kwad.sdk.crash.utils.b.closeQuietly(bufferedReader2);
+                        } catch (Throwable th3) {
+                            th = th3;
+                            bufferedReader2 = bufferedReader;
+                            com.kwad.sdk.crash.utils.b.closeQuietly(bufferedReader2);
+                            com.kwad.sdk.crash.utils.b.closeQuietly(fileReader);
+                            throw th;
+                        }
+                        com.kwad.sdk.crash.utils.b.closeQuietly(fileReader);
+                        return z;
+                    }
+                    for (String str : hashSet) {
+                        if (str.contains("com.saurik.substrate")) {
+                            Log.wtf("HookDetection", "Substrate shared object found: " + str);
+                            z = true;
+                        }
+                        if (str.contains("XposedBridge.jar")) {
+                            Log.wtf("HookDetection", "Xposed JAR found: " + str);
+                            z = true;
+                        }
+                    }
+                    com.kwad.sdk.crash.utils.b.closeQuietly(bufferedReader);
+                    com.kwad.sdk.crash.utils.b.closeQuietly(fileReader);
+                    return z;
+                }
+            });
+        }
+    }
+
+    static class a extends com.kwad.sdk.l.a.a {
+        public a() {
+            PR();
+        }
+
+        private void PR() {
+            this.aWE = new ArrayList();
+            this.aWE.add(new com.kwad.sdk.l.a.a(this.enabled) { // from class: com.kwad.sdk.utils.r.a.1
+                @Override // com.kwad.sdk.l.a.a
+                public final boolean cm(Context context) {
+                    int i = (Build.PRODUCT.contains("sdk") || Build.PRODUCT.contains("Andy") || Build.PRODUCT.contains("ttVM_Hdragon") || Build.PRODUCT.contains("google_sdk") || Build.PRODUCT.contains("Droid4X") || Build.PRODUCT.contains("nox") || Build.PRODUCT.contains("sdk_x86") || Build.PRODUCT.contains("sdk_google") || Build.PRODUCT.contains("vbox86p") || Build.PRODUCT.contains("aries")) ? 1 : 0;
+                    if (Build.MANUFACTURER.equals("unknown") || Build.MANUFACTURER.equals("Genymotion") || Build.MANUFACTURER.contains("Andy") || Build.MANUFACTURER.contains("MIT") || Build.MANUFACTURER.contains("nox") || Build.MANUFACTURER.contains("TiantianVM")) {
+                        i++;
+                    }
+                    if (Build.BRAND.equals("generic") || Build.BRAND.equals("generic_x86") || Build.BRAND.equals("TTVM") || Build.BRAND.contains("Andy")) {
+                        i++;
+                    }
+                    if (Build.DEVICE.contains("generic") || Build.DEVICE.contains("generic_x86") || Build.DEVICE.contains("Andy") || Build.DEVICE.contains("ttVM_Hdragon") || Build.DEVICE.contains("Droid4X") || Build.DEVICE.contains("nox") || Build.DEVICE.contains("generic_x86_64") || Build.DEVICE.contains("vbox86p") || Build.DEVICE.contains("aries")) {
+                        i++;
+                    }
+                    if (Build.MODEL.equals("sdk") || Build.MODEL.contains("Emulator") || Build.MODEL.equals("google_sdk") || Build.MODEL.contains("Droid4X") || Build.MODEL.contains("TiantianVM") || Build.MODEL.contains("Andy") || Build.MODEL.equals("Android SDK built for x86_64") || Build.MODEL.equals("Android SDK built for x86")) {
+                        i++;
+                    }
+                    if (Build.HARDWARE.equals("goldfish") || Build.HARDWARE.equals("vbox86") || Build.HARDWARE.contains("nox") || Build.HARDWARE.contains("ttVM_x86")) {
+                        i++;
+                    }
+                    if (Build.FINGERPRINT.contains("generic/sdk/generic") || Build.FINGERPRINT.contains("generic_x86/sdk_x86/generic_x86") || Build.FINGERPRINT.contains("Andy") || Build.FINGERPRINT.contains("ttVM_Hdragon") || Build.FINGERPRINT.contains("generic_x86_64") || Build.FINGERPRINT.contains("generic/google_sdk/generic") || Build.FINGERPRINT.contains("vbox86p") || Build.FINGERPRINT.contains("generic/vbox86p/vbox86p")) {
+                        i++;
+                    }
+                    try {
+                        if (!bc.useStoragePermissionDisable()) {
+                            if (new File(Environment.getExternalStorageDirectory().toString() + File.separatorChar + "windows" + File.separatorChar + "BstSharedFolder").exists()) {
+                                i += 10;
+                            }
+                        }
+                    } catch (Exception unused) {
+                    }
+                    return i > 3;
+                }
+            });
+            this.aWE.add(new com.kwad.sdk.l.a.a(this.enabled) { // from class: com.kwad.sdk.utils.r.a.2
+                @Override // com.kwad.sdk.l.a.a
+                public final boolean cm(Context context) {
+                    return "1".equals(bq.get("ro.kernel.qemu"));
+                }
+            });
+        }
+    }
+}

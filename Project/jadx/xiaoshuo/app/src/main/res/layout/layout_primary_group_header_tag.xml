@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/drawable_primary_card_top"
+    android:paddingTop="@dimen/general__shared_dimen__16_67dp"
+    android:paddingBottom="@dimen/general__shared_dimen__2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/general__shared_dimen__17_33dp"
+    android:layout_marginHorizontal="@dimen/general__shared_dimen__15_33dp">
+    <TextView
+        android:textSize="@dimen/general__shared_dimen__17_33dp"
+        android:textStyle="bold"
+        android:textColor="@color/general__day_night__1a1a1a_e5ffffff"
+        android:id="@+id/category__primary_group_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

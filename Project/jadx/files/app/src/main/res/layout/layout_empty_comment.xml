@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/text_99"
+        android:gravity="center"
+        android:id="@+id/text"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen20dp"
+        android:layout_marginBottom="@dimen/dimen20dp"
+        android:text="暂无评论，快来抢沙发吧"
+        android:lineSpacingExtra="@dimen/dimen3dp"/>
+    <ImageView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_comment_empty"/>
+    <View
+        android:background="@color/dddddd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen0_5dp"/>
+</LinearLayout>

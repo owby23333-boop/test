@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+    <TextView
+        android:textSize="@dimen/text_font_size_52"
+        android:textStyle="bold"
+        android:textColor="@color/general__day_night__333333"
+        android:id="@+id/free_personal__login_item_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"/>
+    <TextView
+        android:textSize="@dimen/text_font_size_34"
+        android:textColor="@color/general__day_night__7F000000_7Fffffff"
+        android:id="@+id/free_personal__login_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_dimen_6"
+        android:text="@string/free_personal__read_time"/>
+</LinearLayout>

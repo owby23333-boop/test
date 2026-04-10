@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="164dp"
+    android:width="1010dp"
+    android:viewportWidth="1010"
+    android:viewportHeight="164">
+    <group>
+        <clip-path android:pathData="M37,1L973,1A36,36 0,0 1,1009 37L1009,127A36,36 0,0 1,973 163L37,163A36,36 0,0 1,1 127L1,37A36,36 0,0 1,37 1z"/>
+        <path
+            android:fillColor="@drawable/_reward_ad_notification_bg__0_res_0x7f080073"
+            android:pathData="M37,1L973,1A36,36 0,0 1,1009 37L1009,127A36,36 0,0 1,973 163L37,163A36,36 0,0 1,1 127L1,37A36,36 0,0 1,37 1z"/>
+        <path
+            android:fillColor="@drawable/_reward_ad_notification_bg__1_res_0x7f080074"
+            android:pathData="M-104.8,0.9L473.6,-333A36,36 102.1,0 1,522.8 -319.8L723.7,28.1A36,36 102.1,0 1,710.5 77.3L132.1,411.3A36,36 106.7,0 1,82.9 398.1L-118,50.1A36,36 97.9,0 1,-104.8 0.9z"
+            android:strokeAlpha="0.6"
+            android:fillAlpha="0.6"/>
+    </group>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M37,0.5L973,0.5A36.5,36.5 0,0 1,1009.5 37L1009.5,127A36.5,36.5 0,0 1,973 163.5L37,163.5A36.5,36.5 0,0 1,0.5 127L0.5,37A36.5,36.5 0,0 1,37 0.5z"
+        android:strokeColor="@drawable/_reward_ad_notification_bg__2_res_0x7f080075"
+        android:strokeWidth="1"/>
+</vector>

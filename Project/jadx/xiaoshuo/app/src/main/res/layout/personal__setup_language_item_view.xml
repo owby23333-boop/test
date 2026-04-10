@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/personal__personal_settings_view__item_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/personal__personal_settings_view__middle_height">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="56dp"
+        android:paddingStart="@dimen/personal__personal_settings_view__item_padding_start"
+        android:paddingEnd="@dimen/personal__personal_settings_view__item_padding_end">
+        <ImageView
+            android:id="@+id/personal__setup_language_item_view__selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/general__shared__single_checkbox"
+            android:contentDescription="@null"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <com.duokan.reader.ui.general.DkLabelView
+                android:textSize="@dimen/general_font__shared__f"
+                android:textColor="@color/general__day_night__000000"
+                android:id="@+id/personal__setup_language_item_view__language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

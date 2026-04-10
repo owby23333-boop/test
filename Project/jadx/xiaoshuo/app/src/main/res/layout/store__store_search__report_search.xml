@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/general__day_night__ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_dimen_190"
+    android:elevation="@dimen/view_dimen_5">
+    <TextView
+        android:textSize="@dimen/text_font_size_34"
+        android:textColor="@color/general__day_night__F86B45_333333"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/store__store_search__look_more__tv"
+        android:background="@drawable/store__store_search_report_book"
+        android:layout_width="@dimen/view_dimen_681"
+        android:layout_height="@dimen/view_dimen_90"
+        android:text="@string/store__search__report_book"/>
+</FrameLayout>

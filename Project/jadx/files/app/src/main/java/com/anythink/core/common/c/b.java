@@ -1,0 +1,59 @@
+package com.anythink.core.common.c;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+/* JADX INFO: loaded from: classes2.dex */
+public abstract class b {
+    private a a;
+
+    private class a extends SQLiteOpenHelper {
+        public a(Context context, String str) {
+            super(context, str, (SQLiteDatabase.CursorFactory) null, 9);
+        }
+
+        @Override // android.database.sqlite.SQLiteOpenHelper
+        public final void onCreate(SQLiteDatabase sQLiteDatabase) {
+            b.this.a(sQLiteDatabase);
+        }
+
+        @Override // android.database.sqlite.SQLiteOpenHelper
+        public final void onDowngrade(SQLiteDatabase sQLiteDatabase, int i2, int i3) {
+            b.this.b(sQLiteDatabase);
+        }
+
+        @Override // android.database.sqlite.SQLiteOpenHelper
+        public final void onUpgrade(SQLiteDatabase sQLiteDatabase, int i2, int i3) {
+            b.this.a(sQLiteDatabase, i2, i3);
+        }
+    }
+
+    public b(Context context) {
+        this.a = new a(context, c());
+    }
+
+    public final SQLiteDatabase a() {
+        return this.a.getReadableDatabase();
+    }
+
+    protected abstract void a(SQLiteDatabase sQLiteDatabase);
+
+    protected abstract void a(SQLiteDatabase sQLiteDatabase, int i2, int i3);
+
+    public final synchronized SQLiteDatabase b() {
+        SQLiteDatabase writableDatabase;
+        writableDatabase = null;
+        try {
+            writableDatabase = this.a.getWritableDatabase();
+        } catch (Exception unused) {
+        }
+        return writableDatabase;
+    }
+
+    protected abstract void b(SQLiteDatabase sQLiteDatabase);
+
+    protected abstract String c();
+
+    protected abstract int d();
+}

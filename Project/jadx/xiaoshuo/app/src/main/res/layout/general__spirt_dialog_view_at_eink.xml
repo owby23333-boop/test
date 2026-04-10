@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/general__shared__ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/general__shared_dimen__5dp"
+    android:paddingEnd="@dimen/general__shared_dimen__5dp">
+    <include layout="@layout/general__shared__simple_header"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/general__spirt_dialog_view__content_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/general__spirt_dialog_view__content_extra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

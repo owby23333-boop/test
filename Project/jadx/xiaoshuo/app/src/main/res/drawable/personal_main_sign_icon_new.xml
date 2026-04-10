@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="100dp"
+    android:width="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <path
+        android:fillColor="@drawable/_personal_main_sign_icon_new__0_res_0x7f08006b"
+        android:pathData="M42.09,15.23C44.81,11.78 49.8,11.17 53.28,13.86L77.62,32.73C81.14,35.45 81.76,40.51 79.01,44L50.34,80.4C48.85,82.27 46.61,83.39 44.22,83.44L20.96,83.93C19.07,83.97 17.4,82.67 16.98,80.82L11.85,58.43C11.31,56.07 11.87,53.59 13.37,51.69L42.09,15.23Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#ff5756"
+        android:pathData="M63.76,72.02C64.22,71.38 64.97,71 65.76,71L85,71C86.1,71 87,71.9 87,73V82C87,83.1 86.1,84 85,84H57.44C56.43,84 55.84,82.85 56.44,82.03L63.76,72.02Z"
+        android:strokeAlpha="0.5037"
+        android:fillAlpha="0.5037"
+        android:fillType="evenOdd"/>
+</vector>

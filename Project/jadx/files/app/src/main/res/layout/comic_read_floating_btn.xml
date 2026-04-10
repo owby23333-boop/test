@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.floatingactionbutton.FloatingActionButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fb_comment"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen20dp"
+    android:src="@drawable/mk_menu_night"
+    android:scaleType="fitXY"
+    android:tint="@color/color_C4C5C5"
+    android:layout_above="@+id/ll_bottom_root"
+    android:layout_alignParentRight="true"
+    app:backgroundTint="@color/colorBlackAlpha8"
+    app:borderWidth="0dp"
+    app:elevation="@dimen/dimen5dp"
+    app:fabSize="normal"
+    app:pressedTranslationZ="@dimen/dimen5dp"
+    app:rippleColor="@color/color_C4C5C5"/>

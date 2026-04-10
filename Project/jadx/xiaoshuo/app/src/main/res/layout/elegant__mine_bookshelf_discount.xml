@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/elegant__mine_bookshelf_discount__container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="10sp"
+        android:textColor="@color/general__day_night__ffffff"
+        android:id="@+id/elegant__mine_bookshelf_discount__left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="10sp"
+        android:textColor="#f76978"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/elegant__mine_bookshelf_discount__right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="5dp"
+        android:layout_marginStart="2dp"/>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:paddingStart="45.33dp">
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/general__day_night__a2a5a8"
+        android:ellipsize="end"
+        android:id="@+id/elegant__user_news_item__date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_weight="1"/>
+    <TextView
+        android:textSize="12.67sp"
+        android:textColor="@color/elegant__day_night__B4B7BD"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:id="@+id/elegant__user_news_item__comment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:singleLine="true"
+        android:drawablePadding="4.67dp"
+        android:drawableStart="@drawable/elegant__user__comment"
+        android:layout_marginEnd="17dp"/>
+    <TextView
+        android:textSize="12.67sp"
+        android:textColor="@color/elegant__user_news_item__like"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:id="@+id/elegant__user_news_item__praise"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:minWidth="68.67dp"
+        android:singleLine="true"
+        android:drawablePadding="4.67dp"
+        android:drawableStart="@drawable/elegant__user_news_item__like"
+        android:paddingStart="16dp"/>
+</LinearLayout>

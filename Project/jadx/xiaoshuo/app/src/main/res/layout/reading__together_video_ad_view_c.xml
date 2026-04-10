@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.reader.ui.general.RoundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/reading__app_ad_view_click"
+    android:background="@drawable/general__shared__ad_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:radius="@dimen/view_dimen_12">
+    <FrameLayout
+        android:id="@+id/reading__video_view__video_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_dimen_574">
+        <FrameLayout
+            android:id="@+id/reading__video_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_gravity="end|bottom"
+            android:id="@+id/reading__app_ad_view__close"
+            android:layout_width="@dimen/view_dimen_77"
+            android:layout_height="@dimen/view_dimen_30"
+            android:layout_marginBottom="@dimen/view_dimen_20"
+            android:src="@drawable/reading__ad_view_close_c"
+            android:layout_marginEnd="@dimen/view_dimen_20"/>
+    </FrameLayout>
+    <include layout="@layout/reading__ad_title_summary_c"/>
+    <include layout="@layout/reading__ad_view_download_view"/>
+</com.duokan.reader.ui.general.RoundLinearLayout>

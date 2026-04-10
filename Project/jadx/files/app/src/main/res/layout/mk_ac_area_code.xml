@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_title_search"/>
+    <com.amgcyo.cuttadon.view.smilerefresh.MkPullToRefresh
+        android:id="@+id/swipe_refresh_layout"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.amgcyo.cuttadon.sdk.utils.AdFrameLayout
+                android:id="@+id/fl_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen10dp"
+                android:layout_marginTop="@dimen/dimen5dp"
+                android:layout_marginRight="@dimen/dimen10dp"/>
+            <FrameLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:scrollbarSize="2dp"
+                    android:scrollbarStyle="outsideOverlay"
+                    android:id="@android:id/list"
+                    android:background="@color/white"
+                    android:scrollbars="none"
+                    android:clipToPadding="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen10dp"
+                    android:overScrollMode="never"/>
+                <com.amgcyo.cuttadon.view.slideview.SideBarLayout
+                    android:id="@+id/sidebar"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dimen10dp"
+                    app:sidebarSelectTextColor="@color/colorPrimary"
+                    app:sidebarSelectTextSize="12sp"
+                    app:sidebarUnSelectTextColor="@color/text_63"
+                    app:sidebarUnSelectTextSize="10sp"
+                    app:sidebarWordTextColor="@color/white"
+                    app:sidebarWordTextSize="45sp"/>
+            </FrameLayout>
+        </LinearLayout>
+    </com.amgcyo.cuttadon.view.smilerefresh.MkPullToRefresh>
+</LinearLayout>

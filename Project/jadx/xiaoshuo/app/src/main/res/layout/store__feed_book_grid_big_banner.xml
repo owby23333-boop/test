@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground">
+    <TextView
+        android:id="@+id/store__feed_book_grid_banner_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/store__feed_book_grid_title_desc_gap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/store__feed_book_grid_title_style"/>
+    <TextView
+        android:id="@+id/store__feed_book_grid_banner_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/store__feed_book_grid_desc_cover_gap"
+        style="@style/store__feed_book_grid_desc_style"/>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/store__feed_book_grid_banner_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/store__grid_book_grid_big_banner_height"
+        android:scaleType="fitXY"
+        app:shapeAppearance="@style/RoundCorner12"
+        style="@style/store_feed_banner_frame_style"/>
+</LinearLayout>

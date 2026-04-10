@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="bottom|center_horizontal"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.bytedance.sdk.openadsdk.widget.TTLoadingProgressBar
+        android:id="@+id/tt_playable_custom_background_progress"
+        android:layout_width="290dp"
+        android:layout_height="18dp"/>
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/tt_white"
+        android:id="@+id/tt_playable_custom_background_progress_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:shadowColor="#b3000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="1"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/tt_white"
+        android:gravity="center"
+        android:id="@+id/tt_playable_custom_background_play_btn"
+        android:background="@drawable/tt_playable_structure_btn_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="31dp"
+        android:text="@string/tt_playable_btn_play"
+        android:layout_marginHorizontal="24dp"/>
+</LinearLayout>

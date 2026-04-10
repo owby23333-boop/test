@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/reading__custom_font_list_view__dk_font_pacakge_panel"
+    android:paddingLeft="@dimen/view_dimen_60"
+    android:paddingRight="@dimen/view_dimen_60"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="56dp">
+        <com.duokan.reader.ui.general.DkLabelView
+            android:textSize="@dimen/general_font__shared__c"
+            android:textColor="@color/general__day_night__333333"
+            android:layout_gravity="center"
+            android:id="@+id/reading__custom_font_list_view__dk_font_pacakge_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reading__custom_font_list_view__dk_font_package_description"/>
+        <com.duokan.reader.ui.general.DkLabelView
+            android:textSize="@dimen/general_font__shared__d"
+            android:textColor="@color/general__day_night__reading_custom_font_view_button_bg"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/reading__custom_font_list_view__download_all"
+            android:background="@drawable/reading__day_night__custom_font_list_view_download_bg"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reading__custom_font_list_view__download_all"/>
+    </FrameLayout>
+</LinearLayout>

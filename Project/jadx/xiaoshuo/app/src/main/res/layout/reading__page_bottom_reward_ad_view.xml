@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/general__shared_dimen__10dp"
+    android:layout_marginBottom="@dimen/general__shared_dimen__10dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+    <TextView
+        android:textSize="@dimen/view_dimen_42"
+        android:textColor="@color/general__text__day_night__000000"
+        android:gravity="center"
+        android:id="@+id/tv_ad_view__show_reward_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reading__reward_hint"
+        android:drawableLeft="@drawable/reading__chapter_end_ad_reward_hint_icon"
+        android:layout_marginStart="@dimen/view_dimen_36"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:textSize="@dimen/view_dimen_42"
+        android:gravity="center"
+        android:id="@+id/tv_ad_view__show_reward_next_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reading__reward_continue_next_page"
+        android:layout_marginEnd="@dimen/view_dimen_36"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

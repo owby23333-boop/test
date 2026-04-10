@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 亮色主题 -->
+    <style name="Theme.Reader" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- 暗色主题 -->
+    <style name="Theme.Reader.Dark" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:statusBarColor">@color/night_background</item>
+        <item name="android:windowBackground">@color/night_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- 护眼主题 -->
+    <style name="Theme.Reader.EyeProtect" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/eye_protect_background</item>
+        <item name="android:windowBackground">@color/eye_protect_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

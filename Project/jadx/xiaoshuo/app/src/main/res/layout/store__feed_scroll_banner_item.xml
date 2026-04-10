@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6.7dp"
+    android:layout_marginEnd="6.7dp">
+    <com.duokan.reader.ui.general.RoundFrameLayout
+        android:layout_width="@dimen/store__scroll_banner_width"
+        android:layout_height="@dimen/store__scroll_banner_height"
+        android:foreground="?android:attr/selectableItemBackground"
+        style="@style/store_feed_banner_round_style">
+        <include layout="@layout/store__feed_banner_card"/>
+    </com.duokan.reader.ui.general.RoundFrameLayout>
+    <TextView
+        android:textSize="13.3sp"
+        android:textColor="#333333"
+        android:ellipsize="end"
+        android:id="@+id/store_feed_banner_title"
+        android:paddingTop="9.7dp"
+        android:paddingBottom="4.7dp"
+        android:layout_width="@dimen/store__scroll_banner_width"
+        android:layout_height="wrap_content"
+        android:singleLine="true"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="#9ca0a8"
+        android:ellipsize="end"
+        android:id="@+id/store_feed_banner_desc"
+        android:layout_width="@dimen/store__scroll_banner_width"
+        android:layout_height="wrap_content"
+        android:singleLine="true"/>
+</LinearLayout>

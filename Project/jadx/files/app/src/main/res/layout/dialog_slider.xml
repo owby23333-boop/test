@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mardous.discreteseekbar.DiscreteSeekBar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:id="@+id/dialog_slider_bar"
+    android:padding="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:dsb_indicatorColor="?attr/colorPrimary"
+    app:dsb_indicatorPopupEnabled="true"
+    app:dsb_progressColor="?attr/colorPrimary"
+    app:dsb_rippleColor="?attr/colorPrimary"
+    app:dsb_thumbSize="12dp"
+    app:dsb_trackColor="?attr/colorPrimary"
+    app:dsb_trackHeight="4dp"
+    app:dsb_value="12"/>

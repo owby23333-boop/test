@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:background="@drawable/store__book_discount_notify_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/store__share__interval_20"
+    style="@style/store__shared__item_parent">
+    <TextView
+        android:textSize="@dimen/general_font__shared__t3"
+        android:textColor="@color/general__shared__FF6A00"
+        android:ellipsize="end"
+        android:id="@+id/store__feed_book_discount_tip_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/store__share__interval_60"
+        android:layout_marginTop="@dimen/store__feed_book_discount_tip_margin"
+        android:layout_marginRight="@dimen/store__share__interval_60"
+        android:layout_marginBottom="@dimen/store__feed_book_discount_tip_margin"
+        android:singleLine="true"
+        android:layout_weight="1"/>
+    <View
+        android:layout_gravity="center_vertical"
+        android:id="@+id/store__feed_book_discount_tip_close"
+        android:background="@drawable/store__book_discount_notify_close"
+        android:layout_width="@dimen/store__feed_book_discount_tip_close_size"
+        android:layout_height="@dimen/store__feed_book_discount_tip_close_size"
+        android:layout_marginRight="@dimen/store__share__interval_60"/>
+</LinearLayout>

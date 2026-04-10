@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.layout.QMUILinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.qmuiteam.qmui.layout.QMUILinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/trackPlaying"
+            android:visibility="invisible"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="2dp"
+            app:lottie_autoPlay="false"
+            app:lottie_fileName="lottie/track_playing.json"
+            app:lottie_loop="true"
+            app:lottie_repeatMode="restart"/>
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/primary_text_color"
+            android:ellipsize="end"
+            android:id="@+id/tvTrackTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 - 章节名"
+            android:maxLines="1"/>
+    </com.qmuiteam.qmui.layout.QMUILinearLayout>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/secondary_text_color"
+        android:id="@+id/tvPublishTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="-年-月-日"/>
+</com.qmuiteam.qmui.layout.QMUILinearLayout>

@@ -1,0 +1,41 @@
+package com.kwad.sdk.core.scene;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import com.kwad.sdk.utils.s;
+import com.tencent.smtt.sdk.stat.MttLoader;
+import org.json.JSONObject;
+
+/* JADX INFO: loaded from: classes3.dex */
+public class EntryPackage extends URLPackage {
+    private static final long serialVersionUID = 8251709184937662571L;
+    public String entryId;
+    public String entryPageSource;
+
+    public EntryPackage() {
+        this.entryPageSource = "unknown";
+    }
+
+    public EntryPackage(@NonNull String str, int i2) {
+        super(str, i2);
+        this.entryPageSource = "unknown";
+    }
+
+    @Override // com.kwad.sdk.core.response.kwai.a, com.kwad.sdk.core.b
+    public void parseJson(@Nullable JSONObject jSONObject) {
+        super.parseJson(jSONObject);
+        if (jSONObject == null) {
+            return;
+        }
+        this.entryPageSource = jSONObject.optString("entryPageSource");
+        this.entryId = jSONObject.optString(MttLoader.ENTRY_ID);
+    }
+
+    @Override // com.kwad.sdk.core.response.kwai.a, com.kwad.sdk.core.b
+    public JSONObject toJson() {
+        JSONObject json = super.toJson();
+        s.putValue(json, "entryPageSource", this.entryPageSource);
+        s.putValue(json, MttLoader.ENTRY_ID, this.entryId);
+        return json;
+    }
+}

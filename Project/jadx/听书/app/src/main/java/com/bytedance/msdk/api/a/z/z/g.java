@@ -1,0 +1,8 @@
+package com.bytedance.msdk.api.a.z.z;
+
+/* JADX INFO: loaded from: classes2.dex */
+public interface g {
+    void z();
+
+    void z(com.bytedance.msdk.api.z zVar);
+}

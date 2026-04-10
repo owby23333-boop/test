@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rank__menu_view"
+        android:background="@color/general__day_night__f7f7f7"
+        android:layout_width="@dimen/view_dimen_220"
+        android:layout_height="match_parent"/>
+    <FrameLayout
+        android:id="@+id/rank_home_container"
+        android:background="@color/general__day_night__ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

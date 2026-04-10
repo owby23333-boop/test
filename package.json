@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@clawdactual/openclaw-recall": "^0.4.1"
+  }
+}

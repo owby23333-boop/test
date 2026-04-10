@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/surfing__immersive_surfing_view__content"
+    android:paddingTop="20dp"
+    android:paddingBottom="5dp"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/store__tab_bar_view__tabs_and_menu"
+        android:paddingTop="12dp"
+        android:paddingBottom="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <FrameLayout
+            android:id="@+id/store__tab_bar_view__tab_frame"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <com.duokan.core.ui.BoxView
+            android:id="@+id/store__tab_bar_view__menu"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</FrameLayout>

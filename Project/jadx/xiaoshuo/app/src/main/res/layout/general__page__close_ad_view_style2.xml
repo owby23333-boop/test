@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reading__app_ad_view__close"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_csj"
+        android:visibility="gone"
+        android:layout_width="@dimen/view_dimen_100"
+        android:layout_height="@dimen/view_dimen_40"
+        android:src="@drawable/reading_ad_platform_csj"/>
+    <TextView
+        android:textSize="@dimen/view_dimen_32"
+        android:textColor="#b2ffffff"
+        android:gravity="center"
+        android:id="@+id/reading__app_ad_view__close_text"
+        android:background="@drawable/general__page__close_ad_view_background_style2"
+        android:paddingTop="@dimen/view_dimen_5"
+        android:paddingBottom="@dimen/view_dimen_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reading__close_ad_view__close_text"
+        android:drawableRight="@drawable/ic___close_icon_v2"
+        android:drawablePadding="@dimen/view_dimen_8"
+        android:paddingStart="@dimen/view_dimen_17"
+        android:paddingEnd="@dimen/view_dimen_12"/>
+</FrameLayout>

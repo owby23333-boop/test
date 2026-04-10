@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ksad_reflux_card_divider"
+    android:paddingLeft="@dimen/ksad_reflux_card_padding"
+    android:paddingRight="@dimen/ksad_reflux_card_padding"
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:src="@drawable/ksad_reflux_card_divider"/>

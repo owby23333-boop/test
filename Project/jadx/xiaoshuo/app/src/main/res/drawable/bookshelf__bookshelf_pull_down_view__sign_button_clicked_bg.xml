@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <padding android:bottom="3dp"/>
+            <gradient
+                android:startColor="#33c8cfd9"
+                android:endColor="#00000000"
+                android:angle="270"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/general__day_night__bookshelf_signed_button_bg"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+</layer-list>

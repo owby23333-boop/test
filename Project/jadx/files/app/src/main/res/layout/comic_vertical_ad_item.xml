@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amgcyo.cuttadon.view.comic.GestureDetectorLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/ll_ad_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ll_ad_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.amgcyo.cuttadon.sdk.utils.AdFrameLayout
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/adframelayout_comics"
+            android:background="@color/translucent"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen20dp"/>
+        <com.amgcyo.cuttadon.view.otherview.LabelTextView
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_no_ad_read"
+            android:background="@drawable/comic_reward_bg"
+            android:paddingLeft="@dimen/dimen20dp"
+            android:paddingTop="@dimen/dimen10dp"
+            android:paddingRight="@dimen/dimen20dp"
+            android:paddingBottom="@dimen/dimen10dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen30dp"
+            app:label_backgroundColor="#03a9f4"
+            app:label_distance="10dp"
+            app:label_orientation="RIGHT_TOP"
+            app:label_text="推荐"
+            app:label_textSize="10sp"/>
+        <TextView
+            android:textSize="@dimen/sp_11"
+            android:textColor="@color/a2a9b2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/tv_ad_tips"
+            android:background="@android:color/white"
+            android:paddingTop="@dimen/dimen2dp"
+            android:paddingBottom="@dimen/dimen2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:layout_marginBottom="@dimen/dimen20dp"
+            android:text="免广告 · 无限畅读 · 就是爽"/>
+    </LinearLayout>
+</com.amgcyo.cuttadon.view.comic.GestureDetectorLinearLayout>

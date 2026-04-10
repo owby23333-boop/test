@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duokan.reader.ui.general.RoundFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/store_feed_book_audio_card"
+    android:foreground="?android:attr/selectableItemBackground"
+    style="@style/store_feed_book_cover_round_style">
+    <ImageView
+        android:id="@+id/store_feed_book_audio_cover"
+        android:layout_width="@dimen/store__grid_audio_cover_size"
+        android:layout_height="@dimen/store__grid_audio_cover_size"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:textSize="10dp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="end|top"
+        android:id="@+id/store_feed_book_audio_label"
+        android:background="@drawable/store__feed_book_tag_free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/store__label_recommend"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"/>
+    <TextView
+        android:textSize="9sp"
+        android:textColor="@color/general__shared__ffffff"
+        android:ellipsize="none"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:id="@+id/store_feed_book_audio_play_count"
+        android:background="@drawable/store__feed_book_audio__play_count_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/store__list_audio_play_count_height"
+        android:text="5000wan"
+        android:singleLine="true"
+        android:drawablePadding="1.67dp"
+        android:drawableStart="@drawable/store__feed_audio_play"
+        android:paddingStart="5dp"
+        android:paddingEnd="6dp"/>
+</com.duokan.reader.ui.general.RoundFrameLayout>

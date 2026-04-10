@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/teenager_nav"
+    app:startDestination="@+id/teenagerFragment">
+    <fragment
+        android:label="fragment_teenager_password"
+        android:name="com.duokan.reader.teenager.fragment.TeenagerFragment"
+        android:id="@+id/teenagerFragment">
+        <action
+            android:id="@+id/action_teenagerFragment_to_teenagerPasswordFragment2"
+            app:destination="@+id/teenagerPasswordFragment"/>
+        <action
+            android:id="@+id/action_teenagerFragment_to_teenagerLockFragment"
+            app:destination="@+id/teenagerLockFragment"/>
+    </fragment>
+    <fragment
+        android:label="fragment_teenager_password"
+        android:name="com.duokan.reader.teenager.fragment.TeenagerUnLockFragment"
+        android:id="@+id/teenagerPasswordFragment">
+        <action
+            android:id="@+id/action_teenagerPasswordFragment_to_teenagerForgetFragment"
+            app:destination="@+id/teenagerForgetFragment"/>
+    </fragment>
+    <fragment
+        android:label="fragment_teenager_forget"
+        android:name="com.duokan.reader.teenager.fragment.TeenagerForgetFragment"
+        android:id="@+id/teenagerForgetFragment"/>
+    <fragment
+        android:label="fragment_teenager_lock"
+        android:name="com.duokan.reader.teenager.fragment.TeenagerLockFragment"
+        android:id="@+id/teenagerLockFragment">
+        <action
+            android:id="@+id/action_teenagerLockFragment_to_teenagerLockConfirmFragment"
+            app:destination="@+id/teenagerLockConfirmFragment"/>
+    </fragment>
+    <fragment
+        android:label="fragment_teenager_lock_confirm"
+        android:name="com.duokan.reader.teenager.fragment.TeenagerLockConfirmFragment"
+        android:id="@+id/teenagerLockConfirmFragment"/>
+</navigation>

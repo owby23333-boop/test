@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="150dp"
+    android:width="988dp"
+    android:viewportWidth="988"
+    android:viewportHeight="150">
+    <path
+        android:fillColor="@drawable/_persona_vip_view_bg__0_res_0x7f08005d"
+        android:pathData="M24.223,0L964.223,0A24,24 0,0 1,988.223 24L988.223,126A24,24 0,0 1,964.223 150L24.223,150A24,24 0,0 1,0.223 126L0.223,24A24,24 0,0 1,24.223 0z"/>
+    <group>
+        <clip-path android:pathData="M24.223,0L964.223,0A24,24 0,0 1,988.223 24L988.223,126A24,24 0,0 1,964.223 150L24.223,150A24,24 0,0 1,0.223 126L0.223,24A24,24 0,0 1,24.223 0z"/>
+        <path
+            android:fillColor="@drawable/_persona_vip_view_bg__1_res_0x7f08005e"
+            android:pathData="M654.223,-161m-236,0a236,236 0,1 1,472 0a236,236 0,1 1,-472 0"
+            android:strokeColor="@drawable/_persona_vip_view_bg__2_res_0x7f08005f"
+            android:strokeWidth="2"/>
+        <path
+            android:fillColor="@drawable/_persona_vip_view_bg__3_res_0x7f080060"
+            android:pathData="M261.445,362.223m-218.815,88.407a236,236 0,1 0,437.631 -176.814a236,236 0,1 0,-437.631 176.814"
+            android:strokeColor="@drawable/_persona_vip_view_bg__4_res_0x7f080061"
+            android:strokeWidth="2"/>
+    </group>
+</vector>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="app_store_clip_data_array">
+        <item>評論和想法功能都不錯</item>
+        <item>閱讀體驗真棒��</item>
+        <item>很方便，一直在用！</item>
+        <item>不錯，贊壹個</item>
+        <item>很好，書不錯</item>
+        <item>簡單好用，壹直喜歡</item>
+        <item>很棒，活動給力</item>
+        <item>給多看點贊</item>
+        <item>很好看，書挺多的</item>
+        <item>很好用，還可以聽書</item>
+        <item>還能導入本地書</item>
+    </array>
+    <array name="bookshelf__general_shared__main_categories">
+        <item>書架</item>
+        <item>bookshelf</item>
+        <item>書架</item>
+    </array>
+    <array name="general__shared__splash_tips">
+        <item>小提示: 您可以通過導入本地書目獲取書籍</item>
+        <item>小提示: 閱讀時可以點擊屏幕中部彈出工具欄</item>
+        <item>小提示: 閱讀時雙指上下滑動可以快捷調節亮度</item>
+        <item>小提示: 閱讀時單指下拉可以增刪書簽</item>
+        <item>小提示: 閱讀時長按文字可以查字典、做筆記</item>
+        <item>小提示: 閱讀時單指上拉可以返回書架、查看目錄</item>
+        <item>小提示: 閱讀時可以跨頁加書摘喔</item>
+        <item>小提示: 所有圖書都可以同步進度、書簽和筆記喔</item>
+        <item>小提示: 在書架拖拽封面疊加可以創建分組</item>
+        <item>小提示: 購買書後就可以發表評論啦</item>
+        <item>小提示: 漫畫圖書可以雙擊圖片切換閱讀模式</item>
+        <item>小提示: 請註意購書券的有效時間，別過期啦</item>
+    </array>
+    <array name="passport_account_user_gender_name">
+        <item>男</item>
+        <item>女</item>
+    </array>
+    <array name="personal__feedback_create_view__default_problem_array">
+        <item>1688/8282/書籍價格太貴</item>
+        <item>1683/8265/多看如何找回帳號</item>
+        <item>1683/8266/多看如何更換已綁定手機號</item>
+        <item>1683/8267/多看微信帳號問題</item>
+        <item>1684/8268/書籍批量購買問題</item>
+        <item>1684/8269/購買書籍後無法下載和打開</item>
+        <item>1684/8271/“自動購買下壹章節”功能</item>
+        <item>1686/8276/書籍封面錯誤</item>
+    </array>
+    <array name="reading__comment_view__level">
+        <item>@string/reading__comment_view__level1</item>
+        <item>@string/reading__comment_view__level2</item>
+        <item>@string/reading__comment_view__level3</item>
+        <item>@string/reading__comment_view__level4</item>
+        <item>@string/reading__comment_view__level5</item>
+    </array>
+    <array name="share_title_array">
+        <item>@string/share_name_weixin_friend</item>
+        <item>@string/share_name_weixin_friends</item>
+        <item>@string/share_to_other</item>
+    </array>
+    <array name="store_sug_item_view__author_type_name">
+        <item>圖書</item>
+        <item>小説</item>
+        <item>漫畫</item>
+        <item>聽書</item>
+    </array>
+</resources>

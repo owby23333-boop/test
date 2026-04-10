@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="100dp"
+    android:width="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <path
+        android:fillColor="@drawable/_personal_main_sign_icon__0_res_0x7f08006a"
+        android:pathData="M20.51,30.69C18.31,30.69 16.53,32.47 16.53,34.67V42.74C16.53,44.93 18.31,46.71 20.51,46.71H21.53V80.02C21.53,82.22 23.31,84 25.51,84H75.55C77.75,84 79.53,82.22 79.53,80.02V46.71H80.55C82.75,46.71 84.53,44.93 84.53,42.74V34.67C84.53,32.47 82.75,30.69 80.55,30.69H20.51Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#f76047"
+        android:pathData="M47,32.95H26.9C24.66,32.95 23.21,30.59 24.22,28.59L30.28,16.64C31.19,14.85 33.57,14.44 35.02,15.83L50,30.09L64.98,15.83C66.43,14.44 68.81,14.85 69.72,16.64L75.78,28.59C76.79,30.59 75.34,32.95 73.1,32.95H53H47Z"
+        android:fillAlpha="0.45"
+        android:fillType="evenOdd"/>
+</vector>

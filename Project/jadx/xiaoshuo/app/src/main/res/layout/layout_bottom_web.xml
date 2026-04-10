@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/general__shared__dialog_prompt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.duokan.dkwebview.core.DkWebView
+        android:layout_gravity="bottom"
+        android:id="@+id/general__web_core_view__web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>
